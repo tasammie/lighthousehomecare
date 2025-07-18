@@ -1,5 +1,11 @@
+import Services from ".";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <Services />
+    </div>
+  );
 };
 
 export default page;
