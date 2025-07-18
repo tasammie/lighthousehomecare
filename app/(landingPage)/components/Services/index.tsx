@@ -8,7 +8,9 @@ const serviceList = [
     title: "24-Hour Live-In Support",
     description:
       "Round-the-clock care in your own home for complete peace of mind.",
-    gradient: "bg-gradient-to-br from-[#96ECE9] to-teal-300",
+    // gradient: "bg-gradient-to-br from-[#96ECE9] to-teal-300",
+    gradient: "bg-white",
+
     iconBg: "bg-gray-700",
     titleColor: "text-gray-900",
     icon: (
@@ -228,7 +230,13 @@ function ServiceCard({
 
   return (
     <motion.div
-      className={`${gradient} rounded-2xl p-8 shadow-lg relative overflow-hidden`}
+      className={`
+        ${gradient}
+        rounded-2xl p-8 shadow-lg relative overflow-hidden
+        transition-all duration-500 ease-in-out transform
+        hover:bg-gradient-to-br hover:from-[#96ECE9] hover:to-teal-300
+        hover:scale-105 hover:shadow-xl
+      `}
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
