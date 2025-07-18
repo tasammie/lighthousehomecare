@@ -235,7 +235,7 @@ function ServiceCard({
         rounded-2xl p-8 shadow-lg relative overflow-hidden
         transition-all duration-500 ease-in-out transform
         hover:bg-gradient-to-br hover:from-[#96ECE9] hover:to-teal-300
-        hover:scale-105 hover:shadow-xl
+        hover:scale-105 hover:shadow-xl h-[354px] flex flex-col justify-between
       `}
       variants={cardVariants}
       initial="hidden"
@@ -247,9 +247,9 @@ function ServiceCard({
       <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#F3F0F0] rounded-full transform translate-x-12 translate-y-12" />
       <div className="absolute bottom-0 right-0 w-20 h-20 bg-[#E4DFDF] rounded-full transform translate-x-6 translate-y-6" />
 
-      <div className="mb-6">
+      <div className="mb-6  flex flex-col gap-y-4 items-start">
         <div
-          className={`w-16 h-16 rounded-full flex items-center justify-center mb-4 ${iconBg}`}
+          className={`w-[80px] h-[80px] rounded-full flex items-center justify-center mb-4 ${iconBg}`}
         >
           {icon}
         </div>

@@ -148,7 +148,7 @@ const TestimonialSection = () => {
                   key={i}
                   onClick={() => scrollToIndex(i)}
                   className={`w-3 h-3 rounded-full transition-colors ${
-                    i === currentSlide ? "bg-blue-600" : "bg-gray-300"
+                    i === currentSlide ? "bg-primaryColor" : "bg-gray-300"
                   }`}
                 />
               ))}

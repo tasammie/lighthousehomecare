@@ -45,13 +45,12 @@ export default function NursingStaff() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
             {/* Team Member 1 */}
             <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
                 <Image
                   src="/images/team1.png"
                   alt="Paul Matney"
-                  width={256}
-                  height={256}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mt-4">
@@ -62,13 +61,12 @@ export default function NursingStaff() {
 
             {/* Team Member 2 */}
             <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
                 <Image
                   src="/images/team2.png"
                   alt="Paul Matney"
-                  width={256}
-                  height={256}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mt-4">
@@ -79,13 +77,12 @@ export default function NursingStaff() {
 
             {/* Team Member 3 */}
             <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-full h-64 bg-gray-200 rounded-lg overflow-hidden">
+              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
                 <Image
                   src="/images/team3.png"
                   alt="Paul Matney"
-                  width={256}
-                  height={256}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mt-4">

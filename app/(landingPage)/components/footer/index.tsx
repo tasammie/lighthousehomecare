@@ -1,5 +1,6 @@
 "use client";
 import CustomButton from "@/components/CustomButton";
+import { ImgComp } from "@/components/ImgComp";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { useState } from "react";
 
@@ -21,20 +22,13 @@ const LighthouseFooter = () => {
           <div className="md:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               {/* Lighthouse Icon */}
-              <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-8 h-8 text-slate-900"
-                  fill="currentColor"
-                >
-                  <path d="M12 2L8 6v2h8V6l-4-4zM8 8v8h8V8H8zm2 2h4v4h-4v-4zm-2 8v4h8v-4H8z" />
-                  <circle cx="12" cy="4" r="1" />
-                </svg>
-              </div>
-              <div>
-                <div className="text-lg font-bold">LIGHTHOUSE</div>
-                <div className="text-xs text-gray-400">HOMECARE LTD</div>
-              </div>
+              <ImgComp
+                src={"/images/footer-logo.png"}
+                alt="Logo"
+                width={400}
+                height={400}
+                className="w-[160px]"
+              />
             </div>
           </div>
 
@@ -56,7 +50,6 @@ const LighthouseFooter = () => {
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Link Two0
-                 
                 </a>
               </li>
               <li>
