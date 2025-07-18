@@ -74,6 +74,7 @@ export default function ElderCare() {
           The Best Elderly Care Center For You
         </h1>
         <ul className="space-y-6">
+          {/* Expert Carers */}
           <li className="flex items-start">
             <span className="inline-flex items-center justify-center w-12 h-12 mr-4 bg-[#8092CD] text-white rounded-full flex-shrink-0">
               <svg
@@ -115,7 +116,9 @@ export default function ElderCare() {
               </p>
             </div>
           </li>
-          <li className="flex items-start">
+
+          {/* 24/7 Support */}
+          <li className="flex items-start ml-0 md:ml-15">
             <span className="inline-flex items-center justify-center w-12 h-12 mr-4 bg-[#F94D1C] text-white rounded-full flex-shrink-0">
               <svg
                 width="18"
@@ -156,6 +159,8 @@ export default function ElderCare() {
               </p>
             </div>
           </li>
+
+          {/* Assisted Living at Home */}
           <li className="flex items-start">
             <span className="inline-flex items-center justify-center w-12 h-12 mr-4 bg-[#8092CD] text-white rounded-full flex-shrink-0">
               <svg
