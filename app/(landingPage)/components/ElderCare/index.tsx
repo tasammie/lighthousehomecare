@@ -11,7 +11,7 @@ export default function ElderCare() {
       viewport={{ once: true, amount: 0.3 }}
     >
       {/* Left (images) */}
-      <motion.div
+      {/* <motion.div
         className="relative flex justify-center md:w-[50%] gap-[30px] mb-6 md:mb-0 p-5 md:p-0"
         variants={{
           hidden: { opacity: 0, x: -50 },
@@ -19,7 +19,6 @@ export default function ElderCare() {
         }}
         transition={{ duration: 0.8 }}
       >
-        {/* Blue heart shape decoration */}
         <div className="absolute -top-8 -left-8 w-20 h-20 md:w-28 md:h-28 z-10">
           <ImgComp
             src="/images/blue-heart.png"
@@ -28,7 +27,6 @@ export default function ElderCare() {
           />
         </div>
 
-        {/* Large image on the left - takes up about 2/3 of width */}
         <div className="w-2/3">
           <ImgComp
             src="/images/lady-with-woman.png"
@@ -37,7 +35,6 @@ export default function ElderCare() {
           />
         </div>
 
-        {/* Two smaller images stacked on the right - takes up about 1/3 of width */}
         <div className="w-1/3 flex flex-col gap-4">
           <ImgComp
             src="/images/elderly-couple-with-coffee.png"
@@ -51,15 +48,16 @@ export default function ElderCare() {
           />
         </div>
 
-        {/* Dotted pattern on the right side */}
-        {/* <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 w-12 h-64">
-          <ImgComp
-            src="/images/dotted-design.png"
-            alt="Dotted pattern decoration"
-            className="w-full h-full object-cover"
-          />
-        </div> */}
-      </motion.div>
+     
+      </motion.div> */}
+
+      <div className="relative flex justify-center w-full md:w-[50%] gap-[30px] mb-6 md:mb-0 p-5 md:p-0">
+        <ImgComp
+          src={"/images/caregiversimage.png"}
+          alt="care gives"
+          className="w-full h-full"
+        />
+      </div>
 
       {/* Right (text) */}
       <motion.div
