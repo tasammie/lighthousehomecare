@@ -55,7 +55,7 @@ const LighthouseFooter = () => {
                   href="#"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Two
+                  Link Two0
                  
                 </a>
               </li>
