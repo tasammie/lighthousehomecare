@@ -37,7 +37,7 @@ export default function Hero() {
       >
         <div className=" mx-auto">
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[60px] font-bold text-white mb-6 leading-tight text-center sm:text-left">
+          <h1 className="text-[40px] md:text-5xl lg:text-6xl xl:text-[60px] font-bold text-white mb-6 leading-tight text-center sm:text-left">
             Compassionate Care in{" "}
             <span className="block">the Comfort of Your</span>
             <span className="block text-blue-400">Home</span>
