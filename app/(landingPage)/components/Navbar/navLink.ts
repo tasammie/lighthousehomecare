@@ -1,14 +1,15 @@
 type NavLink = {
-  title: string;
-  url: string;
-  items?: { title: string; url: string }[];
+  label: string;
+  href: string;
+  hasDropdown?: boolean;
+  items?: { label: string; href: string }[];
 };
 
-export const navLinks: NavLink[] = [
-  { title: "Home", url: "/" },
-  { title: "About Us", url: "/about-us" },
-  { title: "Our Services", url: "/services" },
-  { title: "Why Choose Us", url: "/why-choose-us" },
-  { title: "Join Our Team", url: "/join-team" },
-  { title: "Franchise With Us", url: "/franchise" },
+export const navigationItems: NavLink[] = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Services", href: "/services", hasDropdown: true },
+  { label: "Find Care", href: "/find-care" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Blog", href: "/blog" },
 ];

@@ -1,3 +1,4 @@
+import LighthouseFooter from "./components/footer";
 import Navbar from "./components/Navbar";
 
 export default function LandingLayout({
@@ -11,6 +12,10 @@ export default function LandingLayout({
         <Navbar />
       </div>
       <div>{children}</div>
+
+      <div>
+        <LighthouseFooter />
+      </div>
     </div>
   );
 }
