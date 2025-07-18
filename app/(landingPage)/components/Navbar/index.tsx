@@ -141,26 +141,23 @@ export default function Navbar() {
               </div>
 
               {/* Mobile menu button */}
-              <div className="lg:hidden">
+              <div className="lg:hidden ">
                 <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                   <SheetTrigger asChild>
                     <button className="text-white hover:text-blue-200 p-2 rounded-lg transition-colors duration-200">
                       <Menu className="w-6 h-6" />
                     </button>
                   </SheetTrigger>
-                  <SheetContent side="right" className="w-80 bg-white">
+                  <SheetContent side="right" className="w-80 bg-white p-5">
                     <SheetHeader className="border-b border-gray-100 pb-4 mb-6">
                       <SheetTitle>
-                        <div className="flex items-center space-x-3">
-                          <div className="w-8 h-8 bg-primaryColor rounded-lg flex items-center justify-center">
-                            <div className="w-4 h-4 bg-white rounded-sm flex items-center justify-center">
-                              <div className="w-2 h-2 bg-primaryColor rounded-full"></div>
-                            </div>
-                          </div>
-                          <span className="text-xl font-bold text-gray-900">
-                            LIGHTHOUSE
-                          </span>
-                        </div>
+                        <ImgComp
+                          src={"/images/logo.png"}
+                          alt="Logo"
+                          width={200}
+                          height={200}
+                          className="w-[120px]"
+                        />
                       </SheetTitle>
                     </SheetHeader>
 

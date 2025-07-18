@@ -1,5 +1,11 @@
+import AboutUs from ".";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <AboutUs />
+    </div>
+  );
 };
 
 export default page;
