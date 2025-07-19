@@ -66,8 +66,6 @@ export default function Navbar() {
               <ImgComp
                 src={"/images/logo.png"}
                 alt="Logo"
-                width={200}
-                height={200}
                 className="w-[120px]"
               />
               <div className="flex items-start gap-10 text-gray-700">

@@ -1,4 +1,4 @@
-import HeroSection from "@/app/(landingPage)/HeroSection";
+import HeroSection from "@/app/(landingPage)/shared/components/HeroSection";
 
 const Hero = () => {
   const breadcrumbs = [{ label: "Home", href: "/" }, { label: "Services" }];

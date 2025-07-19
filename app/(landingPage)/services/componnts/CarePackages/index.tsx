@@ -1,4 +1,5 @@
 "use client";
+import CustomButton from "@/components/CustomButton";
 import { ImgComp } from "@/components/ImgComp";
 import { motion } from "framer-motion";
 
@@ -113,19 +114,25 @@ const PackageCard: React.FC<PackageCardProps> = ({ package: pkg, index }) => {
 
         {/* Content */}
         <div className="text-center">
-          <h3 className="text-xl font-bold mb-4 leading-tight">{pkg.title}</h3>
-          <p className="text-white/90 text-sm leading-relaxed mb-6">
+          <h3 className="text-[24px] font-bold mb-4 leading-tight">
+            {pkg.title}
+          </h3>
+          <p className="text-[#D6D4D4] text-sm leading-relaxed mb-6">
             {pkg.description}
           </p>
 
           {/* CTA Button */}
-          <motion.button
+          {/* <motion.button
             className="bg-[#00269B] hover:bg-blue-700 text-white px-6 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Explore Now
-          </motion.button>
+          </motion.button> */}
+          <CustomButton
+            text="Explore Now"
+            className="bg-[#00269B] hover:bg-blue-700 border text-white px-6 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
+          ></CustomButton>
         </div>
       </div>
     </motion.div>
