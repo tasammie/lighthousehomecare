@@ -2,6 +2,7 @@
 import CustomButton from "@/components/CustomButton";
 import { ImgComp } from "@/components/ImgComp";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface CarePackage {
   id: number;
@@ -9,6 +10,7 @@ interface CarePackage {
   description: string;
   image: string;
   logo: string;
+  buttonLink: string;
 }
 
 const carePackages: CarePackage[] = [
@@ -19,6 +21,7 @@ const carePackages: CarePackage[] = [
       "Round-the-clock care in your own home for complete peace of mind.",
     image: "/images/live-in-support.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "24-hour-live-in-support",
   },
   {
     id: 2,
@@ -27,6 +30,7 @@ const carePackages: CarePackage[] = [
       "Flexible help with everyday tasks, routines, and personal needs.",
     image: "/images/daily-assistance.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "daily-home-assistance",
   },
   {
     id: 3,
@@ -35,6 +39,7 @@ const carePackages: CarePackage[] = [
       "Support through the night for comfort, safety, and reassurance.",
     image: "/images/overnight-care.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "overnight-care-services",
   },
   {
     id: 4,
@@ -42,6 +47,7 @@ const carePackages: CarePackage[] = [
     description: "A listening ear and friendly face to brighten your day.",
     image: "/images/companionship.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "friendly-companionship",
   },
   {
     id: 5,
@@ -50,6 +56,7 @@ const carePackages: CarePackage[] = [
       "Short-term care to help you regain independence after a stay.",
     image: "/images/recovery-support.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "post-hospital-recovery-support",
   },
   {
     id: 6,
@@ -58,6 +65,7 @@ const carePackages: CarePackage[] = [
       "Comfort-focused care for individuals and their families at life's final stage.",
     image: "/images/end-of-life-care.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "compassionate-end-of-life-care",
   },
   {
     id: 7,
@@ -66,6 +74,7 @@ const carePackages: CarePackage[] = [
       "Understanding care tailored for individuals living with memory loss.",
     image: "/images/dementia-support.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "specialist-dementia-support",
   },
   {
     id: 8,
@@ -74,6 +83,7 @@ const carePackages: CarePackage[] = [
       "Discreet, respectful help with washing, dressing, and personal care.",
     image: "/images/personal-care.png",
     logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "personalised-care-hygiene",
   },
 ];
 
@@ -85,7 +95,7 @@ interface PackageCardProps {
 const PackageCard: React.FC<PackageCardProps> = ({ package: pkg, index }) => {
   return (
     <motion.div
-      className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer w-[472px] h-[360px]"
+      className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer md:w-[472px] h-[360px]"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -129,10 +139,12 @@ const PackageCard: React.FC<PackageCardProps> = ({ package: pkg, index }) => {
           >
             Explore Now
           </motion.button> */}
-          <CustomButton
-            text="Explore Now"
-            className="bg-[#00269B] hover:bg-blue-700 border text-white px-6 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
-          ></CustomButton>
+          <Link href={"#"}>
+            <CustomButton
+              text="Explore Now"
+              className="bg-[#00269B] hover:bg-blue-700 border text-white px-6 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
+            ></CustomButton>
+          </Link>
         </div>
       </div>
     </motion.div>
