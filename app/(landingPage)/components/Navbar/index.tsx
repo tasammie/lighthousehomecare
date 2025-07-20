@@ -96,7 +96,7 @@ export default function Navbar() {
         </div>
 
         {/* Main Navigation */}
-        <header className="shadow-lg  bg-[#2A2625B2] max-w-7xl mx-auto ">
+        <header className="shadow-lg bg-[#2A2625B2] max-w-7xl mx-auto">
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               {/* Desktop Navigation */}
@@ -116,6 +116,23 @@ export default function Navbar() {
                         <ChevronDown className="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" />
                       )}
                     </Link>
+
+                    {/* Dropdown Menu */}
+                    {item.hasDropdown && item.items && (
+                      <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                        <div className="py-2">
+                          {item.items.map((subItem) => (
+                            <Link
+                              key={subItem.href}
+                              href={subItem.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primaryColor transition-colors duration-200"
+                            >
+                              {subItem.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
 
                     {/* Active indicator */}
                     {isActive(item.href) && (
@@ -139,7 +156,7 @@ export default function Navbar() {
               </div>
 
               {/* Mobile menu button */}
-              <div className="lg:hidden ">
+              <div className="lg:hidden">
                 <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
                   <SheetTrigger asChild>
                     <button className="text-white hover:text-blue-200 p-2 rounded-lg transition-colors duration-200">
@@ -161,21 +178,38 @@ export default function Navbar() {
 
                     <div className="space-y-2">
                       {navigationItems.map((item) => (
-                        <Link
-                          key={item.label}
-                          href={item.href}
-                          onClick={() => setIsSheetOpen(false)}
-                          className={`flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
-                            isActive(item.href)
-                              ? "text-primaryColor bg-blue-50 font-semibold"
-                              : "text-gray-700 hover:text-primaryColor hover:bg-gray-50"
-                          }`}
-                        >
-                          <span>{item.label}</span>
-                          {item.hasDropdown && (
-                            <ChevronDown className="w-4 h-4" />
+                        <div key={item.label}>
+                          <Link
+                            href={item.href}
+                            onClick={() => setIsSheetOpen(false)}
+                            className={`flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
+                              isActive(item.href)
+                                ? "text-primaryColor bg-blue-50 font-semibold"
+                                : "text-gray-700 hover:text-primaryColor hover:bg-gray-50"
+                            }`}
+                          >
+                            <span>{item.label}</span>
+                            {item.hasDropdown && (
+                              <ChevronDown className="w-4 h-4" />
+                            )}
+                          </Link>
+
+                          {/* Mobile Dropdown Items */}
+                          {item.hasDropdown && item.items && (
+                            <div className="ml-4 mt-2 space-y-1">
+                              {item.items.map((subItem) => (
+                                <Link
+                                  key={subItem.href}
+                                  href={subItem.href}
+                                  onClick={() => setIsSheetOpen(false)}
+                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-primaryColor hover:bg-gray-50 rounded transition-colors duration-200"
+                                >
+                                  {subItem.label}
+                                </Link>
+                              ))}
+                            </div>
                           )}
-                        </Link>
+                        </div>
                       ))}
 
                       {/* Mobile Contact Button */}
