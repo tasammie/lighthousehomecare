@@ -4,7 +4,7 @@ export default function OvernightCareDetails() {
   return (
     <div
       className=" bg-gradient-to-br from-[#00269B] to-[#000D35] py-20 relative overflow-hidden"
-      style={{ backgroundImage: "url('/images/blue-bg.png')" }}
+      style={{ backgroundImage: "url('/images/blue-bg.webp')" }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-0 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-16">
@@ -64,7 +64,7 @@ export default function OvernightCareDetails() {
       </div>
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/blue-bg.png"
+          src="/images/blue-bg.webp"
           alt="Background"
           layout="fill"
           objectFit="cover"

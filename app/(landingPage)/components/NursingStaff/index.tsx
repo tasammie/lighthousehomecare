@@ -15,7 +15,7 @@ export default function NursingStaff() {
       {/* replace color background with image */}
       <div className="absolute inset-x-0 bottom-0 h-1/2 z-0">
         <Image
-          src="/images/blue-bg.png"
+          src="/images/blue-bg.webp"
           alt="Background"
           layout="fill"
           objectFit="cover"
@@ -47,7 +47,7 @@ export default function NursingStaff() {
             <div className="bg-white rounded-lg p-4 shadow-md">
               <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
                 <Image
-                  src="/images/team1.png"
+                  src="/images/team1.webp"
                   alt="Paul Matney"
                   fill
                   className="object-cover"
@@ -63,7 +63,7 @@ export default function NursingStaff() {
             <div className="bg-white rounded-lg p-4 shadow-md">
               <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
                 <Image
-                  src="/images/team2.png"
+                  src="/images/team2.webp"
                   alt="Paul Matney"
                   fill
                   className="object-cover"
@@ -79,7 +79,7 @@ export default function NursingStaff() {
             <div className="bg-white rounded-lg p-4 shadow-md">
               <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
                 <Image
-                  src="/images/team3.png"
+                  src="/images/team3.webp"
                   alt="Paul Matney"
                   fill
                   className="object-cover"

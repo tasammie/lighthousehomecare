@@ -6,49 +6,49 @@ const OvernightCarerServices = () => {
       title: "Nighttime Personal Care",
       description:
         "Assisting with washing, changing, toileting and bedtime routines - providing dignity and comfort before and during sleep.",
-      image: "/images/night-personal-care.png",
+      image: "/images/night-personal-care.webp",
     },
     {
       title: "Medication Reminders",
       description:
         "Administering or prompting time-sensitive evening or overnight medications to maintain treatment plans.",
-      image: "/images/medication-reminder.png",
+      image: "/images/medication-reminder.webp",
     },
     {
       title: "Repositioning & Pressure Relief",
       description:
         "Helping individuals change positions to avoid bedsores and improve sleep quality - especially important for those with limited mobility.",
-      image: "/images/presure-relive.png",
+      image: "/images/presure-relive.webp",
     },
     {
       title: "Monitoring & Reassurance",
       description:
         "Keeping a watchful eye throughout the night to respond quickly to any distress, confusion, or wandering - ideal for clients with dementia or anxiety.",
-      image: "/images/monitoring.png",
+      image: "/images/monitoring.webp",
     },
     {
       title: "Toileting & Continence Care",
       description:
         "Offering discreet support for overnight toileting or incontinence episodes with patience and compassion.",
-      image: "/images/toileting.png",
+      image: "/images/toileting.webp",
     },
     {
       title: "Mobility & Fall Prevention",
       description:
         "Helping clients move safely in and out of bed, reducing fall risks and ensuring stability during the night.",
-      image: "/images/mobilty.png",
+      image: "/images/mobilty.webp",
     },
     {
       title: "Companionship & Calm Presence",
       description:
         "Providing gentle reassurance, conversation, or a calming presence for those who feel anxious or lonely at night.",
-      image: "/images/companionship-service.png",
+      image: "/images/companionship-service.webp",
     },
     {
       title: "Emergency Support",
       description:
         "Ready to act immediately in any unexpected health or safety situations, offering peace of mind for both client and family.",
-      image: "/images/emergency-support.png",
+      image: "/images/emergency-support.webp",
     },
   ];
 

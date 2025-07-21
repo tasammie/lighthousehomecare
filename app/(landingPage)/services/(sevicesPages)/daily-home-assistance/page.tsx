@@ -1,5 +1,11 @@
+import DailyHomeAssistance from ".";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <DailyHomeAssistance />
+    </div>
+  );
 };
 
 export default page;

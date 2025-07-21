@@ -29,7 +29,7 @@ export default function ElderCare() {
 
         <div className="w-2/3">
           <ImgComp
-            src="/images/lady-with-woman.png"
+            src="/images/lady-with-woman.webp"
             alt="Caregiver with elderly"
             className="rounded-lg w-full h-full object-cover"
           />
@@ -37,12 +37,12 @@ export default function ElderCare() {
 
         <div className="w-1/3 flex flex-col gap-4">
           <ImgComp
-            src="/images/elderly-couple-with-coffee.png"
+            src="/images/elderly-couple-with-coffee.webp"
             alt="Elderly couple with coffee"
             className="rounded-lg w-full object-cover"
           />
           <ImgComp
-            src="/images/man-with-woman.png"
+            src="/images/man-with-woman.webp.png"
             alt="Elderly couple outdoors"
             className="rounded-lg w-full object-cover"
           />
@@ -53,7 +53,7 @@ export default function ElderCare() {
 
       <div className="relative flex justify-center w-full md:w-[50%] gap-[30px] mb-6 md:mb-0 p-5 md:p-0">
         <ImgComp
-          src={"/images/caregiversimage.png"}
+          src={"/images/caregiversimage.webp"}
           alt="care gives"
           className="w-full h-full"
         />

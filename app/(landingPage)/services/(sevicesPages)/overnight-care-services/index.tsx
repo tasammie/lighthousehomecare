@@ -18,7 +18,7 @@ export default function OvernightCareServices() {
         text="You're not just choosing a care service — you're choosing a team that truly cares"
         buttonText="Get Started Today"
         buttonLink="/contact"
-        imageSrc="/images/image-banner.png"
+        imageSrc="/images/image-banner.webp"
         imageAlt="Elderly care background"
       />
       <FAQ />

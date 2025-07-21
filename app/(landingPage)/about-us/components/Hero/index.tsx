@@ -6,7 +6,7 @@ const Hero = () => {
     <HeroSection
       title="About Us"
       breadcrumbs={breadcrumbs}
-      imageSrc="/images/man-woman-smile.png"
+      imageSrc="/images/man-woman-smile.webp"
       imageAlt="Team smiling"
     />
   );

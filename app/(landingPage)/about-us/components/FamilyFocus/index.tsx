@@ -52,7 +52,7 @@ export default function FamilyFocus() {
 
             <div className="relative bg-white p-4 rounded-lg shadow-lg">
               <ImgComp
-                src="/images/caregiver-reading.png"
+                src="/images/caregiver-reading.webp"
                 alt="Caregiver reading with elderly patient"
                 className="w-full h-auto rounded-lg"
               />

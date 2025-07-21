@@ -135,7 +135,7 @@ export default function FAQ() {
                 >
                   <AccordionItem
                     value={item.id}
-                    className="bg-white rounded-lg border border-gray-200 px-6 py-2"
+                    className="border-b border-gray-400 px-6 py-2"
                   >
                     <AccordionTrigger className="text-left text-gray-900 font-medium hover:no-underline">
                       {item.question}

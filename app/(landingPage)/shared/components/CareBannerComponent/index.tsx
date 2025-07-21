@@ -23,7 +23,7 @@ export default function CareBannerComponent({
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50 z-10" />
       <Image
-        src={imageSrc || "/images/image-banner.png"}
+        src={imageSrc || "/images/image-banner.webp"}
         alt={imageAlt || "Elderly care background"}
         layout="fill"
         objectFit="cover"

@@ -6,7 +6,7 @@ const Hero = () => {
     <HeroSection
       title="Services Grid"
       breadcrumbs={breadcrumbs}
-      imageSrc="/images/caregiver-service.png"
+      imageSrc="/images/caregiver-service.webp"
       imageAlt="Caregiver providing service"
     />
   );

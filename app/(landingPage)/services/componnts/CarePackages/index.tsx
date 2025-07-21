@@ -19,7 +19,7 @@ const carePackages: CarePackage[] = [
     title: "24-Hour Live-In Support",
     description:
       "Round-the-clock care in your own home for complete peace of mind.",
-    image: "/images/live-in-support.png",
+    image: "/images/live-in-support.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "24-hour-live-in-support",
   },
@@ -28,7 +28,7 @@ const carePackages: CarePackage[] = [
     title: "Daily Home Assistance",
     description:
       "Flexible help with everyday tasks, routines, and personal needs.",
-    image: "/images/daily-assistance.png",
+    image: "/images/daily-assistance.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "daily-home-assistance",
   },
@@ -37,7 +37,7 @@ const carePackages: CarePackage[] = [
     title: "Overnight Care Services",
     description:
       "Support through the night for comfort, safety, and reassurance.",
-    image: "/images/overnight-care.png",
+    image: "/images/overnight-care.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "overnight-care-services",
   },
@@ -45,7 +45,7 @@ const carePackages: CarePackage[] = [
     id: 4,
     title: "Friendly Companionship",
     description: "A listening ear and friendly face to brighten your day.",
-    image: "/images/companionship.png",
+    image: "/images/companionship.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "friendly-companionship",
   },
@@ -54,7 +54,7 @@ const carePackages: CarePackage[] = [
     title: "Post-Hospital Recovery Support",
     description:
       "Short-term care to help you regain independence after a stay.",
-    image: "/images/recovery-support.png",
+    image: "/images/recovery-support.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "post-hospital-recovery-support",
   },
@@ -63,7 +63,7 @@ const carePackages: CarePackage[] = [
     title: "Compassionate End-of-Life Care",
     description:
       "Comfort-focused care for individuals and their families at life's final stage.",
-    image: "/images/end-of-life-care.png",
+    image: "/images/end-of-life-care.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "compassionate-end-of-life-care",
   },
@@ -72,7 +72,7 @@ const carePackages: CarePackage[] = [
     title: "Specialist Dementia Support",
     description:
       "Understanding care tailored for individuals living with memory loss.",
-    image: "/images/dementia-support.png",
+    image: "/images/dementia-support.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "specialist-dementia-support",
   },
@@ -81,7 +81,7 @@ const carePackages: CarePackage[] = [
     title: "Personalised Care & Hygiene",
     description:
       "Discreet, respectful help with washing, dressing, and personal care.",
-    image: "/images/personal-care.png",
+    image: "/images/monitoring.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "personalised-care-hygiene",
   },

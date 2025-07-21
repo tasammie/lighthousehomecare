@@ -6,7 +6,7 @@ export default function CareBanner() {
     //   {/* Dark Overlay */}
     //   <div className="absolute inset-0 bg-black/50 z-10" />
     //   <Image
-    //     src="/images/image-banner.png"
+    //     src="/images/image-banner.webp"
     //     alt="Elderly care background"
     //     layout="fill"
     //     objectFit="cover"
@@ -26,7 +26,7 @@ export default function CareBanner() {
       description="Let's talk about how we can support you."
       buttonText="Get Started Today"
       buttonLink="/contact"
-      imageSrc="/images/image-banner.png"
+      imageSrc="/images/image-banner.webp"
       imageAlt="Elderly care background"
     />
   );

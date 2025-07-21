@@ -1,3 +1,4 @@
+"use client";
 import { ImgComp } from "@/components/ImgComp";
 import { motion } from "framer-motion";
 
@@ -9,7 +10,7 @@ const Hero = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-0">
+      <div className="max-w-7xl mx-auto px-6 md:px-0 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Image */}
           <motion.div
@@ -40,23 +41,28 @@ const Hero = () => {
           >
             {/* Header */}
             <div>
-              <h1 className="text-4xl md:text-[42px] font-bold text-[#000000] mb-4 md:w-[60%]">
-                Overnight Care Services
+              <h1 className="text-4xl md:text-[42px] font-bold text-[#000000] mb-4 ">
+                Daily Home Assistance{" "}
               </h1>
               <h2 className="text-xl font-semibold text-[#00269B] mb-6">
-                Comfort & Support While You Sleep
+                Flexible help with everyday tasks, routines, and personal needs.{" "}
               </h2>
             </div>
 
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                Overnight care is a practical and reassuring solution for
-                individuals who need support during the night hours— whether
-                it&apos;s occasional assistance or consistent overnight
-                supervision. It allows people to remain in their familiar home
-                environment with the peace of mindOvernightCareServices that
-                help is readily available when needed most.
+                When everyday activities become more difficult — from getting
+                dressed to preparing meals — our Daily Home Assistance service
+                provides the extra support needed to stay safe and independent
+                at home.
+              </p>
+              <p>
+                Whether it’s help with household chores, personal hygiene,
+                medication reminders, or companionship, our compassionate carers
+                are here to make life easier. We tailor every visit to fit your
+                routine and preferences, always with dignity, respect, and a
+                smile.
               </p>
             </div>
           </motion.div>
