@@ -29,8 +29,8 @@ export default function CareBannerComponent({
         objectFit="cover"
         className="opacity-50"
       />
-      <div className="relative z-10 text-center text-white space-y-5">
-        <h1 className="text-4xl font-bold">{text}</h1>
+      <div className="relative z-10 text-center text-white space-y-5 max-w-5xl mx-auto">
+        <h1 className="text-2xl md:text-4xl font-bold">{text}</h1>
         <p className="text-2xl mt-2">{description}</p>
 
         <Link href={buttonLink || "#"}>

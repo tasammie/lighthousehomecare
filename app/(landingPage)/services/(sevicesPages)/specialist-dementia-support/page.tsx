@@ -1,5 +1,11 @@
+import SpecialistDementiaSupport from ".";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <SpecialistDementiaSupport />
+    </div>
+  );
 };
 
 export default page;

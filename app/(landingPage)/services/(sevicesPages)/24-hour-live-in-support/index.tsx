@@ -1,20 +1,18 @@
-"use client";
-
 import CareBannerComponent from "@/app/(landingPage)/shared/components/CareBannerComponent";
 import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
-import OvernightCareDetails from "./components/OvernightCareDetails";
-import OvernightCareOptions from "./components/OvernightCareOptions";
-import WhyChooseOvernight from "./components/WhyChooseOvernight";
+import LiveCareDetails from "./components/LiveCareDetails";
+import OvernightCarerServices from "./components/OvernightCarerServices";
+import WhyChooseLiveSupport from "./components/WhyChooseLiveSupport";
 
-export default function OvernightCareServices() {
+const TwentyFourHourLiveInSupport = () => {
   return (
     <div>
       <Hero />
-      <OvernightCareDetails />
-      <OvernightCareOptions />
-      <WhyChooseOvernight />
-      {/* <OvernightCarerServices /> */}
+      <LiveCareDetails />
+
+      <OvernightCarerServices />
+      <WhyChooseLiveSupport />
 
       <CareBannerComponent
         text="You’re not just choosing a care service — you’re choosing a team that truly cares"
@@ -26,4 +24,6 @@ export default function OvernightCareServices() {
       <FAQ />
     </div>
   );
-}
+};
+
+export default TwentyFourHourLiveInSupport;

@@ -1,9 +1,9 @@
-import TwentyFourHourLiveInSupport from ".";
+import CompassionateEndOfLifeCare from ".";
 
 const page = () => {
   return (
     <div>
-      <TwentyFourHourLiveInSupport />
+      <CompassionateEndOfLifeCare />
     </div>
   );
 };

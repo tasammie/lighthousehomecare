@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ImgComp } from "@/components/ImgComp";
 
 export default function OvernightCareDetails() {
   return (
@@ -16,20 +16,14 @@ export default function OvernightCareDetails() {
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
-                  Overnight care offers vital support to individuals who may
-                  require help throughout the night—whether due to mobility
-                  issues, medication needs, incontinence, dementia, or recovery
-                  from illness or surgery. At Lighthouse Homecare Ltd., our
-                  dedicated overnight caregivers remain on-site to ensure your
-                  loved one is safe, comfortable, and not alone during the
-                  critical nighttime hours.
-                </p>
-                <p>
-                  Our carers provide essential assistance such as toileting
-                  support, repositioning in bed, managing restlessness or
-                  confusion, and responding quickly to any emergencies. This
-                  type of care not only promotes restful sleep for clients but
-                  also peace of mind for families.
+                  Overnight Care is a vital service designed to offer safety,
+                  reassurance, and tailored support through the night. Whether
+                  it’s helping someone get ready for bed, managing night-time
+                  medication, or simply being present to respond to needs that
+                  arise after dark — our compassionate team is here so you’re
+                  never alone. From sleep disturbances to personal hygiene and
+                  safety monitoring, we ensure you or your loved one is well
+                  cared for — all through the night.
                 </p>
               </div>
             </div>
@@ -39,23 +33,19 @@ export default function OvernightCareDetails() {
           <div className="space-y-6">
             <div className="border-t-2 border-white pt-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
               <h2 className="text-3xl font-bold text-white mb-6 lg:col-span-1">
-                Tailored for Individual Needs
+                💙 Why Choose Our Overnight Care?
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
-                  We understand that everyone&lsquo;s needs are different—some
-                  may need active overnight assistance, while others just
-                  benefit from having someone nearby. That&apos;s why we offer
-                  fully personalised overnight care plans. From dusk till dawn,
-                  our compassionate carers are there to offer support, prevent
-                  nighttime accidents, and help your loved one feel safe and
-                  secure.
-                </p>
-                <p>
-                  Unlike standard domiciliary visits or daytime-only care, our
-                  overnight services ensure round-the-clock attention when it
-                  matters most—providing both practical assistance and emotional
-                  reassurance in the quiet hours of the night.
+                  Our Overnight Care is ideal for individuals who experience
+                  mobility challenges, dementia, or health conditions that
+                  require constant attention during the night. With Lighthouse,
+                  you’re not just getting a night-time sitter — you’re gaining a
+                  trained, dedicated professional who understands how to create
+                  calm, dignity, and peace of mind. We adapt our support to your
+                  unique needs, whether that’s turning and repositioning,
+                  reassurance during sleep disruptions, or a safe morning start.
+                  Your safety and comfort are always our top priority.
                 </p>
               </div>
             </div>
@@ -63,11 +53,9 @@ export default function OvernightCareDetails() {
         </div>
       </div>
       <div className="absolute inset-0 z-0">
-        <Image
+        <ImgComp
           src="/images/blue-bg.webp"
           alt="Background"
-          layout="fill"
-          objectFit="cover"
           className="opacity-100"
         />
       </div>

@@ -1,16 +1,14 @@
 import CareBannerComponent from "@/app/(landingPage)/shared/components/CareBannerComponent";
-import CompassionateEndOfLifeCareDetails from "./components/CompassionateEndOfLifeCareDetails";
-import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
-import WhoWeAre from "./components/WhoWeAre";
+import SpecialistDementiaSupportDetails from "./components/SpecialistDementiaSupportDetails";
+import TypesofDementia from "./components/TypesofDementia";
 
-const CompassionateEndOfLifeCare = () => {
+const SpecialistDementiaSupport = () => {
   return (
     <div>
       <Hero />
-      <CompassionateEndOfLifeCareDetails />
-      <WhoWeAre />
-
+      <SpecialistDementiaSupportDetails />
+      <TypesofDementia />
       <CareBannerComponent
         text="Lighthouse’s Promise of Respectful, Inclusive Care"
         description="We are dedicated to providing compassionate, culturally sensitive care that embraces people of all backgrounds. Our goal is to ensure that everyone—regardless of beliefs, identity, or circumstance—has access to respectful, dignified care when it matters most."
@@ -19,9 +17,8 @@ const CompassionateEndOfLifeCare = () => {
         imageSrc="/images/image-banner.webp"
         imageAlt="Elderly care background"
       />
-      <FAQ />
     </div>
   );
 };
 
-export default CompassionateEndOfLifeCare;
+export default SpecialistDementiaSupport;

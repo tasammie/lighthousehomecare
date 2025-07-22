@@ -1,5 +1,11 @@
+import FriendlyCompanionship from ".";
+
 const page = () => {
-  return <div>page</div>;
+  return (
+    <div>
+      <FriendlyCompanionship />
+    </div>
+  );
 };
 
 export default page;
