@@ -80,9 +80,9 @@ const serviceSections: ServiceSection[] = [
 ];
 
 const initialContent = {
-  title: "What Is Friendly Companion Care?",
+  title: "Compassionate End-of-Life Care at Home",
   description:
-    "At Lighthouse, our Friendly Companion care goes beyond medical support — it's all about emotional warmth, meaningful connection, and social wellbeing. We match each client with compassionate companions who offer kind conversation, light activities, and a comforting presence. Every visit is a chance to reconnect. Whether it's a chat over tea, looking through old photo albums, or simply sharing stories, our service helps clients build confidence, reduce loneliness, and feel part of the world again. This support is flexible and can be tailored to suit individual preferences — from occasional companionship to more regular visits or integrated live-in care.",
+    "At Lighthouse Homecare, we understand that facing the end of life is one of the most challenging times for individuals and their families. Our compassionate end-of-life care services are designed to provide comfort, dignity, and peace during this deeply personal journey. We believe everyone deserves to spend their final days surrounded by love in the familiar comfort of their own home, supported by caring professionals who understand the importance of preserving dignity and maintaining quality of life.",
 };
 
 interface ServiceSectionProps {
@@ -184,7 +184,7 @@ export default function WhoWeAre() {
       className="py-16 bg-white"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-0">
         {/* Initial Content */}
@@ -196,10 +196,10 @@ export default function WhoWeAre() {
           }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl font-bold text-[#1a365d] mb-6 leading-tight text-[24px]">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1a365d] mb-6 leading-tight">
             {initialContent.title}
           </h2>
-          <p className="text-gray-700 leading-relaxed text-sm max-w-4xl text-[20px]">
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-4xl">
             {initialContent.description}
           </p>
         </motion.div>

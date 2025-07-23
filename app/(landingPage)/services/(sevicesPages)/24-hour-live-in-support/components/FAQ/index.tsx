@@ -17,72 +17,77 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: "item-1",
-    question: "How Quickly Can Overnight Care Begin?",
+    question: "What Is 24-Hour Live-In Support?",
     answer:
-      "We know that care needs can arise unexpectedly. That's why we're prepared to respond fast — often arranging overnight care within 24 hours. Whether it's an emergency or a sudden change in circumstances, we have trusted carers ready to step in and provide support when you need it most.",
+      "24-hour live-in support offers continuous, one-to-one care for individuals who need consistent assistance but prefer to stay in their own home. A dedicated carer lives with the client, delivering support day and night—helping with personal care, mobility, medication, and companionship. It's a compassionate and dignified alternative to moving into a residential care home.",
   },
   {
     id: "item-2",
-    question: "What Kind of Training Do Your Carers Receive?",
+    question: "How Quickly Can Live-In Support Begin?",
     answer:
-      "All our carers join us with prior care experience and strong practical skills. Once part of the Lighthouse team, they undergo comprehensive in-house training to align with our high standards of care. This includes specialised on-the-job training tailored to meet the unique needs of every client, supported by regular supervision. We're committed to continuous professional development, ensuring our carers stay current with best practices through ongoing updates and guidance from our experienced Care Managers.",
+      "We understand care needs can arise suddenly. That's why we aim to arrange live-in support within 24 to 48 hours whenever possible. Whether due to a medical discharge, unexpected illness, or family emergency, our responsive team ensures support starts when it's needed most.",
   },
   {
     id: "item-3",
-    question: "How Do You Monitor the Quality of Care?",
+    question: "What Kind of Training Do Your Carers Receive?",
     answer:
-      "We take quality seriously and have robust systems in place to ensure every client receives the highest standard of care. Our experienced Care Managers monitor all of our services, especially for overnight and live-in services. We maintain regular contact with both carers and clients, and conduct scheduled and unannounced home visits to observe care firsthand. We also encourage open, confidential conversations with clients to address any concerns quickly and respectfully — always maintaining the utmost discretion and respect.",
+      "All our carers come with relevant experience and undergo comprehensive in-house training to align with our standards. Training includes personal care, medication safety, dementia awareness, moving and handling, and more—supported by ongoing professional development, supervision, and mentoring from our Care Managers.",
   },
   {
     id: "item-4",
-    question: "What Kind of Meals Will Carers Prepare?",
+    question: "How Do You Monitor the Quality of Care?",
     answer:
-      "We know that meals are a vital part of daily comfort and wellbeing. That's why all of our carers are trained to prepare fresh, nutritious, and varied meals — tailored to suit personal preferences and dietary requirements. Every carer receives specialist training in Diet and Nutrition, ensuring they understand how to support wellbeing through food. From traditional home-cooked favourites to more adventurous dishes, carers are happy to accommodate individual tastes and cultural preferences. In addition to main meals, carers also ensure regular refreshments and drinks are provided throughout the day to support proper hydration and overall health.",
+      "We maintain high standards through regular supervision, feedback loops, and unannounced visits. Our Care Managers conduct frequent reviews and keep in close touch with both carers and families. We also offer a 24/7 support line to handle any queries or issues swiftly, ensuring consistency, safety, and transparency in every home.",
   },
   {
     id: "item-5",
-    question: "What Is Your Approach to Dementia Care?",
+    question: "What Kind of Meals Will Carers Prepare?",
     answer:
-      "At Lighthouse Homecare, we understand that dementia affects not only the individual, but also their loved ones. Our carers are trained to provide specialist dementia support with a focus on safety, dignity, and emotional reassurance. We prioritise creating a calm, familiar environment that helps reduce confusion and anxiety. Every interaction is delivered with compassion, patience, and sensitivity to the unique challenges presented at every stage. Our team also works closely with families to provide guidance, build trust, and offer peace of mind — ensuring care is person-centred and emotionally supportive at all times.",
+      "Our carers are trained to prepare nutritious, balanced meals tailored to your preferences and dietary needs. From simple home-cooked dishes to meals aligned with medical or cultural requirements, our carers make mealtimes enjoyable and nourishing. They also ensure regular hydration and provide light snacks throughout the day.",
   },
   {
     id: "item-6",
-    question: "Where Do Your Carers Come From?",
+    question: "What Is Your Approach to Dementia Care?",
     answer:
-      "Our carers come from a wide range of backgrounds, primarily across Europe, and are carefully selected through a rigorous recruitment and vetting process. We understand that clear communication is essential to delivering exceptional care, so every one of our carers speaks English and can demonstrate strong interpersonal skills. Beyond communication, we ensure all carers are trained to the highest standards and engage in ongoing professional development to maintain excellence in care delivery. When matching carers with clients, we also consider personal compatibility, including personality, interests, and cultural preferences — so that each client receives care that is not only skilled, but genuinely comfortable and familiar.",
+      "We specialise in dementia-inclusive care, delivering patient, calm, and structured support. Our carers are trained in managing memory loss, confusion, and mood changes—promoting emotional reassurance and familiarity. We also work closely with families to create a consistent and respectful environment for your loved one.",
   },
   {
     id: "item-7",
-    question: "How Long Will the Carer Stay?",
+    question: "Where Do Your Carers Come From?",
     answer:
-      "We're flexible. Many clients prefer a consistent carer to build trust and routine — and we fully support that. As long as it works for both the client and carer, we aim to keep the same person in place. If a break is needed, we'll arrange a suitable temporary replacement.",
+      "Our carers are experienced professionals from across the UK and Europe, carefully recruited and vetted to ensure fluency in English, empathy, and strong interpersonal skills. We match carers based on personality, experience, and cultural fit—so the relationship feels natural, safe, and comfortable for everyone involved.",
   },
   {
     id: "item-8",
-    question: "How Does Live-In Care Compare to a Care Home?",
+    question: "How Long Will the Carer Stay?",
     answer:
-      "Live-in care allows you to stay in your own home, surrounded by familiar routines, personal belongings, and loved ones — including pets. You keep control over your daily life while receiving the support you need. Unlike care homes, there's no need to adjust to strict routines, or limited visiting hours. With live-in care, everything is tailored to your preferences — from mealtimes to how your home is run.",
+      "We're flexible. Most families prefer the consistency of one live-in carer who builds rapport and routine. Depending on the care plan, a carer may stay for weeks or rotate with a second carer. We'll always aim for continuity unless a change is needed for rest or scheduling reasons.",
   },
   {
     id: "item-9",
-    question: "Why Does Managed Live-In Care Matter?",
+    question: "How Does Live-In Support Compare to a Care Home?",
     answer:
-      "With managed live-in care, everything is handled for you — from recruiting and vetting carers to overseeing quality and replacing carers when needed. Unlike agencies that only introduce carers, we fully manage the service. As a CQC-registered provider, we ensure all care meets strict safety and quality standards. You'll also have a dedicated Care Manager to support you, monitor care, and resolve any issues that reflects your specific requirements every step of the way.",
+      "Live-in care enables you to stay at home with full control of your day-to-day life. There are no rigid schedules, shared spaces, or institutional rules. Instead, everything—from mealtimes to bedtime routines—is built around your preferences, allowing for a more comfortable, familiar lifestyle.",
   },
   {
     id: "item-10",
-    question: "How Much Does Live-In Care Cost?",
+    question: "Why Choose Managed Live-In Support?",
     answer:
-      "Costs vary based on the level of support you need. Since every care plan is tailored, we recommend getting in touch for a free, no-obligation quote that reflects your specific requirements.",
+      "With our fully managed service, we handle everything—from recruiting carers to ongoing oversight and training. You'll have a dedicated Care Manager, quality checks, and 24/7 support. This ensures a safe, professional, and reliable service with none of the stress of arranging care yourself.",
   },
   {
     id: "item-11",
+    question: "How Much Does It Cost?",
+    answer:
+      "Costs depend on the level and complexity of support you need. We offer bespoke quotes following a care consultation, with no obligation. Since live-in care can sometimes be more affordable than residential options, we're happy to explore what fits your needs and budget.",
+  },
+  {
+    id: "item-12",
     question: "Are There Any Upfront Fees?",
     answer:
-      "No — we don't charge any registration or assessment fees. All care costs are agreed upfront, so you'll know exactly what to expect with no hidden charges.",
+      "No. We do not charge any assessment or registration fees. All costs are agreed in advance, so you'll always know exactly what to expect—no surprises, no hidden charges.",
   },
 ];
-
 export default function FAQ() {
   return (
     <motion.section

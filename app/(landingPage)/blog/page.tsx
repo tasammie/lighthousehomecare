@@ -1,9 +1,9 @@
-import PersonalisedCareHygiene from ".";
+import Blog from ".";
 
 const page = () => {
   return (
     <div>
-      <PersonalisedCareHygiene />
+      <Blog />
     </div>
   );
 };

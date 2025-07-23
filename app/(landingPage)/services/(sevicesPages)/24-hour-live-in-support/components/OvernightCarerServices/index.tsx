@@ -58,11 +58,11 @@ const OvernightCarerServices = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-[44px] font-bold text-[#001967] mb-4">
-            What Does an Overnight Carer Do?
+            What Does 24-Hour Live-In Support Do?{" "}
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Our overnight carers offer essential evening and night-time care
-            support through:
+            Our live-in carers provide comprehensive assistance in the following
+            areas:
           </p>
         </div>
 

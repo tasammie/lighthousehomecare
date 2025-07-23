@@ -5,7 +5,7 @@ export type Breadcrumb = { label: string; href?: string };
 
 export interface HeroSectionProps {
   title: string;
-  breadcrumbs: Breadcrumb[];
+  breadcrumbs?: Breadcrumb[];
   imageSrc: string;
   imageAlt?: string;
   heightClass?: string;
@@ -30,7 +30,7 @@ export default function HeroSection({
       <div className="max-w-7xl mx-auto h-full flex flex-col justify-center relative z-20 px-4 md:px-0">
         <h1 className="text-white text-[60px] font-bold mb-4">{title}</h1>
         <nav className="flex items-center space-x-2 text-white text-sm">
-          {breadcrumbs.map((bc, idx) => (
+          {breadcrumbs?.map((bc, idx) => (
             <span key={idx} className="flex items-center">
               {bc.href ? (
                 <Link href={bc.href} className="hover:underline">

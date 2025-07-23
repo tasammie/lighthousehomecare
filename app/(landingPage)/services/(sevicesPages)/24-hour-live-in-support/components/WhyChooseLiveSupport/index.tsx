@@ -3,42 +3,37 @@ import { motion } from "framer-motion";
 
 interface Benefit {
   id: number;
-  title: string;
   description: string;
 }
 
 const benefits: Benefit[] = [
   {
     id: 1,
-    title: "Safe Rest & Support at Night",
     description:
-      "A trained carer is always nearby to provide reassurance, assist with movement, or respond to emergencies — reducing risks and promoting restful sleep.",
+      "Consistent Care & Reassurance Around the Clock A professional carer is always present to provide help with personal care, movement, or emergencies — supporting safety and reducing anxiety for clients and families alike.",
   },
   {
     id: 2,
-    title: "Tailored to Individual Needs",
     description:
-      "Whether it's hourly check-ins, toileting support, or regular repositioning, care plans are personalised for maximum comfort and well-being.",
+      "Completely Tailored to You Whether it’s help with washing, dressing, medication reminders, mobility, or companionship, each care plan is fully personalised to support daily routines and wellbeing.",
   },
   {
     id: 3,
-    title: "Ideal for Dementia or Post-Hospital Clients",
     description:
-      "Many individuals feel disoriented or anxious at night — especially those living with dementia or recovering from hospital discharge. Overnight carers provide steady emotional and physical support.",
+      "Ideal for Long-Term Health Conditions For individuals living with dementia, Parkinson’s, stroke recovery, or chronic illness, continuous live-in support ensures stability, reduces confusion, and promotes overall comfort.",
   },
   {
     id: 4,
-    title: "Flexible & Cost-Efficient",
     description:
-      "Compared to full-time live-in care, overnight services offer targeted support only when needed, making them an affordable and practical choice.",
+      "Continuity & Comfort at Home Staying at home means remaining close to family, pets, and familiar surroundings. With live-in support, there’s no need to uproot your life or adjust to institutional care settings.",
   },
 ];
 
 const approach = {
-  title: "A Thoughtful, Client-First Approach",
+  title: "A Compassionate, Person-Centred Approach",
   points: [
-    "At Lighthouse Homecare Ltd., we believe that quality care shouldn't stop when the sun goes down. Our night carers are compassionate, professional, and specially trained to deliver care that's calm, attentive, and focused on preserving your loved one's dignity and independence.",
-    "Whether it's short-term support following surgery or long-term night monitoring for peace of mind, our overnight care is built around you and your family's unique rhythms.",
+    "At Lighthouse Homecare Ltd., we know that dependable care should extend beyond a few visits. Our live-in carers are compassionate, trained, and fully committed to protecting the dignity, independence, and lifestyle of the person they support.",
+    "Whether for ongoing complex needs or simply reassurance through the day and night, our 24-hour live-in support adapts to each individual’s routines, preferences, and pace of life — making it a truly personal alternative to residential care.",
   ],
 };
 
@@ -59,7 +54,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({ benefit, index }) => {
       <div className="flex items-start space-x-4">
         <div className="flex-shrink-0 w-2 h-2 bg-orange-400 rounded-full mt-2"></div>
         <div>
-          <h3 className="font-bold text-gray-900 mb-2">{benefit.title}</h3>
+          {/* <h3 className="font-bold text-gray-900 mb-2">{benefit.title}</h3> */}
           <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
         </div>
       </div>
@@ -86,14 +81,15 @@ export default function WhyChooseLiveSupport() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl font-bold text-[#001967] mb-6">
-            Why Choose Overnight Care Over Other Options?
+            Why Choose 24-Hour Live-In Support Over Other Options?{" "}
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            Overnight care offers essential peace of mind and uninterrupted
-            support when your loved one needs it most — through the night.
-            Whether it&apos;s for a few nights a week or consistent overnight
-            supervision, our care ensures safety, comfort, and dignity after
-            hours.
+            24-hour live-in care provides continuous, reassuring support for
+            individuals who need round-the-clock help — day and night — in the
+            comfort of their own home. Whether support is needed due to age,
+            illness, or disability, our live-in service ensures safety,
+            companionship, and peace of mind without the need to move into a
+            residential care facility.
           </p>
         </motion.div>
 
@@ -109,7 +105,7 @@ export default function WhyChooseLiveSupport() {
           <div className="flex items-center mb-8">
             <span className="text-2xl mr-3">⭐</span>
             <h3 className="text-2xl font-bold text-gray-900">
-              Key Benefits of Overnight Care
+              Key Benefits of 24-Hour Live-In Support{" "}
             </h3>
           </div>
 

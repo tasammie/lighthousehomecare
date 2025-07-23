@@ -99,6 +99,15 @@ export default function Navbar() {
         <header className="shadow-lg bg-[#2A2625B2] max-w-7xl mx-auto">
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
+              {/* Mobile Logo - Only visible on mobile */}
+              <div className="lg:hidden">
+                <ImgComp
+                  src={"/images/lighthouse-logo-white.png"}
+                  alt="Logo"
+                  className="w-[100px]"
+                />
+              </div>
+
               {/* Desktop Navigation */}
               <nav className="hidden lg:flex items-center space-x-6 flex-1 justify-center">
                 {navigationItems.map((item) => (
