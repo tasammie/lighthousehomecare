@@ -127,7 +127,7 @@ export default function BlogList({ filters }: BlogListProps) {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
         {/* Results Header */}
         <div className="mb-8">
           <h3 className="text-lg font-semibold text-gray-900">
