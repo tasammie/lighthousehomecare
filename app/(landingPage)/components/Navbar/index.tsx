@@ -73,7 +73,7 @@ export default function Navbar() {
                   <div className="flex items-center gap-2">
                     <Mail className="w-5 h-5 text-black" />
                     <span className="font-semibold text-sm">
-                      info@yourdomain.com
+                      info@Lighthousehomecare.co.uk
                     </span>
                   </div>
                   <span className="text-xs text-gray-500">Email Us</span>
@@ -83,7 +83,7 @@ export default function Navbar() {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-5 h-5 text-black" />
                     <span className="font-semibold text-sm">
-                      121 King Street, United Kingdom
+                      2 Fountain Court, Victoria Square, St. Albans, AL1 3TF
                     </span>
                   </div>
                   <span className="text-xs text-gray-500">
@@ -236,11 +236,14 @@ export default function Navbar() {
                       <div className="pt-6 space-y-3 text-sm text-gray-600">
                         <div className="flex items-center space-x-2">
                           <Mail className="w-4 h-4" />
-                          <span>info@yourdomain.com</span>
+                          <span>info@Lighthousehomecare.co.uk</span>
                         </div>
                         <div className="flex items-center space-x-2">
                           <MapPin className="w-4 h-4" />
-                          <span>121 King Street, United Kingdom</span>
+                          <span>
+                            2 Fountain Court, Victoria Square, St. Albans, AL1
+                            3TF
+                          </span>
                         </div>
                       </div>
                     </div>

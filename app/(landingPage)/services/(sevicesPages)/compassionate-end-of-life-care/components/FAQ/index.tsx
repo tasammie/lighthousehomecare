@@ -88,6 +88,7 @@ export default function FAQ() {
               <CustomButton
                 text="Contact Us Today"
                 className="bg-[#00269B] hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold"
+                link="contact"
               />
             </div>
           </motion.div>

@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NursingStaff() {
   return (
@@ -102,9 +103,11 @@ export default function NursingStaff() {
             Unemployed looking for a caregiver job, feel free to reach out, we
             have amazing jobs waiting for you.
           </p>
-          <button className="bg-white text-blue-900 font-semibold px-6 py-2 rounded hover:bg-gray-100 transition-colors duration-200">
-            Apply Now
-          </button>
+          <Link href={"#"}>
+            <button className="bg-white text-blue-900 font-semibold px-6 py-2 rounded hover:bg-gray-100 transition-colors duration-200">
+              Apply Now
+            </button>
+          </Link>
         </div>
       </motion.div>
     </motion.div>

@@ -1,6 +1,5 @@
 import CustomButton from "@/components/CustomButton";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   text: string;
@@ -16,8 +15,8 @@ export default function CareBannerComponent({
   imageAlt,
   description,
   buttonText,
-  buttonLink,
-}: Props) {
+}: // buttonLink,
+Props) {
   return (
     <div className="relative w-full bg-gray-200 flex items-center justify-center h-[422px]">
       {/* Dark Overlay */}
@@ -33,9 +32,7 @@ export default function CareBannerComponent({
         <h1 className="text-2xl md:text-4xl font-bold">{text}</h1>
         <p className="text-2xl mt-2">{description}</p>
 
-        <Link href={buttonLink || "#"}>
-          <CustomButton text={buttonText} />
-        </Link>
+        <CustomButton text={buttonText} link="contact" />
       </div>
     </div>
   );

@@ -9,6 +9,11 @@ const GetInTouch = () => {
     phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -20,10 +25,46 @@ const GetInTouch = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message:
+            "Thank you! Your message has been sent successfully. We will get back to you soon.",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setSubmitStatus({
+        type: "error",
+        message:
+          "Sorry, there was an error sending your message. Please try again or contact us directly.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -31,14 +72,27 @@ const GetInTouch = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Column - Contact Form */}
-          <div className="  rounded-lg">
-            <h2 className=" font-bold text-[#142349] text-[44px] mb-4">
+          <div className="rounded-lg">
+            <h2 className="font-bold text-[#142349] text-[44px] mb-4">
               Get In Touch
             </h2>
             <p className="text-gray-600 mb-8">
               Our consulting professional will contact you directly, please
               complete the form below or submit an email.
             </p>
+
+            {/* Status Message */}
+            {submitStatus.type && (
+              <div
+                className={`mb-6 p-4 rounded-lg ${
+                  submitStatus.type === "success"
+                    ? "bg-green-50 text-green-800 border border-green-200"
+                    : "bg-red-50 text-red-800 border border-red-200"
+                }`}
+              >
+                {submitStatus.message}
+              </div>
+            )}
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
@@ -56,6 +110,7 @@ const GetInTouch = () => {
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -74,6 +129,7 @@ const GetInTouch = () => {
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -91,6 +147,7 @@ const GetInTouch = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -110,14 +167,16 @@ const GetInTouch = () => {
                   placeholder="Type your message..."
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors resize-none"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
               <button
                 type="submit"
-                className="bg-[#00269B] hover:bg-blue-700 text-white px-8 py-3 rounded-md font-semibold transition-colors duration-200"
+                disabled={isSubmitting}
+                className="bg-[#00269B] hover:bg-blue-700 text-white px-8 py-3 rounded-md font-semibold transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Submit
+                {isSubmitting ? "Sending..." : "Submit"}
               </button>
             </form>
           </div>
@@ -140,10 +199,10 @@ const GetInTouch = () => {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                   <a
-                    href="mailto:nfo@maxicareplus.com.au"
+                    href="mailto:info@Lighthousehomecare.co.uk"
                     className="text-blue-600 hover:text-blue-800 underline"
                   >
-                    nfo@maxicareplus.com.au
+                    info@Lighthousehomecare.co.uk
                   </a>
                 </div>
               </div>
@@ -153,57 +212,27 @@ const GetInTouch = () => {
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
                   <div className="space-y-1">
-                    <p className="text-gray-700">1300 648 114</p>
-                    <p className="text-gray-700">(+61) 434 539 838</p>
+                    <p className="text-gray-700">07397 029 192</p>
+                    <p className="text-gray-700">01727 324 619</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Office Locations */}
+            {/* Office Location */}
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-[#001967] mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
-                    Head Office
+                    Office Address
                   </h3>
                   <p className="text-gray-700">
-                    Level 2, 11-17 Swanson
+                    2 Fountain Court, Victoria Square,
                     <br />
-                    Court, Belconnen ACT 2617,
+                    Victoria Street, St. Albans,
                     <br />
-                    Australia
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-[#001967] mt-1" />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Melbourne Office
-                  </h3>
-                  <p className="text-gray-700">
-                    Suit 95, 139 Cardigan Street
-                    <br />
-                    Carlton 3053 VIC
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <MapPin className="w-6 h-6 text-[#001967] mt-1" />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-2">
-                    Sydney Office
-                  </h3>
-                  <p className="text-gray-700">
-                    Suit 37, Level 1, 93 George
-                    <br />
-                    Street Parramatta 2150
-                    <br />
-                    NSW
+                    AL1 3TF
                   </p>
                 </div>
               </div>

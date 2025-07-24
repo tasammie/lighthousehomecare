@@ -47,7 +47,7 @@ export const navigationItems: NavLink[] = [
       },
     ],
   },
-  { label: "Find Care", href: "/find-care" },
   { label: "Contact Us", href: "/contact" },
+  { label: "Find Job", href: "#" },
   { label: "Blog", href: "/blog" },
 ];

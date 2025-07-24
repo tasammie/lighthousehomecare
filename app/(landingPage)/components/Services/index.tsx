@@ -1,6 +1,7 @@
 "use client";
 import CustomButton from "@/components/CustomButton";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const serviceList = [
   {
@@ -13,6 +14,7 @@ const serviceList = [
 
     iconBg: "bg-gray-700",
     titleColor: "text-gray-900",
+    link: "24-hour-live-in-support",
     icon: (
       <svg
         width="25"
@@ -51,6 +53,7 @@ const serviceList = [
     gradient: "bg-white",
     iconBg: "bg-[#8092CD]",
     titleColor: "text-blue-900",
+    link: "daily-home-assistance",
     icon: (
       <svg
         width="25"
@@ -89,6 +92,7 @@ const serviceList = [
     gradient: "bg-white",
     iconBg: "bg-[#8092CD]",
     titleColor: "text-blue-900",
+    link: "overnight-care-services",
     icon: (
       <svg
         width="25"
@@ -127,6 +131,7 @@ const serviceList = [
     gradient: "bg-white",
     iconBg: "bg-[#8092CD]",
     titleColor: "text-blue-900",
+    link: "friendly-companionship",
     icon: (
       <svg
         width="25"
@@ -200,7 +205,7 @@ export default function Services() {
             
           </button> */}
 
-          <CustomButton text="Explore Our Services" />
+          <CustomButton text="Explore Our Services" link="/services" />
         </div>
       </div>
     </div>
@@ -214,6 +219,7 @@ type Props = {
   iconBg: string;
   gradient: string;
   titleColor: string;
+  link: string;
 };
 function ServiceCard({
   title,
@@ -222,6 +228,7 @@ function ServiceCard({
   iconBg,
   gradient,
   titleColor,
+  link,
 }: Props) {
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -255,9 +262,12 @@ function ServiceCard({
         </div>
         <h3 className={`text-xl font-bold ${titleColor} mb-3`}>{title}</h3>
         <p className="text-gray-600 text-sm mb-6">{description}</p>
-        <button className="text-blue-700 font-semibold text-sm underline hover:text-blue-800">
+        <Link
+          href={`/services/${link}` || "#"}
+          className="text-blue-700 font-semibold text-sm underline hover:text-blue-800"
+        >
           See details
-        </button>
+        </Link>
       </div>
     </motion.div>
   );

@@ -1,17 +1,12 @@
 "use client";
-import CustomButton from "@/components/CustomButton";
 import { ImgComp } from "@/components/ImgComp";
+import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 const LighthouseFooter = () => {
   const [email, setEmail] = useState("");
-
-  //   const handleSubscribe = (e) => {
-  //     e.preventDefault();
-  //     // Handle subscription logic here
-  //     console.log('Subscribing email:', email);
-  //   };
 
   return (
     <footer className="bg-[#000D34] text-white">
@@ -32,96 +27,96 @@ const LighthouseFooter = () => {
             </div>
           </div>
 
-          {/* Column One */}
+          {/* Quick Links */}
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold mb-6">Column One</h3>
+            <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link One
-                </a>
+                  Home
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/about-us"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Two
-                </a>
+                  About Us
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   Link Threee
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Four
-                </a>
+                  Contact Us
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/blog"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Fiv
-                </a>
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column Two */}
+          {/* Our Services */}
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold mb-6">Column Two</h3>
+            <h3 className="text-lg font-semibold mb-6">Our Services</h3>
             <ul className="space-y-4">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services/24-hour-live-in-support"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Six
-                </a>
+                  24-Hour Live-In Support
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services/daily-home-assistance"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Seven
-                </a>
+                  Daily Home Assistance
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services/overnight-care-services"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Eight
-                </a>
+                  Overnight Care Services
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services/friendly-companionship"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Nine
-                </a>
+                  Friendly Companionship
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/services/specialist-dementia-support"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Ten
-                </a>
+                  Specialist Dementia Support
+                </Link>
               </li>
             </ul>
           </div>
@@ -140,19 +135,26 @@ const LighthouseFooter = () => {
                 placeholder="Enter your email"
                 className="w-full px-4 py-3 bg-white text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
               />
-              <CustomButton
-                text="Subscribe"
-                className="w-full px-4 py-3 bg-transparent text-white border border-gray-400 rounded-md hover:bg-gray-800 transition-colors font-medium"
-              />
+              <motion.button
+                className={`bg-primaryColor hover:bg-blue-900 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 `}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 8px 15px rgba(0,0,0,0.1)",
+                }}
+                whileTap={{ scale: 0.95 }}
+                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              >
+                Subscribe
+              </motion.button>
             </div>
             <p className="text-xs text-gray-400 mt-4 leading-relaxed">
               By subscribing you agree to with our{" "}
-              <a
+              <Link
                 href="#"
                 className="underline hover:text-white transition-colors"
               >
                 Privacy Policy
-              </a>{" "}
+              </Link>{" "}
               and provide consent to receive updates from our company.
             </p>
           </div>
@@ -167,53 +169,53 @@ const LighthouseFooter = () => {
             <div className="flex flex-col md:flex-row items-center gap-4 text-sm text-gray-400">
               <span>© 2025 Lighthouse home care LTD All rights reserved.</span>
               <div className="flex gap-6">
-                <a
+                <Link
                   href="#"
                   className="hover:text-white transition-colors underline"
                 >
                   Privacy Policy
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="hover:text-white transition-colors underline"
                 >
                   Terms of Service
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="hover:text-white transition-colors underline"
                 >
                   Cookies Settings
-                </a>
+                </Link>
               </div>
             </div>
 
             {/* Social Media Icons */}
             <div className="flex gap-4">
-              <a
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Twitter className="w-5 h-5" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

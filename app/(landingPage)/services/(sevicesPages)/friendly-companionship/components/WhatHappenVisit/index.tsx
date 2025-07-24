@@ -171,6 +171,7 @@ export default function WhatHappenVisit() {
           <CustomButton
             text="Contact Us Now"
             className="bg-[#001967] hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+            link="contact"
           />
         </motion.div>
       </div>

@@ -81,6 +81,7 @@ const LighthouseHome = () => {
         <CustomButton
           text="Contact Us"
           className="bg-blue-700 text-white px-6 py-3 rounded font-medium hover:bg-blue-800 transition-colors"
+          link="contact"
         />
       </div>
     </div>
