@@ -1,12 +1,14 @@
 "use client";
+import emailjs from "@emailjs/browser";
 import { Mail, MapPin, Phone } from "lucide-react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const GetInTouch = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
+    user_name: "",
+    user_email: "",
+    user_phone: "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -27,34 +29,34 @@ const GetInTouch = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!form.current) return;
+
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
     try {
-      const response = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+      const result = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        form.current,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
+
+      console.log("Email sent successfully:", result);
+      setSubmitStatus({
+        type: "success",
+        message:
+          "Thank you! Your message has been sent successfully. We will get back to you soon.",
       });
 
-      if (response.ok) {
-        setSubmitStatus({
-          type: "success",
-          message:
-            "Thank you! Your message has been sent successfully. We will get back to you soon.",
-        });
-        // Reset form
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-      } else {
-        throw new Error("Failed to send message");
-      }
+      // Reset form
+      setFormData({
+        user_name: "",
+        user_email: "",
+        user_phone: "",
+        message: "",
+      });
     } catch (error) {
       console.error("Error sending email:", error);
       setSubmitStatus({
@@ -94,19 +96,19 @@ const GetInTouch = () => {
               </div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
-                  htmlFor="name"
+                  htmlFor="user_name"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Name
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
+                  id="user_name"
+                  name="user_name"
+                  value={formData.user_name}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
                   required
@@ -116,16 +118,16 @@ const GetInTouch = () => {
 
               <div>
                 <label
-                  htmlFor="email"
+                  htmlFor="user_email"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Email
                 </label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
+                  id="user_email"
+                  name="user_email"
+                  value={formData.user_email}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
                   required
@@ -135,16 +137,16 @@ const GetInTouch = () => {
 
               <div>
                 <label
-                  htmlFor="phone"
+                  htmlFor="user_phone"
                   className="block text-sm font-medium text-gray-700 mb-2"
                 >
                   Phone Number
                 </label>
                 <input
                   type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
+                  id="user_phone"
+                  name="user_phone"
+                  value={formData.user_phone}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-colors"
                   disabled={isSubmitting}

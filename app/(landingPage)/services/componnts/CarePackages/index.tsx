@@ -2,7 +2,6 @@
 import CustomButton from "@/components/CustomButton";
 import { ImgComp } from "@/components/ImgComp";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
 interface CarePackage {
   id: number;
@@ -139,12 +138,11 @@ const PackageCard: React.FC<PackageCardProps> = ({ package: pkg, index }) => {
           >
             Explore Now
           </motion.button> */}
-          <Link href={`/services/${pkg.buttonLink}`}>
-            <CustomButton
-              text="Explore Now"
-              className="bg-[#00269B] hover:bg-blue-700 border text-white px-6 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
-            ></CustomButton>
-          </Link>
+          <CustomButton
+            text="Explore Now"
+            className="bg-[#00269B] hover:bg-blue-700 border text-white px-6 py-2 rounded-md text-sm font-semibold transition-colors duration-200"
+            link={`/services/${pkg.buttonLink}`}
+          />
         </div>
       </div>
     </motion.div>

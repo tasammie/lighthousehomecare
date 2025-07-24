@@ -252,6 +252,7 @@ export default function OvernightCareOptions() {
               text="Get Started Today"
               className="bg-[#00269B] hover:bg-blue-700 text-white px-8 py-3  font-semibold 
                        transition-all duration-300 shadow-lg hover:shadow-xl"
+              link="contact"
             />
           </motion.div>
         </motion.div>
