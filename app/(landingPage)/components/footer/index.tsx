@@ -52,7 +52,7 @@ const LighthouseFooter = () => {
                   href="/services"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Link Threee
+                  Link Three
                 </Link>
               </li>
               <li>
