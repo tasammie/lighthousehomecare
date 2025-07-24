@@ -60,7 +60,7 @@ const LighthouseFooter = () => {
                   href="/contact"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Contact Us
+                  Contact Us.
                 </Link>
               </li>
               <li>
