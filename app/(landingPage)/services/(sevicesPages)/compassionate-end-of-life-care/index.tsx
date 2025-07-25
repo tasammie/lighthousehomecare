@@ -17,7 +17,7 @@ const CompassionateEndOfLifeCare = () => {
         buttonText="Get Started Today"
         buttonLink="/contact"
         imageSrc="/images/image-banner.webp"
-        imageAlt="Elderly care background"
+        imageAlt="Carer gently supporting elderly client with end of life care at home"
       />
       <FAQ />
     </div>
