@@ -13,7 +13,7 @@ interface VisitActivity {
 const visitActivities: VisitActivity[] = [
   {
     id: 1,
-    title: "Emotional Support & Gentle Conversation",
+    title: "🫶 Emotional Support & Gentle Conversation",
     description:
       "A friendly face and a listening ear can make all the difference. Whether it's sharing stories, flipping through photo albums, or chatting over a cuppa, our companions are here to uplift and connect — one moment at a time.",
     bgColor: "bg-teal-200",
@@ -21,7 +21,7 @@ const visitActivities: VisitActivity[] = [
   },
   {
     id: 2,
-    title: "Everyday Help & Confidence at Home",
+    title: "🍽 Everyday Help & Confidence at Home",
     description:
       "From preparing meals together to helping with light chores or video calls to loved ones, our companions offer the right mix of encouragement and practical support to keep your loved one feeling independent and at ease.",
     bgColor: "bg-white",
@@ -29,7 +29,7 @@ const visitActivities: VisitActivity[] = [
   },
   {
     id: 3,
-    title: "Activities That Spark Joy",
+    title: "🌼 Activities That Spark Joy",
     description:
       "We bring meaningful moments back into the day — walks in the park, music, hobbies, or community outings. These simple joys build confidence, restore connection, and brighten every visit with purpose.",
     bgColor: "bg-white",
@@ -59,7 +59,7 @@ export const ActivityCard: React.FC<ActivityCardProps> = ({
         transition-all duration-500 ease-in-out transform
         hover:bg-gradient-to-br hover:from-[#96ECE9] hover:to-teal-300
         hover:scale-105 hover:shadow-xl
-        md:h-[400px] flex flex-col justify-between
+        md:h-[400px] flex flex-col justify-start items-start
         cursor-pointer group
       `}
       variants={cardVariants}
@@ -76,10 +76,10 @@ export const ActivityCard: React.FC<ActivityCardProps> = ({
       <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#F3F0F0] rounded-full transform translate-x-8 translate-y-8" />
       <div className="absolute bottom-0 right-0 w-20 h-20 bg-[#E4DFDF] rounded-full transform translate-x-4 translate-y-4" />
 
-      <div className="relative z-10 h-full flex flex-col  justify-center items-center">
+      <div className="relative z-10 h-full flex flex-col justify-center items-center text-start">
         {/* Title */}
         <motion.h3
-          className={`text-xl font-bold ${activity.textColor} mb-4 leading-tight
+          className={`text-xl font-bold ${activity.textColor} mb-7 leading-tight
                      group-hover:text-gray-900 transition-colors duration-300 text-[27.34px]`}
           whileHover={{ x: 5 }}
           transition={{ duration: 0.2 }}
@@ -90,7 +90,7 @@ export const ActivityCard: React.FC<ActivityCardProps> = ({
         {/* Description */}
         <p
           className={`${activity.textColor} leading-relaxed text-sm opacity-90
-                     group-hover:text-gray-700 transition-colors duration-300 flex-grow text-[18px]`}
+                     group-hover:text-gray-700 transition-colors duration-300 text-[18px]`}
         >
           {activity.description}
         </p>
@@ -126,7 +126,7 @@ export const ActivityCard: React.FC<ActivityCardProps> = ({
 export default function WhatHappenVisit() {
   return (
     <motion.section
-      className="py-16 bg-gray-50"
+      className="md:py-16 py-7 bg-gray-50 "
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -170,7 +170,7 @@ export default function WhatHappenVisit() {
         >
           <CustomButton
             text="Contact Us Now"
-            className="bg-[#001967] hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300"
+            className="bg-[#001967] hover:bg-blue-800 text-white px-8 py-3 rounded-[5px] font-semibold transition-colors duration-300"
             link="contact"
           />
         </motion.div>

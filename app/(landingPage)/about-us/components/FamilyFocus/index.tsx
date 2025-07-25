@@ -130,7 +130,7 @@ export default function FamilyFocus() {
                 <div className="absolute top-4 right-4 w-16 h-16 bg-white/10 rounded-full"></div>
                 <div className="absolute bottom-4 left-4 w-24 h-24 bg-white/5 rounded-full"></div>
 
-                <div className="relative z-10">
+                <div className="relative z-10 w-full">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-full mb-6">
                     <Phone className="w-8 h-8 text-[#2B4CB8]" />
                   </div>
@@ -140,7 +140,7 @@ export default function FamilyFocus() {
                   </h3>
 
                   <motion.a
-                    href="tel:666123499800"
+                    href="tel:07397 029 192"
                     className="inline-block bg-white text-[#2B4CB8] px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-colors duration-200"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}

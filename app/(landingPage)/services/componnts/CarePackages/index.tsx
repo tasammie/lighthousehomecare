@@ -178,7 +178,7 @@ export default function CarePackages() {
         </motion.div>
 
         {/* Packages Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        <div className="flex flex-wrap justify-center gap-[56px] max-w-5xl mx-auto">
           {carePackages.map((pkg, index) => (
             <PackageCard key={pkg.id} package={pkg} index={index} />
           ))}

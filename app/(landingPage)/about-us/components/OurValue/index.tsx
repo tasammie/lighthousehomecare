@@ -1,4 +1,5 @@
 "use client";
+import { ImgComp } from "@/components/ImgComp";
 import { motion } from "framer-motion";
 
 interface Value {
@@ -85,17 +86,19 @@ interface ValueCardProps {
 const ValueCard: React.FC<ValueCardProps> = ({ value, index }) => {
   return (
     <motion.div
-      className="text-center space-y-4"
+      className="  space-y-4 flex items-start gap-4"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
     >
-      <div className="flex justify-center text-white/80 mb-6">{value.icon}</div>
-      <h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
-      <p className="text-white/90 leading-relaxed text-base">
-        {value.description}
-      </p>
+      <ImgComp className="w-[40px]" src="/images/logo-fav.png" alt="logo" />
+      <div>
+        <h3 className="text-2xl font-bold text-white mb-4">{value.title}</h3>
+        <p className="text-white/90 leading-relaxed text-base">
+          {value.description}
+        </p>
+      </div>
     </motion.div>
   );
 };
@@ -103,7 +106,7 @@ const ValueCard: React.FC<ValueCardProps> = ({ value, index }) => {
 export default function OurValues() {
   return (
     <motion.section
-      className="py-20 bg-gradient-to-br from-[#2B4CB8] to-[#1E3A8A] relative overflow-hidden"
+      className="py-20 bg-gradient-to-br from-[#00269B] to-[#1E3A8A] relative overflow-hidden"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -125,7 +128,7 @@ export default function OurValues() {
           }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
+          <h2 className="text-3xl md:text-[44px] font-[700] text-white mb-8">
             Our Values
           </h2>
         </motion.div>
