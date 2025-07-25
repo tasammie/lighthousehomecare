@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     "home nursing",
     "care services",
   ],
-  metadataBase: new URL("https://lighthousehomecareltd.vercel.app/"),
+  metadataBase: new URL("https://lighthousehomecare.co.uk/"),
   openGraph: {
     title: "Lighthouse Homecare – Compassionate In-Home Care",
     description:
       "Personalized caregiving services delivered with dignity and respect in the comfort of your home.",
-    url: "https://lighthousehomecareltd.vercel.app/",
+    url: "https://lighthousehomecare.co.uk/",
     siteName: "Lighthouse Homecare",
     images: [
       {
