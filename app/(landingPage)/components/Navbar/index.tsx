@@ -172,20 +172,25 @@ export default function Navbar() {
                       <Menu className="w-6 h-6" />
                     </button>
                   </SheetTrigger>
-                  <SheetContent side="right" className="w-80 bg-white p-5">
-                    <SheetHeader className="border-b border-gray-100 pb-4 mb-6">
+                  <SheetContent
+                    side="right"
+                    className="w-80 bg-white p-5 flex flex-col h-full"
+                  >
+                    <SheetHeader className="border-b border-gray-100 pb-4 mb-6 flex-shrink-0">
                       <SheetTitle>
-                        <ImgComp
-                          src={"/images/logo.png"}
-                          alt="Logo"
-                          width={200}
-                          height={200}
-                          className="w-[120px]"
-                        />
+                        <Link href="/">
+                          <ImgComp
+                            src={"/images/logo.png"}
+                            alt="Logo"
+                            width={200}
+                            height={200}
+                            className="w-[120px]"
+                          />
+                        </Link>
                       </SheetTitle>
                     </SheetHeader>
 
-                    <div className="space-y-2">
+                    <div className="flex-1 overflow-y-auto space-y-2">
                       {navigationItems.map((item) => (
                         <div key={item.label}>
                           <Link
