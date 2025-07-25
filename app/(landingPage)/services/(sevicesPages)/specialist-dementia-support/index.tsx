@@ -15,7 +15,7 @@ const SpecialistDementiaSupport = () => {
         buttonText="Get Started Today"
         buttonLink="/contact"
         imageSrc="/images/image-banner.webp"
-        imageAlt="Elderly care background"
+        imageAlt="Carer supporting an elderly man with dementia at home"
       />
     </div>
   );

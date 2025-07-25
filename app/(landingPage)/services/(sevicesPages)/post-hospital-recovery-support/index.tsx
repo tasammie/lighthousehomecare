@@ -15,7 +15,7 @@ const PostHospitalRecoverySupport = () => {
         buttonText="Get Started Today"
         buttonLink="/contact"
         imageSrc="/images/image-banner.webp"
-        imageAlt="Elderly care background"
+        imageAlt="Carer supporting elderly man recovering after hospital discharge"
       />
     </div>
   );
