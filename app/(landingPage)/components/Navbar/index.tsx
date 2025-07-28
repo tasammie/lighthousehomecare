@@ -101,11 +101,13 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-16">
               {/* Mobile Logo - Only visible on mobile */}
               <div className="lg:hidden">
-                <ImgComp
-                  src={"/images/lighthouse-logo-white.png"}
-                  alt="Logo"
-                  className="w-[100px]"
-                />
+                <Link href="/">
+                  <ImgComp
+                    src={"/images/lighthouse-logo-white.png"}
+                    alt="Logo"
+                    className="w-[100px]"
+                  />
+                </Link>
               </div>
 
               {/* Desktop Navigation */}
