@@ -32,7 +32,7 @@ Props) {
         <h1 className="text-2xl md:text-4xl font-bold">{text}</h1>
         <p className="text-2xl mt-2">{description}</p>
 
-        <CustomButton text={buttonText} link="contact" />
+        <CustomButton text={buttonText} link="contact" className="border" />
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ const carePackages: CarePackage[] = [
     id: 5,
     title: "Post-Hospital Recovery Support",
     description:
-      "Short-term care to help you regain independence after a stay.",
+      "Short-term care to help you regain independence after discharge.",
     image: "/images/recovery-support.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "post-hospital-recovery-support",
@@ -61,7 +61,7 @@ const carePackages: CarePackage[] = [
     id: 6,
     title: "Compassionate End-of-Life Care",
     description:
-      "Comfort-focused care for individuals and their families at life's final stage.",
+      "Comfort-focused care for individuals and their families at life’s final stage.",
     image: "/images/end-of-life-care.webp",
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "compassionate-end-of-life-care",

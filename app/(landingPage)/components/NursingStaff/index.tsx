@@ -3,6 +3,25 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
+const staff = [
+  {
+    name: "Paul Matney",
+    role: "Nursing Staff",
+    image: "/images/team1.webp",
+  },
+  {
+    name: "Paul Matney",
+    role: "Nursing Staff",
+    image: "/images/team2.webp",
+  },
+  {
+    name: "Paul Matney",
+    role: "Nursing Staff",
+    image: "/images/team3.webp",
+  },
+  // Add more staff objects here as needed
+];
+
 export default function NursingStaff() {
   return (
     <motion.div
@@ -13,7 +32,6 @@ export default function NursingStaff() {
     >
       {/* Background halves behind all content */}
       <div className="absolute inset-x-0 top-0 h-1/2 bg-white z-0" />
-      {/* replace color background with image */}
       <div className="absolute inset-x-0 bottom-0 h-1/2 z-0">
         <Image
           src="/images/blue-bg.webp"
@@ -44,58 +62,28 @@ export default function NursingStaff() {
         {/* Team Cards Section */}
         <div className="max-w-7xl mx-auto px-6 md:px-0 pb-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
-            {/* Team Member 1 */}
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
-                <Image
-                  src="/images/team1.webp"
-                  alt="Paul Matney"
-                  fill
-                  className="object-cover"
-                />
+            {staff.map((member, idx) => (
+              <div key={idx} className="bg-transparent rounded-lg p-4 ">
+                <div className="w-full aspect-square bg-[#C6C6C6]  rounded-lg overflow-hidden relative ">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover p-5 border"
+                  />
+                </div>
+                <div className="flex items-center justify-center flex-col">
+                  <h3 className="text-xl font-bold text-white mt-4">
+                    {member.name}
+                  </h3>
+                  <p className="text-[#FFFFFF] text-sm">{member.role}</p>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mt-4">
-                Paul Matney
-              </h3>
-              <p className="text-gray-600 text-sm">Nursing Staff</p>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
-                <Image
-                  src="/images/team2.webp"
-                  alt="Paul Matney"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mt-4">
-                Paul Matney
-              </h3>
-              <p className="text-gray-600 text-sm">Nursing Staff</p>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="bg-white rounded-lg p-4 shadow-md">
-              <div className="w-full aspect-square bg-gray-200 rounded-lg overflow-hidden relative">
-                <Image
-                  src="/images/team3.webp"
-                  alt="Paul Matney"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mt-4">
-                Paul Matney
-              </h3>
-              <p className="text-gray-600 text-sm">Nursing Staff</p>
-            </div>
+            ))}
           </div>
         </div>
-
         {/* Hiring Section */}
-        <div className="text-center pt-5 pb-20">
+        <div className="text-center pt-2 pb-20">
           <h2 className="text-4xl font-bold text-white mb-6">
             We&apos;re hiring!
           </h2>

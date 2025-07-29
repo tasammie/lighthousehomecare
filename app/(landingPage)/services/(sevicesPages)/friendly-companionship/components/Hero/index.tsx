@@ -52,22 +52,18 @@ const Hero = () => {
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                Everyone deserves a bit of companionship — a listening ear, a
-                shared story, or simply someone to brighten the day. Whether
-                it’s helping with daily routines, enjoying a conversation over
-                tea, or easing the feeling of loneliness, Lighthouse’s Friendly
-                Companion service is here to bring meaningful human connection
-                into the lives of those we support.
+                At Lighthouse, we understand that sometimes the most meaningful
+                care comes from simply being there. Our Friendly Companion
+                service offers more than conversation — it brings connection,
+                comfort, and the quiet joy of being truly seen.
               </p>
               <p>
-                At Lighthouse, we believe that companionship is more than just
-                presence — it&apos;s about fostering comfort, confidence, and
-                emotional well-being. Our companions provide reassurance and joy
-                in small everyday moments that make a big difference.
-              </p>
-              <p>
-                👉 Discover how our companionship care can help your loved one
-                feel more connected, supported, and truly seen.
+                Whether it’s sharing stories over a cup of tea, helping with
+                gentle daily routines, or easing moments of loneliness, our
+                companions create space for dignity and emotional well-being.
+                With warmth and attentiveness, they offer more than presence —
+                they offer peace of mind, for both the individual and their
+                family.
               </p>
             </div>
           </motion.div>

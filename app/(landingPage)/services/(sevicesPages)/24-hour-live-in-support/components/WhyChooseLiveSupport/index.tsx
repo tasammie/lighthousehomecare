@@ -10,30 +10,30 @@ const benefits: Benefit[] = [
   {
     id: 1,
     description:
-      "Consistent Care & Reassurance Around the Clock A professional carer is always present to provide help with personal care, movement, or emergencies — supporting safety and reducing anxiety for clients and families alike.",
+      "Consistent Care & Reassurance, Day and Night A dedicated carer is always available to assist with personal care, movement, or emergency needs — helping reduce anxiety and ensuring safety for both clients and families.",
   },
   {
     id: 2,
     description:
-      "Completely Tailored to You Whether it’s help with washing, dressing, medication reminders, mobility, or companionship, each care plan is fully personalised to support daily routines and wellbeing.",
+      "Entirely Tailored to You Whether it’s assistance with dressing, bathing, medication, or companionship, every care plan is designed to meet individual needs and promote daily wellbeing.",
   },
   {
     id: 3,
     description:
-      "Ideal for Long-Term Health Conditions For individuals living with dementia, Parkinson’s, stroke recovery, or chronic illness, continuous live-in support ensures stability, reduces confusion, and promotes overall comfort.",
+      "Perfect for Long-Term Health Conditions For people living with dementia, Parkinson’s, recovering from a stroke, or managing chronic illness, live-in care provides ongoing stability, reduces confusion, and brings added comfort.",
   },
   {
     id: 4,
     description:
-      "Continuity & Comfort at Home Staying at home means remaining close to family, pets, and familiar surroundings. With live-in support, there’s no need to uproot your life or adjust to institutional care settings.",
+      "Continuity & Familiarity at Home Staying at home allows you to remain close to loved ones, pets, and familiar routines. Live-in care means no upheaval or adjustment to institutional care environments.",
   },
 ];
 
 const approach = {
   title: "A Compassionate, Person-Centred Approach",
   points: [
-    "At Lighthouse Homecare Ltd., we know that dependable care should extend beyond a few visits. Our live-in carers are compassionate, trained, and fully committed to protecting the dignity, independence, and lifestyle of the person they support.",
-    "Whether for ongoing complex needs or simply reassurance through the day and night, our 24-hour live-in support adapts to each individual’s routines, preferences, and pace of life — making it a truly personal alternative to residential care.",
+    "At Lighthouse Homecare, we believe care should go beyond brief visits. Our live-in carers are trained, empathetic, and fully dedicated to safeguarding each person’s dignity, independence, and quality of life.",
+    "Whether your needs are complex or you simply want consistent reassurance, our 24-hour live-in care adapts to your daily preferences, pace, and lifestyle — making it a truly personal alternative to residential care.",
   ],
 };
 

@@ -20,8 +20,6 @@ const FriendlyCompanionshipCareDetails = () => {
                   solitary — often leading to feelings of isolation. This shift,
                   particularly after retirement, bereavement, or a decline in
                   mobility, can affect both mental and emotional well-being.
-                </p>
-                <p>
                   Studies show that long-term loneliness is linked to anxiety,
                   depression, cognitive decline, and even reduced life
                   expectancy. Sometimes, it’s the absence of everyday
@@ -30,15 +28,12 @@ const FriendlyCompanionshipCareDetails = () => {
                   disconnected.
                 </p>
                 <p>
-                  At Lighthouse, we believe in the power of simple, meaningful
-                  connection. Our Friendly Companion service offers emotional
-                  support through regular visits and genuine conversation,
-                  helping to restore purpose, build trust, and make every day a
-                  little brighter.
-                </p>
-                <p>
-                  Even a short visit can bring warmth, reassurance, and the
-                  sense that someone truly cares.
+                  At Lighthouse Homecare, we believe in the power of simple,
+                  meaningful connection. Our Friendly Companion service offers
+                  emotional support through regular visits and genuine
+                  conversation, helping to restore purpose, build trust, and
+                  make every day a little brighter. Even a short visit can bring
+                  warmth, reassurance, and the sense that someone truly cares.
                 </p>
               </div>
             </div>

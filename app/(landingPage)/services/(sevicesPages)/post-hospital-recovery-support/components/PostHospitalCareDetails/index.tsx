@@ -15,20 +15,23 @@ export default function PostHospitalCareDetails() {
                 What Is Post-Hospital Recovery Support?{" "}
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
+                <p>Helping your loved one regain strength, safely at home</p>
                 <p>
-                  Lighthouse Homecare’s Post-Hospital Recovery Support offers
-                  short-term in-home care to help your loved one regain
-                  strength, stability, and confidence after a hospital
-                  discharge. Being in the comfort of familiar surroundings has
-                  been shown to speed up recovery and reduce the need for
-                  readmission or a move into residential care.
+                  When someone is discharged from hospital, the road to full
+                  recovery often continues at home. At Lighthouse Homecare, we
+                  offer short-term, in-home support to help individuals rebuild
+                  strength, stability, and confidence in familiar surroundings —
+                  proven to speed up recovery and reduce the risk of readmission
+                  or moving into residential care.
                 </p>
+                <p>Our experienced carers assist with:</p>
+                <ul>
+                  <li>Personal care</li>
+                  <li>Meal preparation and light housekeeping</li>
+                  <li>Mobility support and medication reminders</li>
+                </ul>
                 <p>
-                  Our compassionate care team focuses on helping individuals
-                  safely transition back to everyday life. We support with
-                  personal care, meal preparation, light housekeeping, mobility,
-                  and medication reminders—all while keeping families informed
-                  of their loved one’s progress.
+                  All while keeping families informed every step of the way.
                 </p>
               </div>
             </div>
@@ -42,20 +45,19 @@ export default function PostHospitalCareDetails() {
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
-                  Post-Hospital Recovery Support is typically arranged by the
-                  hospital discharge team or social worker before a patient
-                  returns home. In many cases, support may be available free of
-                  charge through your local authority or the NHS for up to six
-                  weeks. (You can contact your council to request an assessment
-                  and check eligibility.)
+                  In many cases, your hospital’s discharge team or social worker
+                  will help arrange recovery care before you return home. Some
+                  support may be available free of charge for up to six weeks
+                  through your local authority or NHS — speak to your council
+                  for an assessment and to check eligibility.
                 </p>
                 <p>
-                  Alternatively, Lighthouse Homecare can step in to provide
-                  personalised care, especially if your needs extend beyond this
-                  initial period or if there’s an emergency gap in care—such as
-                  when the main family caregiver needs support or becomes
-                  unavailable. We’re here to ensure no one has to recover alone.
-                </p>
+                  If your needs go beyond that period, or if there’s an
+                  emergency gap in care (e.g. if a family carer becomes
+                  unavailable), Lighthouse Homecare can step in to provide
+                  tailored, flexible support — ensuring no one has to face
+                  recovery alone.
+                </p>{" "}
               </div>
             </div>
           </div>

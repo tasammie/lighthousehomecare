@@ -15,7 +15,7 @@ const visitActivities: VisitActivity[] = [
     id: 1,
     title: "🫶 Emotional Support & Gentle Conversation",
     description:
-      "A friendly face and a listening ear can make all the difference. Whether it's sharing stories, flipping through photo albums, or chatting over a cuppa, our companions are here to uplift and connect — one moment at a time.",
+      "A friendly face and a listening ear can make all the difference. Whether it’s sharing stories, flipping through photo albums, or chatting over a cuppa, our companions are here to uplift and connect — one moment at a time.",
     bgColor: "bg-teal-200",
     textColor: "text-gray-800",
   },
@@ -145,7 +145,7 @@ export default function WhatHappenVisit() {
             What Happens During a Friendly Companion Visit?
           </h2>
           <p className="text-gray-700 leading-relaxed max-w-4xl text-[18px]">
-            Each visit is thoughtfully shaped around your loved one&apos;s
+            Each visit is thoughtfully shaped around your loved one’s
             personality and preferences. Our dedicated companions bring warmth,
             conversation, and uplifting support to brighten days and foster
             lasting emotional connections.
@@ -153,7 +153,7 @@ export default function WhatHappenVisit() {
         </motion.div>
 
         {/* Activities Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:h-[484px]">
           {visitActivities.map((activity, index) => (
             <ActivityCard key={activity.id} activity={activity} index={index} />
           ))}

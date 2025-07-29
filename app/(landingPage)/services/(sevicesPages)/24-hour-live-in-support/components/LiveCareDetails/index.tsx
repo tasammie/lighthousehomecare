@@ -16,18 +16,18 @@ const LiveCareDetails = () => {
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
-                  Live-in care provides round-the-clock assistance for
-                  individuals who need continuous support—whether that’s help
-                  with personal care, mobility, medication, or daily routines.
-                  Unlike hourly visits or residential homes, this service allows
-                  a dedicated carer to reside in the client’s home, ensuring
-                  consistent and personalised care throughout the day and night.
+                  Live-in care provides continuous, round-the-clock support for
+                  individuals who need help with daily living — including
+                  personal care, mobility, medication, and regular routines.
+                  Unlike hourly visits or residential care homes, this service
+                  places a dedicated carer in the comfort of the client’s own
+                  home, ensuring consistent, personalised care day and night.
                 </p>
                 <p>
-                  At Lighthouse Homecare, our 24/7 live-in support is tailored to each
-                  person’s health needs, preferences, and lifestyle. From
-                  dementia care and stroke recovery to mobility challenges or
-                  companionship, we’re here to support individuals to live
+                  At Lighthouse Homecare, our 24/7 live-in support is tailored
+                  to each person’s health needs, preferences, and lifestyle.
+                  From dementia care and stroke recovery to mobility challenges
+                  or companionship, we’re here to support individuals to live
                   safely and independently at home.
                 </p>
               </div>
@@ -38,18 +38,18 @@ const LiveCareDetails = () => {
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
-                  We believe that no two care journeys are the same. That’s why
-                  we design our services to reflect the specific needs, goals,
-                  and routines of the people we support. Our personalised
-                  approach ensures that care is not only effective but also
-                  respectful and empowering.
+                  We understand that no two care journeys are ever the same.
+                  That’s why we design our services to reflect the unique needs,
+                  routines, and aspirations of each person we support. Our
+                  personalised approach makes care not just effective, but also
+                  dignified and empowering.
                 </p>
                 <p>
-                  Unlike one-size-fits-all solutions, our live-in support offers
-                  flexibility, continuity, and comfort. It’s a cost-effective
-                  alternative to residential care—ideal for those who value
-                  familiar surroundings but need more consistent help than
-                  occasional visits can provide.
+                  Unlike generic or one-size-fits-all solutions, our live-in
+                  support provides flexibility, continuity, and genuine comfort.
+                  It’s a cost-effective alternative to residential care — ideal
+                  for those who value staying in familiar surroundings, yet need
+                  more regular support than occasional visits can offer.
                 </p>
               </div>
             </div>

@@ -18,11 +18,11 @@ const careOptions: CareOption[] = [
     title: "Waking Night Support",
     subtitle: "Attentive care throughout the night",
     description:
-      "Our Waking Night Support is perfect for individuals who require close monitoring and hands-on help overnight. A dedicated Lighthouse carer remains awake, responsive, and fully alert to attend to your loved one's needs.",
+      "Waking Night Support is ideal for individuals who require close monitoring and hands-on assistance overnight. A dedicated Lighthouse carer remains fully awake, alert, and ready to respond to any needs as they arise.",
     features: [
-      "Mobility support for safe repositioning, toileting, or moving around the home",
-      "Providing emotional reassurance and comfort through the night",
-      "Prompt responses to any unexpected events or concerns",
+      "Support with mobility, repositioning, toileting, or moving safely around the home",
+      "Emotional reassurance and a calming presence throughout the night",
+      "Immediate response to any unexpected needs or concerns",
     ],
     bgColor: "bg-[#B5E5E0]",
     textColor: "text-gray-800",
@@ -30,13 +30,13 @@ const careOptions: CareOption[] = [
   {
     id: 2,
     title: "Sleeping Night Support",
-    subtitle: "Peaceful reassurance with light assistance",
+    subtitle: "Peace of mind with light-touch reassurance",
     description:
-      "For those who sleep through the night but feel more secure knowing someone is there, our Sleeping Night Support provides just the right balance of presence and peace. Your carer sleeps at the property and is available to assist if needed.",
+      "Sleeping Night Support is perfect for those who sleep through the night but feel more secure knowing someone is nearby. Your Lighthouse carer stays at the property and is on hand to assist if needed.",
     features: [
-      "Continuity of care through a personalised overnight plan",
-      "Helping reduce the risk of falls or emergencies by being on hand",
-      "Offering mobility assistance during the night if needed",
+      "Ongoing care guided by a personalised overnight plan",
+      "Reduced fall risks or emergencies by having someone present",
+      "Mobility help if needed during the night",
     ],
     bgColor: "bg-white",
     textColor: "text-gray-800",
@@ -71,15 +71,15 @@ export default function OvernightCareOptions() {
           </h2>
           <div className="max-w-4xl mx-auto space-y-4 text-gray-700 leading-relaxed">
             <p className="text-[18px]">
-              At Lighthouse Homecare, we understand that comfort and safety
-              don&apos;t stop when the sun goes down. Our overnight care
-              services offer round-the-clock peace of mind, whether you need a
-              carer who is awake and alert throughout the night or someone who
-              provides reassurance while you sleep.
+              At Lighthouse Homecare, we know that comfort and safety don’t stop
+              when night falls. That’s why our overnight care services offer
+              dependable, around-the-clock peace of mind — whether you need
+              someone awake and alert all night, or simply present for
+              reassurance while you rest.
             </p>
             <p>
-              We offer two key types of overnight support, designed to suit
-              individual needs and routines:
+              We offer two types of overnight care to suit different needs and
+              routines:
             </p>
           </div>
         </motion.div>
@@ -184,9 +184,9 @@ export default function OvernightCareOptions() {
                       className={`${option.textColor} text-sm leading-relaxed opacity-90 
                                  group-hover:text-gray-700 transition-colors duration-300`}
                     >
-                      With Lighthouse Homecare, your family can rest assured
-                      knowing a professional is present to support and safeguard
-                      your loved one every step of the way.
+                      With Lighthouse Homecare, your loved one receives full
+                      attention, while you gain peace of mind knowing they are
+                      safe and supported at all times.
                     </p>
                   )}
 
@@ -195,10 +195,9 @@ export default function OvernightCareOptions() {
                       className={`${option.textColor} text-sm leading-relaxed opacity-90 
                                  group-hover:text-gray-700 transition-colors duration-300`}
                     >
-                      Whether you&apos;re recovering from an illness or simply
-                      need the reassurance of knowing someone is close by,
-                      Lighthouse carers are there to deliver trusted care with
-                      compassion and professionalism.
+                      Whether recovering from illness or simply seeking peace of
+                      mind, our carers provide calm, compassionate support to
+                      help you sleep easy — knowing someone is always close by.
                     </p>
                   )}
                 </motion.div>
@@ -244,8 +243,9 @@ export default function OvernightCareOptions() {
             Let&apos;s find the right overnight solution for your family.
           </h3>
           <p className="text-gray-700 mb-8 max-w-2xl mx-auto">
-            We&apos;ll build a tailored care plan that meets your unique needs
-            for overnight solution for your family.
+            We’ll work with you to build a tailored overnight care plan that
+            fits your unique needs — ensuring trusted support for both your
+            loved one and your peace of mind.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <CustomButton

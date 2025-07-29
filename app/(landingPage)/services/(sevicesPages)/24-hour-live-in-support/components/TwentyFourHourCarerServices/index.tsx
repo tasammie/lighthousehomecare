@@ -1,41 +1,41 @@
 import { ImgComp } from "@/components/ImgComp";
 
-const OvernightCarerServices = () => {
+const TwentyFourHourCarerServices = () => {
   const services = [
     {
-      title: "Nighttime Personal Care",
+      title: "Night-time Personal Care",
       description:
-        "Assisting with washing, changing, toileting and bedtime routines - providing dignity and comfort before and during sleep.",
+        "Helping with washing, changing, toileting, and bedtime routines — ensuring dignity and comfort both before and during sleep.",
       image: "/images/night-personal-care.webp",
     },
     {
       title: "Medication Reminders",
       description:
-        "Administering or prompting time-sensitive evening or overnight medications to maintain treatment plans.",
+        "Prompting or administering time-sensitive evening or night-time medication to help maintain prescribed treatment plans.",
       image: "/images/medication-reminder.webp",
     },
     {
       title: "Repositioning & Pressure Relief",
       description:
-        "Helping individuals change positions to avoid bedsores and improve sleep quality - especially important for those with limited mobility.",
+        "Assisting with regular position changes to prevent pressure sores and enhance sleep — vital for those with reduced mobility.",
       image: "/images/presure-relive.webp",
     },
     {
       title: "Monitoring & Reassurance",
       description:
-        "Keeping a watchful eye throughout the night to respond quickly to any distress, confusion, or wandering - ideal for clients with dementia or anxiety.",
+        "Maintaining a watchful presence through the night to quickly respond to distress, confusion, or wandering  especially helpful for those with dementia or anxiety.",
       image: "/images/monitoring.webp",
     },
     {
       title: "Toileting & Continence Care",
       description:
-        "Offering discreet support for overnight toileting or incontinence episodes with patience and compassion.",
+        "Providing discreet assistance during the night with toileting or incontinence episodes — always with kindness, patience, and respect.",
       image: "/images/toileting.webp",
     },
     {
       title: "Mobility & Fall Prevention",
       description:
-        "Helping clients move safely in and out of bed, reducing fall risks and ensuring stability during the night.",
+        "Offering calming company, soothing conversation, or quiet reassurance for those feeling unsettled, anxious, or alone during the night.",
       image: "/images/mobilty.webp",
     },
     {
@@ -47,7 +47,7 @@ const OvernightCarerServices = () => {
     {
       title: "Emergency Support",
       description:
-        "Ready to act immediately in any unexpected health or safety situations, offering peace of mind for both client and family.",
+        "Prepared to act swiftly in unexpected health or safety incidents, delivering peace of mind to both clients and their loved ones.",
       image: "/images/emergency-support.webp",
     },
   ];
@@ -105,4 +105,4 @@ const OvernightCarerServices = () => {
   );
 };
 
-export default OvernightCarerServices;
+export default TwentyFourHourCarerServices;

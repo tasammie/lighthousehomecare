@@ -1,4 +1,5 @@
 import CareBannerComponent from "@/app/(landingPage)/shared/components/CareBannerComponent";
+import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
 import PostHospitalCareDetails from "./components/PostHospitalCareDetails";
 import Support from "./components/Support";
@@ -17,6 +18,7 @@ const PostHospitalRecoverySupport = () => {
         imageSrc="/images/image-banner.webp"
         imageAlt="Carer supporting elderly man recovering after hospital discharge"
       />
+      <FAQ />
     </div>
   );
 };

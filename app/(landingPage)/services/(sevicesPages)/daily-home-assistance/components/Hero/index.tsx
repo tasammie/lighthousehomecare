@@ -52,17 +52,17 @@ const Hero = () => {
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                When everyday activities become more difficult — from getting
-                dressed to preparing meals — our Daily Home Assistance service
-                provides the extra support needed to stay safe and independent
-                at home.
+                When everyday tasks become harder — from dressing to cooking —
+                our Daily Home Assistance service provides the vital support
+                needed to remain safe and independent at home.
               </p>
               <p>
-                Whether it’s help with household chores, personal hygiene,
-                medication reminders, or companionship, our compassionate carers
-                are here to make life easier. We tailor every visit to fit your
-                routine and preferences, always with dignity, respect, and a
-                smile.
+                From housekeeping and hygiene to medication prompts and friendly
+                company, our kind carers make daily life smoother.
+              </p>
+              <p>
+                Each visit is tailored to your routine with dignity, respect,
+                and always a friendly smile.
               </p>
             </div>
           </motion.div>

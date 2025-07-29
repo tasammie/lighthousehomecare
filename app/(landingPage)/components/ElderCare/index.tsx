@@ -110,7 +110,7 @@ export default function ElderCare() {
               </h3>
               <p className="text-gray-600">
                 Skilled, compassionate professionals providing tailored care
-                with dignity and respect—right in the comfort of your home.
+                with dignity and respect — right in the comfort of your home.
               </p>
             </div>
           </li>
@@ -152,8 +152,8 @@ export default function ElderCare() {
                 24/7 Support
               </h3>
               <p className="text-gray-600">
-                We&lsquo;re here any time, day or night. Reliable care and
-                assistance whenever you need it.
+                We’re here any time, day or night. Reliable care and assistance
+                whenever you need it.
               </p>
             </div>
           </li>
@@ -195,7 +195,7 @@ export default function ElderCare() {
                 Assisted Living at Home
               </h3>
               <p className="text-gray-600">
-                Stay independent with help at home—from daily tasks to
+                Stay independent with help at home — from daily tasks to
                 personalised support that fits your lifestyle.
               </p>
             </div>

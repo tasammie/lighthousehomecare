@@ -134,7 +134,7 @@ export default function OurValues() {
         </motion.div>
 
         {/* Values Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 lg:gap-16">
           {values.map((value, index) => (
             <ValueCard key={value.id} value={value} index={index} />
           ))}

@@ -19,73 +19,73 @@ const faqItems: FAQItem[] = [
     id: "item-1",
     question: "What Is 24-Hour Live-In Support?",
     answer:
-      "24-hour live-in support offers continuous, one-to-one care for individuals who need consistent assistance but prefer to stay in their own home. A dedicated carer lives with the client, delivering support day and night—helping with personal care, mobility, medication, and companionship. It's a compassionate and dignified alternative to moving into a residential care home.",
+      "24-hour live-in care offers one-to-one, continuous support for individuals who need regular assistance but prefer to remain in their own home. A dedicated carer lives alongside the client, providing help with personal care, mobility, medication, and companionship — day and night. It’s a compassionate, dignified alternative to residential care.",
   },
   {
     id: "item-2",
     question: "How Quickly Can Live-In Support Begin?",
     answer:
-      "We understand care needs can arise suddenly. That's why we aim to arrange live-in support within 24 to 48 hours whenever possible. Whether due to a medical discharge, unexpected illness, or family emergency, our responsive team ensures support starts when it's needed most.",
+      "We understand that care needs can arise unexpectedly. That’s why we aim to begin live-in support within 24 to 48 hours. Whether due to hospital discharge, a sudden illness, or a family emergency, our team responds quickly to ensure care starts when it’s needed most.",
   },
   {
     id: "item-3",
     question: "What Kind of Training Do Your Carers Receive?",
     answer:
-      "All our carers come with relevant experience and undergo comprehensive in-house training to align with our standards. Training includes personal care, medication safety, dementia awareness, moving and handling, and more—supported by ongoing professional development, supervision, and mentoring from our Care Managers.",
+      "All of our carers are experienced and receive thorough, ongoing in-house training. This includes personal care techniques, medication safety, dementia care, moving and handling, and more. Training is supported by supervision, mentoring, and professional development led by our Care Managers.",
   },
   {
     id: "item-4",
     question: "How Do You Monitor the Quality of Care?",
     answer:
-      "We maintain high standards through regular supervision, feedback loops, and unannounced visits. Our Care Managers conduct frequent reviews and keep in close touch with both carers and families. We also offer a 24/7 support line to handle any queries or issues swiftly, ensuring consistency, safety, and transparency in every home.",
+      "We ensure high standards through regular reviews, feedback systems, and unannounced visits. Care Managers remain closely connected with both carers and families. A 24/7 support line is also available, ensuring swift responses to any concerns, and maintaining consistent, safe, and transparent care.",
   },
   {
     id: "item-5",
     question: "What Kind of Meals Will Carers Prepare?",
     answer:
-      "Our carers are trained to prepare nutritious, balanced meals tailored to your preferences and dietary needs. From simple home-cooked dishes to meals aligned with medical or cultural requirements, our carers make mealtimes enjoyable and nourishing. They also ensure regular hydration and provide light snacks throughout the day.",
+      "Our carers are trained to cook nutritious, well-balanced meals based on your tastes and dietary needs. From traditional home-cooked favourites to culturally or medically aligned dishes, they ensure mealtimes are both enjoyable and nourishing. Regular hydration and light snacks are also included throughout the day.",
   },
   {
     id: "item-6",
     question: "What Is Your Approach to Dementia Care?",
     answer:
-      "We specialise in dementia-inclusive care, delivering patient, calm, and structured support. Our carers are trained in managing memory loss, confusion, and mood changes—promoting emotional reassurance and familiarity. We also work closely with families to create a consistent and respectful environment for your loved one.",
+      "We specialise in dementia-inclusive care that is calm, structured, and reassuring. Our carers are trained to support those experiencing memory loss, confusion, or emotional changes — always promoting safety and familiarity. We work closely with families to create consistent, respectful routines.",
   },
   {
     id: "item-7",
     question: "Where Do Your Carers Come From?",
     answer:
-      "Our carers are experienced professionals from across the UK and Europe, carefully recruited and vetted to ensure fluency in English, empathy, and strong interpersonal skills. We match carers based on personality, experience, and cultural fit—so the relationship feels natural, safe, and comfortable for everyone involved.",
+      "Our carers are recruited from across the UK and Europe and are carefully vetted for empathy, English fluency, and interpersonal skills. We pair carers based on personality, experience, and cultural compatibility — making sure every relationship feels natural, secure, and well-matched.",
   },
   {
     id: "item-8",
     question: "How Long Will the Carer Stay?",
     answer:
-      "We're flexible. Most families prefer the consistency of one live-in carer who builds rapport and routine. Depending on the care plan, a carer may stay for weeks or rotate with a second carer. We'll always aim for continuity unless a change is needed for rest or scheduling reasons.",
+      "We’re flexible. Many families prefer the continuity of one carer who builds trust and routine. Depending on your care plan, a carer may stay for several weeks or alternate with another. We always aim for consistency unless a break or rotation is needed.",
   },
   {
     id: "item-9",
     question: "How Does Live-In Support Compare to a Care Home?",
     answer:
-      "Live-in care enables you to stay at home with full control of your day-to-day life. There are no rigid schedules, shared spaces, or institutional rules. Instead, everything—from mealtimes to bedtime routines—is built around your preferences, allowing for a more comfortable, familiar lifestyle.",
+      "Live-in care allows you to remain at home, in control of your day-to-day life. There are no institutional rules or schedules — just personalised routines that match your preferences. From meals to bedtime, everything is shaped around your lifestyle in the comfort of your own home.",
   },
   {
     id: "item-10",
     question: "Why Choose Managed Live-In Support?",
     answer:
-      "With our fully managed service, we handle everything—from recruiting carers to ongoing oversight and training. You'll have a dedicated Care Manager, quality checks, and 24/7 support. This ensures a safe, professional, and reliable service with none of the stress of arranging care yourself.",
+      "With our fully managed service, we take care of everything — from recruitment to training, supervision, and 24/7 support. You’ll have a dedicated Care Manager and regular quality checks, ensuring a dependable, professional service without the burden of organising care yourself.",
   },
   {
     id: "item-11",
     question: "How Much Does It Cost?",
     answer:
-      "Costs depend on the level and complexity of support you need. We offer bespoke quotes following a care consultation, with no obligation. Since live-in care can sometimes be more affordable than residential options, we're happy to explore what fits your needs and budget.",
+      "Costs vary based on the level and type of care needed. We provide tailored quotes following a no-obligation consultation. Live-in care is often more cost-effective than residential care, and we’ll help you find the best fit for your budget and needs.",
   },
   {
     id: "item-12",
     question: "Are There Any Upfront Fees?",
     answer:
-      "No. We do not charge any assessment or registration fees. All costs are agreed in advance, so you'll always know exactly what to expect—no surprises, no hidden charges.",
+      "No. We don’t charge registration or assessment fees. All pricing is agreed in advance, so you’ll always know exactly what to expect — with no hidden charges or surprises.",
   },
 ];
 export default function FAQ() {

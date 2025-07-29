@@ -11,7 +11,7 @@ const DailyHomeAssistance = () => {
       <HowToHelp />
       <DailyHome />
       <CareBannerComponent
-        text="You’re not just choosing a care service — you’re choosing a team that truly cares"
+        text="You’re not simply choosing a care service, you’re choosing a team that genuinely cares."
         buttonText="Get Started Today"
         buttonLink="/contact"
         imageSrc="/images/image-banner.webp"

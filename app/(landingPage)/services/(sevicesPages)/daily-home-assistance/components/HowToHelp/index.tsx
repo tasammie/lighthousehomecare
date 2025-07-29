@@ -8,16 +8,28 @@ interface ServiceItem {
 }
 
 const serviceItems: ServiceItem[] = [
-  { id: 1, text: "Morning routines: getting out of bed and ready for the day" },
-  { id: 2, text: "Personal care: washing, dressing, and appearance" },
-  { id: 3, text: "Toileting and continence support" },
+  {
+    id: 1,
+    text: "Morning routines: help getting out of bed and preparing for the day",
+  },
+  {
+    id: 2,
+    text: "Personal care: support with washing, dressing, grooming, and appearance",
+  },
+  { id: 3, text: "Toileting and continence care" },
   { id: 4, text: "Preparing meals and drinks, and help with eating" },
-  { id: 5, text: "Medication reminders and prescription pickups" },
-  { id: 6, text: "Light health tasks, coordinated with medical professionals" },
-  { id: 7, text: "Shopping, paying bills, or collecting pensions" },
-  { id: 8, text: "Outings and social connections" },
-  { id: 9, text: "Companionship and emotional support" },
-  { id: 10, text: "Evening routines and getting ready for bed" },
+  { id: 5, text: "Medication prompts and collecting prescriptions" },
+  {
+    id: 6,
+    text: "Light health-related tasks, coordinated with healthcare professionals",
+  },
+  {
+    id: 7,
+    text: "Running errands: shopping, paying bills, or collecting pensions",
+  },
+  { id: 8, text: "Social outings and community engagement" },
+  { id: 9, text: "Companionship and emotional wellbeing" },
+  { id: 10, text: "Bedtime routines and preparing for sleep" },
 ];
 
 export default function HowToHelp() {
@@ -67,12 +79,15 @@ export default function HowToHelp() {
           >
             <div className="space-y-6">
               {/* Description */}
-              <p className="text-[#FFFFFF] text-lg leading-relaxed font-[400] text-[24px]">
-                Our compassionate carers provide practical support that helps
-                you stay independent, safe, and comfortable at home. Here&apos;s
-                what we can assist with:
-              </p>
-
+              <div>
+                <p className="text-[#FFFFFF] text-lg leading-relaxed font-[400] text-[24px]">
+                  Our compassionate carers offer hands-on support to help you
+                  remain safe, comfortable, and independent in your own home.
+                </p>
+                <p className="text-[#FFFFFF] text-lg leading-relaxed font-[400] text-[24px]">
+                  Here’s how we can assist:
+                </p>
+              </div>
               {/* Service List */}
               <ul className="space-y-4">
                 {serviceItems.map((item, index) => (

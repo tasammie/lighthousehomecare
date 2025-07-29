@@ -44,19 +44,19 @@ const Hero = () => {
                 Overnight Care Services
               </h1>
               <h2 className="text-xl font-semibold text-[#00269B] mb-6">
-                Comfort & Support While You Sleep
+                Comfort, Reassurance & Support Through the Night{" "}
               </h2>
             </div>
 
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                Overnight care is a practical and reassuring solution for
-                individuals who need support during the night hours— whether
-                it&apos;s occasional assistance or consistent overnight
-                supervision. It allows people to remain in their familiar home
-                environment with the peace of mindOvernightCareServices that
-                help is readily available when needed most.
+                When the rest of the world sleeps, our care continues. Whether
+                you need assistance with bedtime routines, night-time movement,
+                or simply the reassurance of someone nearby — our thoughtful
+                carers provide attentive overnight support in the safety of your
+                home. Families enjoy peace of mind, knowing support is available
+                for toileting, mobility, and safe, gentle morning wake-ups.
               </p>
             </div>
           </motion.div>

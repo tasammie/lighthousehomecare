@@ -18,68 +18,102 @@ const faqItems: FAQItem[] = [
   {
     id: "item-1",
     question: "What is included in Personal Care?",
-    answer:
-      "Personal care includes assistance with washing, bathing, dressing, toileting, and maintaining personal hygiene — all provided with complete dignity and respect. Our carers are trained to help individuals maintain their independence while ensuring their comfort and wellbeing. We understand these are sensitive tasks, which is why we prioritise building trust and ensuring every client feels safe and respected during personal care assistance.",
+    answer: `
+      <p>Personal care involves sensitive, hands-on assistance with day-to-day tasks that may be difficult to manage alone. Our respectful carers support clients with:</p>
+      <ul class="list-disc ml-6">
+        <li>Getting in and out of bed</li>
+        <li>Washing, bathing, or showering</li>
+        <li>Dressing and grooming</li>
+        <li>Personal hygiene and appearance</li>
+        <li>Toileting and continence care</li>
+        <li>Bedtime routines and settling for the night</li>
+      </ul>
+      <p>We tailor our support to your preferences and routines, whether full assistance is needed or just the reassuring presence of someone nearby.</p>
+      <p><strong>Please note:</strong> We do not offer nail or toenail cutting due to insurance limits. We’re happy to refer you to trusted providers who offer this service safely using personal nail care kits.</p>
+    `,
   },
   {
     id: "item-2",
-    question: "How long can a carer stay during the day?",
-    answer:
-      "We're completely flexible with daily assistance — whether you need a carer for just an hour or throughout the entire day. Some clients prefer shorter visits for specific tasks, while others benefit from longer support sessions. We'll work with you to create a schedule that fits your lifestyle and needs perfectly.",
+    question: "What does Practical Home Help include?",
+    answer: `
+      <p>A little help around the house can make a big difference. Our carers assist with:</p>
+      <ul class="list-disc ml-6">
+        <li>Light housekeeping (e.g. cleaning, laundry, tidying)</li>
+        <li>Meal preparation and serving</li>
+        <li>Grocery shopping (with or on behalf of the client)</li>
+        <li>Running errands and household chores</li>
+      </ul>
+      <p>We also offer friendly companionship, helping clients stay connected — from social outings and local events to special occasions like weddings or birthdays. We encourage independence wherever possible, building confidence through personalised, respectful support tailored to each individual’s lifestyle, culture, and routine.</p>
+    `,
   },
   {
     id: "item-3",
-    question: "Can Daily Home Assistance help with medication?",
-    answer:
-      "Yes, our carers can provide medication reminders and support with medication management as part of our daily assistance service. They can help ensure medications are taken at the right times and in the correct doses, supporting your health and wellbeing routine. For more complex medical needs, we work closely with healthcare professionals to ensure safe and appropriate care.",
+    question: "Do You Help with Medication?",
+    answer: `
+      <p>Yes — many clients need help managing medication safely. Our trained carers can assist with:</p>
+      <ul class="list-disc ml-6">
+        <li>Prompting and reminders to take medicine</li>
+        <li>Help with packaging or opening bottles</li>
+        <li>Full administration of prescribed medication (where appropriate)</li>
+      </ul>
+      <p>Every medication visit is recorded, ensuring safe, accurate care. Carers can only administer medication as prescribed — we do not follow informal instructions unless authorised by a health professional. If a client manages their own medicine, we won’t interfere unless requested.</p>
+    `,
   },
   {
     id: "item-4",
-    question: "What does Practical Home Help include?",
-    answer:
-      "Our practical home help covers light housekeeping tasks like cleaning, laundry, dish washing, and general tidying. We can also assist with shopping, meal preparation, and other household tasks that help maintain a comfortable living environment. The goal is to reduce stress and ensure your home remains a pleasant, safe space.",
+    question: "Is There Anything Else I Should Know?",
+    answer: `
+      <p>Small home changes can boost independence. You may benefit from:</p>
+      <ul class="list-disc ml-6">
+        <li>Grab rails or stair lifts</li>
+        <li>Kitchen tools to improve food safety</li>
+        <li>Bedroom or bathroom modifications</li>
+        <li>Adjusting furniture for easier access</li>
+      </ul>
+      <p>An Occupational Therapist (OT) can assess your home and suggest adjustments. We can help coordinate this through your GP or local authority — or refer directly with your consent.</p>
+      <p>At Lighthouse Homecare, all carers are trained in safe Moving and Positioning techniques to ensure comfort and safety during transfers like bed-to-chair.</p>
+    `,
   },
   {
     id: "item-5",
-    question: "Do I have to commit to multiple days a week?",
-    answer:
-      "Not at all — our Daily Home Assistance is designed to be completely flexible. You might need support just once or twice a week, or you may prefer daily visits. We can adjust the frequency and timing of visits based on your changing needs, ensuring you receive exactly the right level of support when you need it.",
+    question: "What Is Assistive Technology and How Can It Help?",
+    answer: `
+      <p>Devices like personal alarms or telecare systems provide 24/7 peace of mind — especially helpful between visits. These can alert carers, loved ones, or emergency services if a client:</p>
+      <ul class="list-disc ml-6">
+        <li>Falls or feels unwell</li>
+        <li>Needs urgent help</li>
+        <li>Requires non-urgent attention when services are unavailable</li>
+      </ul>
+      <p>Devices like wristbands or pendants are simple, reliable, and available on a subscription basis. We’re happy to help you explore the right option.</p>
+    `,
   },
   {
     id: "item-6",
-    question: "Can the same carer visit each time?",
-    answer:
-      "Absolutely. We understand the importance of consistency and building trust, so we do our best to arrange for the same carer to visit regularly. This helps create a comfortable routine and allows for a stronger, more supportive relationship to develop over time.",
-  },
-  {
-    id: "item-7",
-    question: "Is Daily Home Assistance available at weekends?",
-    answer:
-      "Yes, our Daily Home Assistance is available seven days a week, including weekends and bank holidays. We understand that care needs don't follow a typical work schedule, so we're here to provide support whenever you need it most.",
-  },
-  {
-    id: "item-8",
-    question: "How quickly can Daily Home Assistance start?",
-    answer:
-      "We can often arrange Daily Home Assistance within 24-48 hours, depending on your specific requirements and carer availability in your area. For urgent needs, we'll do everything possible to arrange support even sooner. Our goal is to respond quickly while ensuring we match you with the right carer for your needs.",
-  },
-  {
-    id: "item-9",
-    question: "Will the carer help with outings and appointments?",
-    answer:
-      "Yes, our carers can provide companionship and support for medical appointments, shopping trips, social outings, or simply a walk in the park. This helps maintain social connections and independence while ensuring you have trusted support when out and about.",
-  },
-  {
-    id: "item-10",
-    question: "How much does Daily Home Assistance cost?",
-    answer:
-      "Costs vary depending on the type and frequency of support you need. Since every care plan is personalised, we recommend contacting us for a free, no-obligation assessment and quote that reflects your specific requirements.",
-  },
-  {
-    id: "item-11",
-    question: "Are there any setup or registration fees?",
-    answer:
-      "No — we don't charge any registration, assessment, or setup fees. All costs are transparent and agreed upfront, so you know exactly what to expect with no hidden charges or surprise fees.",
+    question: "What Are the Pros and Cons of Home Care?",
+    answer: `
+      <p><span class="inline-block mr-2">✅</span><strong>Advantages:</strong></p>
+      <ul class="list-disc ml-6">
+        <li>Familiarity: Stay in your own home, near cherished routines and surroundings</li>
+        <li>Peace of Mind: Families know care is always in place — even if just occasional reassurance</li>
+        <li>Independence: Support fits your lifestyle and schedule</li>
+        <li>Flexibility: Choose hourly visits or full-time live-in care, short- or long-term</li>
+        <li>Social Connection: Stay close to friends, neighbours, and your local community</li>
+        <li>Quality-Assured Carers: With Lighthouse Homecare, you’re supported by trained, vetted professionals</li>
+        <li>Cost-Effective: Home care can be more affordable than residential alternatives, depending on need</li>
+      </ul>
+      <p class="mt-4"><span class="inline-block mr-2">⚠️</span><strong>Things to Consider:</strong></p>
+      <ul class="list-disc ml-6">
+        <li>Not Always 24/7<br/>
+          <span class="text-sm">Unless using live-in care, support is limited to scheduled visits. For round-the-clock care, live-in care or telecare devices may help.</span>
+        </li>
+        <li>Staff Variation<br/>
+          <span class="text-sm">Although we prioritise consistency, occasional changes may occur due to illness, leave, or scheduling needs. We minimise disruptions and communicate clearly.</span>
+        </li>
+        <li>Timing Delays<br/>
+          <span class="text-sm">Rare delays may happen due to emergencies or earlier appointments. We always keep you informed and maintain strong lines of communication.</span>
+        </li>
+      </ul>
+    `,
   },
 ];
 
@@ -142,7 +176,10 @@ export default function FAQ() {
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 leading-relaxed">
-                      {item.answer}
+                      <div
+                        className="faq-answer"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>

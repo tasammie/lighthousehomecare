@@ -22,8 +22,8 @@ export default function CareBanner() {
     //   </div>
     // </div>
     <CareBannerComponent
-      text="Looking for the Right Care?"
-      description="Let's talk about how we can support you."
+      text="Searching for the right care? Let’s have a chat about how we can support you."
+      // description="Let's talk about how we can support you."
       buttonText="Get Started Today"
       buttonLink="/contact"
       imageSrc="/images/image-banner.webp"

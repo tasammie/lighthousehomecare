@@ -15,35 +15,35 @@ const features: Feature[] = [
     icon: "📋",
     iconColor: "text-gray-600",
     title: "Tailored for You",
-    description: `We know every individual has their own story, routine, and preferences. That's why we don't believe in "one-size-fits-all" care. From the first consultation, we listen closely to understand your unique needs and work with you to build a personalised care plan — whether it's help with daily tasks, companionship, or more complex care.`,
+    description: `We understand that every person has their own story, habits, and preferences. That’s why we don’t offer “one-size-fits-all” solutions. From the very first meeting, we listen carefully to understand your individual needs and work alongside you to create a bespoke care plan — whether it’s support with daily routines, companionship, or something more complex.`,
   },
   {
     id: 2,
     icon: "💙",
     iconColor: "text-blue-600",
     title: "Care with Heart",
-    description: `At the core of our service is compassion. Our caregivers are handpicked not just for their skills, but for their empathy and humanity. We build genuine relationships with those we care for — treating each person with the respect, kindness, and attention they deserve. This emotional connection is what transforms our care into something truly meaningful.`,
+    description: `At the heart of what we do is compassion. Our carers are chosen not only for their expertise but for their kindness and humanity. We form genuine bonds with those we support — offering care filled with the dignity, attention, and warmth every person deserves. It’s this emotional connection that makes our care truly meaningful.`,
   },
   {
     id: 3,
-    icon: "🏆",
+    icon: "🧑‍⚕️",
     iconColor: "text-yellow-600",
     title: "Skilled & Reliable Team",
-    description: `All of our caregivers are fully trained, experienced, and supported through continuous learning. We conduct thorough background checks and ensure each team member meets our high standards of professionalism and reliability. You can trust us to show up — and to show up with excellence.`,
+    description: `All of our carers are highly trained, experienced, and continually supported through ongoing professional development. We carry out detailed background checks and hold every team member to the highest standards of professionalism and dependability. You can count on us to arrive on time — and to deliver with excellence.`,
   },
   {
     id: 4,
-    icon: "🏠",
+    icon: "🏡",
     iconColor: "text-green-600",
     title: "Comfort of Home",
-    description: `There's no place like home — especially when facing the challenges of aging or recovery. We help people remain in familiar surroundings, maintain their routines, and retain their sense of independence. It's not just about care; it's about preserving dignity and quality of life.`,
+    description: `There’s simply no place like home — especially when recovering or coping with ageing. We help individuals stay in familiar surroundings, stick to their daily routines, and preserve a strong sense of independence. Our aim isn’t just care; it’s to uphold dignity and enhance quality of life.`,
   },
   {
     id: 5,
-    icon: "⭐",
+    icon: "🌟",
     iconColor: "text-yellow-600",
     title: "Excellence You Can Trust",
-    description: `Our reputation is built on consistency, integrity, and positive outcomes. We hold ourselves to the highest standards of care, monitoring quality every step of the way. Families across the community choose Lighthouse Homecare because they know we'll go above and beyond — always.`,
+    description: `Our reputation stands on integrity, consistency, and positive results. We adhere to the highest quality standards and carefully monitor every stage of care. Families across the community choose Lighthouse Homecare because they know we’ll go further — always.`,
   },
 ];
 
@@ -75,12 +75,12 @@ const LighthouseHome = () => {
         <h2 className="text-2xl font-bold text-gray-900 mb-4">
           Still have a question?
         </h2>
-        <p className="text-gray-600 text-sm mb-6">
-          Support details to capture customers that might be on the fence.
+        <p className="text-[Black] text-[18px]font-[400] mb-6">
+          Support details to capture customers that might be on the fence.{" "}
         </p>
         <CustomButton
           text="Contact Us"
-          className="bg-blue-700 text-white px-6 py-3 rounded font-medium hover:bg-blue-800 transition-colors"
+          className="bg-[#00269B] w-[199px] text-white px-6 py-3 rounded font-medium hover:bg-blue-800 transition-colors"
           link="contact"
         />
       </div>

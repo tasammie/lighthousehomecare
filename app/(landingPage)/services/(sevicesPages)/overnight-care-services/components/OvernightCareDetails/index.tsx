@@ -17,13 +17,16 @@ export default function OvernightCareDetails() {
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
                   Overnight Care is a vital service designed to offer safety,
-                  reassurance, and tailored support through the night. Whether
-                  it’s helping someone get ready for bed, managing night-time
-                  medication, or simply being present to respond to needs that
-                  arise after dark — our compassionate team is here so you’re
-                  never alone. From sleep disturbances to personal hygiene and
-                  safety monitoring, we ensure you or your loved one is well
-                  cared for — all through the night.
+                  comfort, and tailored reassurance through the night. Whether
+                  it’s helping someone settle for bed, assisting with night-time
+                  medication, or simply being there when needs arise after dark
+                  — our caring team is by your side so you&apos;re never alone.
+                </p>
+                <p>
+                  From managing sleep disturbances to supporting personal
+                  hygiene and monitoring safety, we ensure you or your loved one
+                  receives attentive, compassionate care — all through the
+                  night.
                 </p>
               </div>
             </div>
@@ -37,15 +40,20 @@ export default function OvernightCareDetails() {
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
-                  Our Overnight Care is ideal for individuals who experience
-                  mobility challenges, dementia, or health conditions that
-                  require constant attention during the night. With Lighthouse,
-                  you’re not just getting a night-time sitter — you’re gaining a
-                  trained, dedicated professional who understands how to create
-                  calm, dignity, and peace of mind. We adapt our support to your
-                  unique needs, whether that’s turning and repositioning,
-                  reassurance during sleep disruptions, or a safe morning start.
-                  Your safety and comfort are always our top priority.
+                  Our Overnight Care is ideal for individuals facing mobility
+                  challenges, dementia, or health conditions that require close
+                  attention during the night.
+                </p>
+                <p>
+                  With Lighthouse Homecare, you’re not just hiring a night-time
+                  sitter — you’re welcoming a trained professional who knows how
+                  to create calm, dignity, and peace of mind.
+                </p>
+                <p>
+                  We adapt our support to meet your unique needs — whether that
+                  involves repositioning, reassurance during unsettled sleep, or
+                  a gentle start to the morning. Your comfort and safety are
+                  always our top priority.
                 </p>
               </div>
             </div>

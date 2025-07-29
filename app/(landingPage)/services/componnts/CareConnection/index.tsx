@@ -12,73 +12,73 @@ const careFeatures: CareFeature[] = [
     id: 1,
     title: "Relationship-Based Care Tailored to Your Needs",
     description:
-      "At Lighthouse Homecare Ltd, our approach is founded on building trust and forming meaningful relationships with those we care for. We don't just offer support — we connect on a personal level ensuring each person feels seen, heard, and genuinely valued. Every care plan is crafted to reflect the individual, not the system.",
+      "At Lighthouse Homecare, we focus on trust and connection — forming meaningful relationships with every individual we care for. We go beyond practical support by engaging on a personal level, ensuring each person feels acknowledged, understood, and truly valued. Every care plan is shaped around the individual — never the system.",
   },
   {
     id: 2,
     title: "Our Philosophy",
     description:
-      "We believe that meaningful care starts with a real relationship — one built on trust. That's why we take the time to understand every person — their preferences, routines, and emotional needs. This approach allows us to deliver care that feels natural, comfortable, and enriching from day one.",
+      "We believe meaningful care begins with genuine connection. That’s why we take time to understand every person — their preferences, habits, and emotional needs. This approach allows us to provide care that feels natural, comfortable, and enriching right from the start.",
   },
   {
     id: 3,
     title: "Bespoke Support Plans",
     description:
-      "No two people are the same — and neither are our care plans. We design every support package to fit the unique lifestyle, health needs, and aspirations of the individual. Our aim is to deliver more focused personal care. Our goal is to empower independence while preserving dignity.",
+      "Everyone is unique — and so are our care plans. We create tailored packages to suit individual lifestyles, health needs, and goals. Whether offering assistance at home or delivering focused personal care, our aim is to promote independence and preserve dignity.",
   },
   {
     id: 4,
     title: "Genuine Connection",
     description:
-      "We match clients with compassionate caregivers who not only assist with daily tasks but build friendships through empathy, conversation, and consistency. Our carers aren't just there to help — they're there to uplift!",
+      "We match each client with warm, compassionate carers who not only assist with daily activities but also build lasting bonds through empathy and conversation. Our carers don’t just support — they uplift.",
   },
   {
     id: 5,
     title: "Ongoing Communication",
     description:
-      "We stay in constant touch with you and your loved ones, adapting to circumstances and remaining open, responsive and transparent every step of the way.",
+      "We stay connected with you and your loved ones, adjusting support as needs evolve. Your feedback shapes our care decisions, and we remain open, responsive, and transparent every step of the way.",
   },
   {
     id: 6,
     title: "Emotional Presence",
     description:
-      "True care goes beyond physical needs. Our team is trained to offer emotional reassurance — providing reassurance, listening without judgment, and offering a comforting presence through all seasons of life.",
+      "Real care extends beyond physical needs. Our team offers emotional companionship — providing comfort, understanding, and judgement-free support through every season of life.",
   },
   {
     id: 7,
     title: "What Makes Us Different",
     description:
-      "Our care stands out because of the values and dedication we bring to each individual and family we serve.",
+      "Our care stands out because of the values and devotion we bring to each person and family we serve.",
   },
   {
     id: 8,
     title: "Relationship-First Culture",
     description:
-      "We focus on long-term connection, not just tasks. It's about creating safe, trusting relationships that enrich the lives of our clients and their families.",
+      "We focus on long-term relationships, not just care tasks. We’re committed to fostering trust and emotional security that enriches the lives of both clients and families.",
   },
   {
     id: 9,
     title: "Empowered, Caring Professionals",
     description:
-      "Our carers are passionate individuals who bring heart, skill, and integrity to their work. Every visit is a reflection of their commitment to wellbeing and dignity.",
+      "Our carers are dedicated professionals who bring warmth, skill, and integrity to every visit. Each interaction reflects their passion for promoting dignity and wellbeing.",
   },
   {
     id: 10,
     title: "Tailored with Purpose",
     description:
-      "Everything we do is designed around the person — not a checklist. From ongoing care support style, your preferences guide the journey.",
+      "Everything we do is shaped around people — never checklists. From schedules to support styles, your preferences lead the way.",
   },
   {
     id: 11,
     title: "Up-to-Date, Always",
     description:
-      "We continually invest in training and skill-building so that our staff are always equipped with the best knowledge and techniques to deliver care of the highest standard.",
+      "We invest consistently in training and development, ensuring our staff have the latest knowledge and techniques to deliver top-quality care.",
   },
   {
     id: 12,
     title: "Safety & Excellence Assured",
     description:
-      "Every aspect of our service is held to the highest quality benchmarks. From regular audits to client feedback, we are proactive in maintaining care that is safe, respectful, and responsive.",
+      "We hold ourselves to the highest standards, using regular audits and client feedback to ensure our care remains safe, respectful, and highly responsive.",
   },
 ];
 
@@ -125,12 +125,12 @@ export default function CareConnection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-[#001967] mb-6">
-            Care That Begins with Connection and Grows with You
+            Care That Begins with Connection and Grows with You{" "}
           </h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            We believe the best care starts with trust, grows through
-            understanding, and thrives on genuine relationships that honour your
-            unique needs and journey.
+            We believe exceptional care is built on trust, deepens through
+            understanding, and flourishes through genuine relationships that
+            honour your unique needs and journey.
           </p>
         </motion.div>
 

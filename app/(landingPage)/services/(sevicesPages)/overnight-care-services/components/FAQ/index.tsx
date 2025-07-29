@@ -17,69 +17,69 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: "item-1",
-    question: "How Quickly Can Overnight Care Begin?",
-    answer:
-      "We know that care needs can arise unexpectedly. That's why we're prepared to respond fast — often arranging overnight care within 24 hours. Whether it's an emergency or a sudden change in circumstances, we have trusted carers ready to step in and provide support when you need it most.",
+    question:
+      "What is Overnight Care Services and how can it help individuals with dementia or Alzheimer’s?",
+    answer: `
+      <p>At Lighthouse Homecare, our Overnight Care Services provide dedicated, compassionate support throughout the night — specially tailored for individuals living with dementia or Alzheimer’s.</p>
+      <p>Our trained carers remain present and attentive to manage restlessness, confusion, and night-time wandering — all common during dementia-related sleep disruption. Their presence helps reduce risk, restore calm, and reinforce a structured bedtime routine.</p>
+      <p>For families, this offers valuable peace of mind — knowing your loved one is safe, never alone, and fully supported in the comfort of home.</p>
+    `,
   },
   {
     id: "item-2",
-    question: "What Kind of Training Do Your Carers Receive?",
-    answer:
-      "All our carers join us with prior care experience and strong practical skills. Once part of the Lighthouse team, they undergo comprehensive in-house training to align with our high standards of care. This includes specialised on-the-job training tailored to meet the unique needs of every client, supported by regular supervision. We're committed to continuous professional development, ensuring our carers stay current with best practices through ongoing updates and guidance from our experienced Care Managers.",
+    question:
+      "What services are included in Overnight Care Services for seniors?",
+    answer: `
+      <p>Our overnight care is thoughtfully designed to support older adults through the night with empathy and attentiveness. Services include:</p>
+      <ul class="list-disc ml-6">
+        <li>Timed medication reminders</li>
+        <li>Toileting support and safe mobility assistance</li>
+        <li>Gentle night-time monitoring for wellbeing and safety</li>
+        <li>Emotional reassurance and companionship to ease anxiety or confusion</li>
+      </ul>
+      <p>Whether your loved one lives with Alzheimer’s, dementia, or simply needs support during the night, our carers deliver care that’s consistent, respectful, and tailored to their needs.</p>
+    `,
   },
   {
     id: "item-3",
-    question: "How Do You Monitor the Quality of Care?",
-    answer:
-      "We take quality seriously and have robust systems in place to ensure every client receives the highest standard of care. Our experienced Care Managers monitor all of our services, especially for overnight and live-in services. We maintain regular contact with both carers and clients, and conduct scheduled and unannounced home visits to observe care firsthand. We also encourage open, confidential conversations with clients to address any concerns quickly and respectfully — always maintaining the utmost discretion and respect.",
+    question: "Who can benefit from Overnight Care Services for seniors?",
+    answer: `
+      <p>These services are ideal for older adults who need supervision or reassurance during night-time hours — including those who experience:</p>
+      <ul class="list-disc ml-6">
+        <li>Difficulty sleeping or night-time disorientation</li>
+        <li>Memory loss or confusion caused by Alzheimer’s or dementia</li>
+        <li>Restlessness, wandering, or increased vulnerability at night</li>
+        <li>Anxiety or feelings of isolation after dark</li>
+      </ul>
+      <p>Our carers are specially trained to offer gentle, attentive care — creating a peaceful night-time environment for clients and comfort for families.</p>
+    `,
   },
   {
     id: "item-4",
-    question: "What Kind of Meals Will Carers Prepare?",
-    answer:
-      "We know that meals are a vital part of daily comfort and wellbeing. That's why all of our carers are trained to prepare fresh, nutritious, and varied meals — tailored to suit personal preferences and dietary requirements. Every carer receives specialist training in Diet and Nutrition, ensuring they understand how to support wellbeing through food. From traditional home-cooked favourites to more adventurous dishes, carers are happy to accommodate individual tastes and cultural preferences. In addition to main meals, carers also ensure regular refreshments and drinks are provided throughout the day to support proper hydration and overall health.",
+    question:
+      "How can I determine if Overnight Care Services are right for my loved one?",
+    answer: `
+      <p>If your loved one shows signs of confusion, increased night-time agitation, or safety concerns — especially linked to dementia — overnight support could make a significant difference.</p>
+      <p>We recommend speaking with your GP or healthcare professional for a needs assessment. Our team at Lighthouse Homecare is also here to guide you through options and help you make an informed choice based on your loved one’s unique situation.</p>
+    `,
   },
   {
     id: "item-5",
-    question: "What Is Your Approach to Dementia Care?",
-    answer:
-      "At Lighthouse Homecare, we understand that dementia affects not only the individual, but also their loved ones. Our carers are trained to provide specialist dementia support with a focus on safety, dignity, and emotional reassurance. We prioritise creating a calm, familiar environment that helps reduce confusion and anxiety. Every interaction is delivered with compassion, patience, and sensitivity to the unique challenges presented at every stage. Our team also works closely with families to provide guidance, build trust, and offer peace of mind — ensuring care is person-centred and emotionally supportive at all times.",
+    question:
+      "How can I arrange Overnight Care Services for my loved one with dementia?",
+    answer: `
+      <p>Getting started is simple. Contact our team by phone or through our website to tell us about your loved one’s situation.</p>
+      <p>We’ll listen carefully to understand their needs and design a personalised night care plan that ensures safety, comfort, and peace of mind. Our carers are experienced in dementia care and offer gentle, compassionate support where it matters most — at home.</p>
+    `,
   },
   {
     id: "item-6",
-    question: "Where Do Your Carers Come From?",
-    answer:
-      "Our carers come from a wide range of backgrounds, primarily across Europe, and are carefully selected through a rigorous recruitment and vetting process. We understand that clear communication is essential to delivering exceptional care, so every one of our carers speaks English and can demonstrate strong interpersonal skills. Beyond communication, we ensure all carers are trained to the highest standards and engage in ongoing professional development to maintain excellence in care delivery. When matching carers with clients, we also consider personal compatibility, including personality, interests, and cultural preferences — so that each client receives care that is not only skilled, but genuinely comfortable and familiar.",
-  },
-  {
-    id: "item-7",
-    question: "How Long Will the Carer Stay?",
-    answer:
-      "We're flexible. Many clients prefer a consistent carer to build trust and routine — and we fully support that. As long as it works for both the client and carer, we aim to keep the same person in place. If a break is needed, we'll arrange a suitable temporary replacement.",
-  },
-  {
-    id: "item-8",
-    question: "How Does Live-In Care Compare to a Care Home?",
-    answer:
-      "Live-in care allows you to stay in your own home, surrounded by familiar routines, personal belongings, and loved ones — including pets. You keep control over your daily life while receiving the support you need. Unlike care homes, there's no need to adjust to strict routines, or limited visiting hours. With live-in care, everything is tailored to your preferences — from mealtimes to how your home is run.",
-  },
-  {
-    id: "item-9",
-    question: "Why Does Managed Live-In Care Matter?",
-    answer:
-      "With managed live-in care, everything is handled for you — from recruiting and vetting carers to overseeing quality and replacing carers when needed. Unlike agencies that only introduce carers, we fully manage the service. As a CQC-registered provider, we ensure all care meets strict safety and quality standards. You'll also have a dedicated Care Manager to support you, monitor care, and resolve any issues that reflects your specific requirements every step of the way.",
-  },
-  {
-    id: "item-10",
-    question: "How Much Does Live-In Care Cost?",
-    answer:
-      "Costs vary based on the level of support you need. Since every care plan is tailored, we recommend getting in touch for a free, no-obligation quote that reflects your specific requirements.",
-  },
-  {
-    id: "item-11",
-    question: "Are There Any Upfront Fees?",
-    answer:
-      "No — we don't charge any registration or assessment fees. All care costs are agreed upfront, so you'll know exactly what to expect with no hidden charges.",
+    question: "Hear from One of Our Families",
+    answer: `
+      <p>“I was deeply concerned when a neighbour told me my mum had gone out at 11 p.m., thinking she needed to get ‘home’. Over the next few weeks, it happened again. A social worker explained it might be early dementia.</p>
+      <p>We didn’t feel a care home was right — Mum was still fairly independent. Then we found Overnight Care Services from Lighthouse Homecare. We arranged for a carer to be there each night.</p>
+      <p>The relief was immense. I could finally sleep, knowing someone was watching over her with care, kindness, and professionalism.”</p>
+    `,
   },
 ];
 
@@ -142,7 +142,7 @@ export default function FAQ() {
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 leading-relaxed">
-                      {item.answer}
+                      <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>

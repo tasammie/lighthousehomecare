@@ -11,12 +11,12 @@ const companionItems: CompanionItem[] = [
   {
     id: 1,
     description:
-      "At Lighthouse, our Friendly Companion care goes beyond medical support — it's all about emotional warmth, meaningful connection, and social wellbeing. We match each client with compassionate companions who offer kind conversation, light activities, and a comforting presence.",
+      "At Lighthouse Homecare, our Friendly Companion care goes beyond medical support — it’s all about emotional warmth, meaningful connection, and social wellbeing. We match each client with compassionate companions who offer kind conversation, light activities, and a comforting presence.",
   },
   {
     id: 2,
     description:
-      "Every visit is a chance to reconnect. Whether it's a chat over tea, looking through old photo albums, or simply sharing stories, our service helps clients build confidence, reduce loneliness, and feel part of the world again.",
+      "Every visit is a chance to reconnect. Whether it’s a chat over tea, looking through old photo albums, or simply sharing stories, our service helps clients build confidence, reduce loneliness, and feel part of the world again.",
   },
   {
     id: 3,
@@ -100,7 +100,7 @@ export default function WhoWeAre() {
                   Who Is Friendly Companion Care For?
                 </h3>
                 <p className="text-sm text-gray-700 mb-4 md:text-[18px]">
-                  Lighthouse&apos;s Friendly Companion service is ideal for:
+                  Lighthouse’s Friendly Companion service is ideal for:{" "}
                 </p>
                 <div className="space-y-2">
                   {idealFor.map((item, index) => (

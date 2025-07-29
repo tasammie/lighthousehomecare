@@ -13,31 +13,31 @@ const services: ServiceItem[] = [
     id: 1,
     title: "Skilled and Compassionate Carers",
     description:
-      "Our overnight team is made up of highly trained professionals who genuinely care. With experience supporting older adults and those with complex needs, they bring both expertise and empathy to every shift.",
+      "Our overnight team is made up of experienced, highly trained professionals who care deeply. With expertise in supporting older adults and complex needs, they bring empathy and confidence to every visit.",
   },
   {
     id: 2,
     title: "Tailored Night Plans",
     description:
-      "We work closely with you to develop a personalised night care plan. Whether your loved one needs occasional reassurance or continuous hands-on support, we adjust to fit their routine and preferences.",
+      "We work closely with you to create a personalised night care plan. Whether occasional reassurance or full hands-on assistance is required, we adapt our support to match your loved one’s preferences and routine.",
   },
   {
     id: 3,
     title: "Health & Wellbeing Monitoring",
     description:
-      "From administering medication to monitoring vital signs or simply checking in for reassurance, our team is equipped to ensure your loved one's health is supported throughout the night.",
+      "From administering medication to checking vital signs or offering gentle reassurance, our carers ensure your loved one’s health and safety are supported throughout the night.",
   },
   {
     id: 4,
     title: "Emotional Comfort & Companionship",
     description:
-      "We know the night can feel isolating for many. Our carers are there not just to help physically, but also to provide a warm presence that eases worry and creates connection.",
+      "Nights can sometimes feel isolating. Our carers offer a warm, calming presence — not just physical support, but meaningful connection and reassurance.",
   },
   {
     id: 5,
     title: "Flexible Support Options",
     description:
-      "We offer both regular and occasional overnight care depending on your needs. Whether you require full night coverage or just a few nights a week, we'll work around your lifestyle and preferences.",
+      " We offer both occasional and ongoing overnight care. Whether you need cover every night or just a few evenings a week, we’ll tailor our support to suit your family’s needs and lifestyle",
   },
 ];
 
@@ -90,26 +90,26 @@ export default function WhyChooseOvernight() {
           >
             {/* Header */}
             <div className="mb-8">
-              <h2 className="text-[44px] font-[700] text-[#1a365d] mb-3 leading-tight">
+              <h2 className="text-[44px] font-[700] text-[#001967] mb-3 leading-tight">
                 Why Choose Lighthouse for Overnight Support?
               </h2>
               <p className="text-base text-[18px] font-[400] text-gray-700 mb-4">
-                Support with Everyday Routines, Right at Home
+                Support with Everyday Routines, Right at Home{" "}
               </p>
               <div className="space-y-4 text-sm text-gray-700 leading-relaxed">
                 <p>
                   At Lighthouse Homecare, we understand that true peace of mind
-                  for families means knowing your loved ones are cared for —
-                  even during the quietest hours of the night. Our Overnight
-                  Support services are designed to offer more than just
-                  supervision. We provide thoughtful, attentive care tailored to
-                  each individual&apos;s nighttime needs.
+                  means knowing your loved one is cared for — even during the
+                  quietest hours of the night. Our Overnight Support services
+                  are designed to offer more than just supervision. We provide
+                  thoughtful, attentive care tailored to each individual’s
+                  nighttime needs.
                 </p>
                 <p>
-                  Whether it&apos;s helping someone settle into bed, providing
-                  emotional reassurance, or responding to unexpected needs in
-                  the night, our dedicated team is here to make sure every
-                  moment is met with dignity, comfort, and professionalism.
+                  Whether it’s settling into bed, providing emotional
+                  reassurance, or responding to unexpected events, our
+                  compassionate team is here to make sure every moment is met
+                  with dignity, warmth, and professionalism.
                 </p>
               </div>
             </div>

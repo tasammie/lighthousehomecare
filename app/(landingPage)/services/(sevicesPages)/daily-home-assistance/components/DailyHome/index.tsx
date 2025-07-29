@@ -13,19 +13,19 @@ const helpItems: HelpItem[] = [
     id: 1,
     title: "Personalised Care & Hygiene",
     description:
-      "From bathing and grooming to dressing and toileting, we assist with sensitive tasks in a way that prioritises comfort and dignity.",
+      "From bathing and grooming to dressing and toileting, we offer sensitive support that respects your comfort and dignity.",
   },
   {
     id: 2,
     title: "Meal Preparation",
     description:
-      "We prepare healthy, tasty meals that match your preferences and dietary needs — supporting good nutrition and well-being.",
+      "Our carers prepare wholesome, tasty meals tailored to your dietary needs — supporting both nutrition and well-being.",
   },
   {
     id: 3,
     title: "Light Housekeeping",
     description:
-      "A tidy space helps create a calmer life. Our carers assist with dusting, vacuuming, dishes, laundry, and general upkeep to keep your home comfortable and clean.",
+      " A clean home helps create a calm mind. We help with dusting, vacuuming, dishes, laundry, and general upkeep to keep your space tidy and inviting.",
   },
 ];
 
@@ -54,23 +54,23 @@ export default function DailyHome() {
                 Daily Home Assistance
               </h1>
               <h2 className="text-xl font-semibold text-[#00269B] mb-6">
-                Support with Everyday Routines, Right at Home
+                Support with Everyday Routines, Right at Home{" "}
               </h2>
             </div>
 
             {/* Description */}
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                When daily tasks start feeling overwhelming, our Daily Home
-                Assistance service steps in to offer the right help — with
-                warmth, respect, and dignity. This support allows individuals to
-                remain independent in the comfort of their own home while
-                receiving flexible care tailored to their routine.
+                When everyday tasks begin to feel overwhelming, our Daily Home
+                Assistance service offers the support you need — always with
+                warmth, dignity, and respect. This flexible care enables you to
+                stay independent in the comfort of your own home, with
+                personalised help shaped around your daily routine.
               </p>
               <p>
-                Whether someone needs help once a day or throughout the week,
-                our compassionate carers are here to lighten the load with a
-                friendly, reliable presence.
+                Whether support is needed once a day or several times a week,
+                our kind and reliable carers are here to ease the load with a
+                friendly presence you can count on.
               </p>
             </div>
           </motion.div>

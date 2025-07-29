@@ -91,7 +91,7 @@ const TestimonialSection = () => {
         {/* Header */}
         <div className="text-start mb-12">
           <p className="text-[#00269B] text-sm mb-2">
-            Read convincing testimonies from some of our care patients
+            Read convincing testimonies from some of our care patients{" "}
           </p>
           <h2 className="text-[44px] font-[700] text-[#001967]">
             What our Clients say

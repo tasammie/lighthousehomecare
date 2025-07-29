@@ -18,26 +18,55 @@ const faqItems: FAQItem[] = [
   {
     id: "item-1",
     question: "What Kind of Support Will You Receive?",
-    answer:
-      "At Lighthouse Homecare, we take the pressure off families by liaising with your local authority to arrange a needs assessment on your behalf. This process ensures your loved one receives a fully personalised care package tailored to their current situation—whether it includes physiotherapy, professional care assistance, or other support services. Every care plan is built around the unique needs, preferences, and abilities of your loved one—while also considering your own input and emotional well-being. Our goal is to help them regain mobility, independence, and confidence as they return to daily life. Support staff typically visit each day to assist with essential routines like washing, dressing, and meal preparation—gently guiding your loved one toward rebuilding strength and restoring their sense of normalcy. Alongside carers, health professionals and social workers may provide targeted exercises and recommend home adaptations or mobility aids to enhance safety and comfort at home. With Lighthouse, you're not just getting care—you're getting a caring team dedicated to a smooth and supported recovery journey.",
+    answer: `
+      <p>At Lighthouse Homecare, we ease the burden on families by coordinating with your local authority to arrange a care needs assessment. This ensures your loved one receives a personalised support plan — tailored to their condition, preferences, and goals. Services may include physiotherapy, personal care, mobility support, or other professional assistance.</p>
+      <p>Each plan is designed with your loved one’s well-being, independence, and daily comfort in mind — and with your family’s input every step of the way.</p>
+      <p>Our carers assist with essential tasks such as:</p>
+      <ul class="list-disc ml-6">
+        <li>Washing, dressing, and personal care</li>
+        <li>Meal preparation</li>
+        <li>Encouraging safe movement and routine restoration</li>
+      </ul>
+      <p>We work closely with health professionals to provide additional therapies and may recommend adaptations (like mobility aids) to make the home safer and more accessible.</p>
+      <p>With Lighthouse, your loved one gets more than care — they get a supportive team committed to recovery and dignity.</p>
+    `,
   },
   {
     id: "item-2",
     question: "Avoiding Unnecessary Hospital Trips",
-    answer:
-      "Sometimes, a hospital stay isn't the best—or even the safest—option. Healthcare professionals may determine that your loved one's needs can be managed effectively at home with the right short-term care. This approach, often referred to as crisis-response, helps prevent unnecessary admissions and supports recovery in a more comforting environment. At Lighthouse Homecare, we work alongside local healthcare teams to provide rapid, tailored care at home or, if needed, in a temporary care setting. The goal is simple: stabilise your loved one's condition, reduce stress, and promote recovery where they feel most at ease. Studies consistently show that people heal more quickly and regain independence faster when supported in the comfort of their own home. Our compassionate team ensures your loved one receives the right care, at the right time, in the right place—without the disruption of a hospital ward.",
+    answer: `
+      <p>Not every situation requires a hospital visit. Often, short-term home care is the safest and most comfortable option, particularly when recovery can be managed effectively at home.</p>
+      <p>This prevents avoidable readmissions and reduces stress, allowing healing in the comfort of familiar surroundings.</p>
+      <p>We partner with local NHS teams and social workers to:</p>
+      <ul class="list-disc ml-6">
+        <li>Deliver prompt in-home care</li>
+        <li>Stabilise your loved one’s condition</li>
+        <li>Help them feel supported where they feel safest — at home</li>
+      </ul>
+      <p>People tend to recover faster at home, and our team ensures they receive the right care, in the right place, at the right time.</p>
+    `,
   },
   {
     id: "item-3",
     question: "What Happens After Six Weeks?",
-    answer:
-      "At the end of the initial six-week support period, your loved one's care needs will be reassessed to determine what happens next. If continued support is needed, a new care plan will be arranged—this may involve transitioning to long-term services. Depending on personal circumstances, there may be a cost for ongoing care. However, Lighthouse Homecare can support you in requesting a full care needs assessment through your local authority. This will help determine eligibility for continued funding or council-supported care. If your loved one qualifies for long-term support, we can continue to provide consistent, compassionate care under a revised plan. Our goal is to ensure continuity, comfort, and peace of mind for you and your family—every step of the way.",
+    answer: `
+      <p>At the end of the initial six-week recovery period:</p>
+      <ul class="list-disc ml-6">
+        <li>A reassessment will determine if further care is needed.</li>
+        <li>If so, a new care plan will be arranged — possibly including long-term home care services.</li>
+        <li>Lighthouse can support you in arranging a full reassessment through your local authority, which helps determine if your loved one qualifies for ongoing funding or council-supported services.</li>
+      </ul>
+      <p>Should long-term care be necessary, we’ll ensure a smooth transition with continuity and compassion at its core — keeping your loved one’s comfort and peace of mind our top priority.</p>
+    `,
   },
   {
     id: "item-4",
     question: "Support for People with Complex Needs",
-    answer:
-      "If your loved one has more advanced or long-term care requirements after leaving the hospital, they may be eligible for NHS Continuing Healthcare—a fully funded package of care delivered in the comfort of their own home. At Lighthouse Homecare, we proudly work alongside both local authorities and the NHS, offering personalised care plans for individuals with complex needs. Our experienced team ensures seamless coordination between hospital discharge and at-home support, providing high-quality care that prioritises safety, dignity, and independence. Let us help you navigate the next steps with the right support in place.",
+    answer: `
+      <p>If your loved one has more advanced care needs, they may qualify for NHS Continuing Healthcare — a fully funded care package delivered at home.</p>
+      <p>Lighthouse Homecare works with both the NHS and local councils to create comprehensive, high-quality care plans for individuals with complex conditions. From mobility and medication to personalised routines and emotional reassurance, our team ensures a seamless and dignified recovery process.</p>
+      <p>Let us help you navigate the next steps — with expert guidance and support every step of the way.</p>
+    `,
   },
 ];
 
@@ -100,7 +129,10 @@ export default function FAQ() {
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 leading-relaxed">
-                      {item.answer}
+                      <div
+                        className="faq-answer"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>

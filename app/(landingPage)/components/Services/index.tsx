@@ -8,7 +8,7 @@ const serviceList = [
     id: 1,
     title: "24-Hour Live-In Support",
     description:
-      "Round-the-clock care in your own home for complete peace of mind.",
+      "Continuous care in your own home personalised support with tasks, medication, and companionship, day and night.",
     // gradient: "bg-gradient-to-br from-[#96ECE9] to-teal-300",
     gradient: "bg-white",
 
@@ -49,7 +49,8 @@ const serviceList = [
   {
     id: 2,
     title: "Daily Home Assistance",
-    description: "Our friendly caregivers help with everyday tasks at home.",
+    description:
+      "Support with daily tasks, hygiene, reminders, and companionship — personalised to your needs with care and respect.",
     gradient: "bg-white",
     iconBg: "bg-[#8092CD]",
     titleColor: "text-blue-900",
@@ -88,7 +89,8 @@ const serviceList = [
   {
     id: 3,
     title: "Overnight Care Services",
-    description: "Rest easy knowing help is always on call after dark.",
+    description:
+      "Gentle overnight care offering reassurance, help with night-time routines, mobility, safety, and a peaceful night’s sleep.",
     gradient: "bg-white",
     iconBg: "bg-[#8092CD]",
     titleColor: "text-blue-900",
@@ -127,7 +129,8 @@ const serviceList = [
   {
     id: 4,
     title: "Friendly Companionship",
-    description: "Trusted companions for social engagement and light support.",
+    description:
+      "Kind-hearted companionship that brings conversation, connection, and comfort into each day — helping ease loneliness with warmth and care.",
     gradient: "bg-white",
     iconBg: "bg-[#8092CD]",
     titleColor: "text-blue-900",
@@ -176,7 +179,7 @@ export default function Services() {
               Our Best Services
             </p>
             <h1 className="text-5xl font-bold text-blue-900 leading-tight">
-              Care That Makes Every Day Easier
+              Care That Makes Every Day Easier{" "}
             </h1>
           </div>
           <div className="lg:w-1/2 lg:pl-12">
