@@ -24,7 +24,7 @@ const LiveCareDetails = () => {
                   consistent and personalised care throughout the day and night.
                 </p>
                 <p>
-                  At Sylvian, our 24-hour live-in support is tailored to each
+                  At Lighthouse Homecare, our 24/7 live-in support is tailored to each
                   person’s health needs, preferences, and lifestyle. From
                   dementia care and stroke recovery to mobility challenges or
                   companionship, we’re here to support individuals to live
