@@ -25,10 +25,10 @@ const LiveCareDetails = () => {
                 </p>
                 <p>
                   At Lighthouse Homecare, our 24/7 live-in support is tailored
-                  to each person’s health needs, preferences, and lifestyle.
-                  From dementia care and stroke recovery to mobility challenges
-                  or companionship, we’re here to support individuals to live
-                  safely and independently at home.
+                  to each person&apos;s health needs, preferences, and
+                  lifestyle. From dementia care and stroke recovery to mobility
+                  challenges or companionship, we’re here to support individuals
+                  to live safely and independently at home.
                 </p>
               </div>
             </div>
