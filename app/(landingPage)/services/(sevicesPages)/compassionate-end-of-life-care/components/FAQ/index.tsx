@@ -18,44 +18,60 @@ const faqItems: FAQItem[] = [
   {
     id: "item-1",
     question: "What Is End-of-Life Care?",
-    answer:
-      "End-of-life care is support provided to individuals nearing the final stages of life. It focuses on comfort, dignity, and quality of life rather than cure. This includes: Managing symptoms like pain or breathlessness, Emotional and psychological support, Helping with advance care plans and preferences, Supporting loved ones, Ensuring dignity and comfort in the final days. Care may also involve practical guidance around financial or legal matters, ensuring individuals feel supported every step of the way.",
+    answer: `
+      <p>End-of-life care is support provided to individuals nearing the final stages of life. It focuses on comfort, dignity, and quality of life rather than cure. This includes:</p>
+      <ul class="list-disc ml-6">
+        <li>Managing symptoms like pain or breathlessness</li>
+        <li>Emotional and psychological support</li>
+        <li>Helping with advance care plans and preferences</li>
+        <li>Supporting loved ones</li>
+        <li>Ensuring dignity and comfort in the final days</li>
+      </ul>
+      <p>Care may also involve practical guidance around financial or legal matters, ensuring individuals feel supported every step of the way.</p>
+    `,
   },
   {
     id: "item-2",
     question: "Can End-of-Life Care Be Provided at Home?",
-    answer:
-      "Yes. End-of-life care can be delivered at home, in a care home, hospice, or hospital — depending on your needs and wishes. While many people prefer to pass away at home, this isn't always possible due to medical complexities or limited support. Lighthouse Care works to honour your preferences whenever it's safe and suitable to do so.",
+    answer: `
+      <p>Yes. End-of-life care can be delivered at home, in a care home, hospice, or hospital — depending on your needs and wishes.</p>
+      <p>While many people prefer to pass away at home, this isn't always possible due to medical complexities or limited support. Lighthouse Homecare works to honour your preferences whenever it’s safe and suitable to do so.</p>
+    `,
   },
   {
     id: "item-3",
-    question: "What's the difference between palliative and end-of-life care?",
-    answer:
-      "Palliative care supports individuals with serious illnesses at any stage, helping to ease pain and improve comfort. End-of-life care, on the other hand, focuses specifically on the final phase of life—typically the last year—providing compassionate support tailored to physical, emotional, and spiritual needs.",
+    question: "What’s the difference between palliative and end-of-life care?",
+    answer: `
+      <p>Palliative care supports individuals with serious illnesses at any stage, helping to ease pain and improve comfort. End-of-life care, on the other hand, focuses specifically on the final phase of life—typically the last year—providing compassionate support tailored to physical, emotional, and spiritual needs.</p>
+    `,
   },
   {
     id: "item-4",
     question: "Can end-of-life care be provided at home?",
-    answer:
-      "Absolutely. Many individuals find the most peace and comfort when receiving care in the familiar surroundings of their own home. At Lighthouse Homecare, we provide compassionate, home-based end-of-life care as a meaningful alternative to hospitals or hospices—allowing you or your loved one to maintain dignity, choice, and a sense of control during life's final chapter.",
+    answer: `
+      <p>Absolutely. Many individuals find the most peace and comfort when receiving care in the familiar surroundings of their own home. At Lighthouse Homecare, we provide compassionate, home-based end-of-life care as a meaningful alternative to hospitals or hospices—allowing you or your loved one to maintain dignity, choice, and a sense of control during life’s final chapter.</p>
+    `,
   },
   {
     id: "item-5",
     question: "Who delivers the care?",
-    answer:
-      "At Lighthouse Homecare, your care is provided by a dedicated team tailored to your needs. This may include skilled carers, palliative care nurses, healthcare assistants, and support staff—working together to ensure compassionate, dignified care at every step of your journey.",
+    answer: `
+      <p>At Lighthouse Homecare, your care is provided by a dedicated team tailored to your needs. This may include skilled carers, palliative care nurses, healthcare assistants, and support staff—working together to ensure compassionate, dignified care at every step of your journey.</p>
+    `,
   },
   {
     id: "item-6",
     question: "What illnesses qualify for palliative care?",
-    answer:
-      "Palliative care at Lighthouse Homecare supports individuals living with serious or long-term conditions such as cancer, advanced heart or lung disease, dementia, and neurological disorders. Our goal is to ease symptoms and enhance comfort—no matter the diagnosis.",
+    answer: `
+      <p>Palliative care at Lighthouse Homecare supports individuals living with serious or long-term conditions such as cancer, advanced heart or lung disease, dementia, and neurological disorders. Our goal is to ease symptoms and enhance comfort—no matter the diagnosis.</p>
+    `,
   },
   {
     id: "item-7",
     question: "Is palliative care covered by the NHS?",
-    answer:
-      "Yes, NHS services often provide core support for individuals needing palliative care. At Lighthouse Care, we build on that foundation with personalised, flexible care packages designed to meet each person's unique medical and emotional needs in the comfort of their own home.",
+    answer: `
+      <p>Yes, NHS services often provide core support for individuals needing palliative care. At Lighthouse Homecare, we build on that foundation with personalised, flexible care packages designed to meet each person's unique medical and emotional needs in the comfort of their own home.</p>
+    `,
   },
 ];
 
@@ -118,7 +134,10 @@ export default function FAQ() {
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 leading-relaxed">
-                      {item.answer}
+                      <div
+                        className="faq-answer"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>

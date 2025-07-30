@@ -50,12 +50,12 @@ export default function CareAtHome() {
 
         <div className="mt-8">
           <h3 className="text-[44px] font-[700] text-[#001967] mb-4 md:w-[50%]">
-            Supporting Your Independence with a Personal Carer
+            Supporting Your Independence with a Personal Carer{" "}
           </h3>
 
           <p className="text-gray-700">
-            For many, home is more than just a place — it&apos;s a space filled
-            with familiarity, memories, and a sense of control. That&apos;s why
+            For many, home is more than just a place — it’s a space filled with
+            familiarity, memories, and a sense of control. That’s why
             maintaining independence at home is a priority for us.
           </p>
 

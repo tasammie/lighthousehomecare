@@ -3,16 +3,12 @@ import { ImgComp } from "@/components/ImgComp";
 import { motion } from "framer-motion";
 
 const serviceItems = [
-  { id: 1, text: "Morning routines: getting out of bed and ready for the day" },
+  { id: 1, text: "Consistent, one-to-one support" },
   { id: 2, text: "Personal care: washing, dressing, and appearance" },
-  { id: 3, text: "Toileting and continence support" },
-  { id: 4, text: "Preparing meals and drinks, and help with eating" },
-  { id: 5, text: "Medication reminders and prescription pickups" },
-  { id: 6, text: "Light health tasks, coordinated with medical professionals" },
-  { id: 7, text: "Shopping, paying bills, or collecting pensions" },
-  { id: 8, text: "Outings and social connections" },
-  { id: 9, text: "Companionship and emotional support" },
-  { id: 10, text: "Evening routines and getting ready for bed" },
+  { id: 3, text: "Medication reminders and assistive aids" },
+  { id: 4, text: "Mobility support to reduce fall risks" },
+  { id: 5, text: "Emotional companionship and respite care" },
+  { id: 6, text: "Help managing sleep, mood, and incontinence" },
 ];
 const SpecialistDementiaSupportDetails = () => {
   return (
@@ -68,6 +64,7 @@ const SpecialistDementiaSupportDetails = () => {
                   cause confusion and anxiety. Receiving care at home helps
                   preserve independence and supports cognitive wellbeing.
                 </p>
+                <p> In-home dementia care offers:</p>
                 {/* Service List */}
                 <ul className="space-y-4">
                   {serviceItems.map((item, index) => (
@@ -86,6 +83,11 @@ const SpecialistDementiaSupportDetails = () => {
                     </motion.li>
                   ))}
                 </ul>
+                <p>
+                  We also collaborate with trusted organisations like the
+                  Alzheimer’s Society and Skills for Care to ensure our support
+                  remains compassionate and informed.
+                </p>
               </div>
             </div>
           </div>

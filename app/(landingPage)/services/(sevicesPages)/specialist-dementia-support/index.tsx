@@ -1,4 +1,5 @@
 import CareBannerComponent from "@/app/(landingPage)/shared/components/CareBannerComponent";
+import FAQ from "./components/FAQ";
 import Hero from "./components/Hero";
 import SpecialistDementiaSupportDetails from "./components/SpecialistDementiaSupportDetails";
 import TypesofDementia from "./components/TypesofDementia";
@@ -17,6 +18,7 @@ const SpecialistDementiaSupport = () => {
         imageSrc="/images/image-banner.webp"
         imageAlt="Carer supporting an elderly man with dementia at home"
       />
+      <FAQ />
     </div>
   );
 };

@@ -42,26 +42,25 @@ const Hero = () => {
             {/* Header */}
             <div>
               <h1 className="text-4xl md:text-[42px] font-bold text-[#000000] mb-4 ">
-                Personalised Care & Hygiene{" "}
+                Personal Centered Care{" "}
               </h1>
               <h2 className="text-xl font-semibold text-[#00269B] mb-6">
-                Gentle, Respectful Support for Life’s Final Chapter{" "}
+                Care as unique as the person.{" "}
               </h2>
             </div>
 
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                At Lighthouse Homecare, we believe that independence and dignity
-                are central to well-being. Supporting these values can
-                strengthen both physical and mental health, build confidence,
-                and improve overall quality of life.{" "}
+                At Lighthouse Homecare, we believe that truly great care begins
+                with truly understanding the individual. Our Person-Centred Care
+                approach places each client at the heart of their care plan —
+                honouring their choices, routines, preferences, and life story.
               </p>
               <p>
-                With great respect for each person’s comfort and preferences,
-                our compassionate care professionals are dedicated to helping
-                you or your loved one feel safe, clean, and cared for — right at
-                home.
+                We take the time to understand not just what support is needed,
+                but how it can be delivered in a way that feels familiar,
+                respectful, and empowering.
               </p>
             </div>
           </motion.div>

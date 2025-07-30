@@ -52,19 +52,19 @@ const Hero = () => {
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                At Lighthouse Care, we believe everyone deserves dignity,
+                At Lighthouse Homecare, we believe everyone deserves dignity,
                 comfort, and compassion at the end of life. Our end-of-life care
                 services are designed to provide expert support at home—where
                 many feel most at peace. We work closely with individuals and
                 families to ensure that each moment is spent with dignity,
-                respect, and as little discomfort as possible.
+                respect, and as little discomfort as possible
               </p>
               <p>
                 Whether your loved one is facing a terminal illness, a complex
                 chronic condition, or is in need of palliative support, our
                 experienced team offers emotional reassurance, clinical care,
                 and companionship—allowing families to focus on what matters
-                most: time together.
+                most: time togethe
               </p>
             </div>
           </motion.div>

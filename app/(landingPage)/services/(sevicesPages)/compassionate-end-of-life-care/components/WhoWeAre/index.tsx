@@ -6,6 +6,7 @@ interface ServiceSection {
   id: number;
   title: string;
   content: string[];
+  featuresButtomText?: string;
   features?: string[];
   image: string;
   imageAlt: string;
@@ -14,10 +15,11 @@ interface ServiceSection {
 const serviceSections: ServiceSection[] = [
   {
     id: 1,
-    title: "Comfort at Home at Life's Final Chapter",
+    title: "Comfort at Home in Life’s Final Chapter",
     content: [
-      "At Lighthouse Homecare, we understand that facing the end of life can feel overwhelming for both individuals and their families. That's why we're here to provide compassionate, dignified care that allows your loved one to remain in the comfort and familiarity of their own home during this deeply personal time.",
-      "Our end-of-life care is about more than medical support—it's about preserving dignity, maintaining comfort, and ensuring that every moment is filled with love, respect, and peace. We work closely with families, GPs, and specialist teams to create a care plan that reflects your loved one's wishes while providing you with the support you need during this difficult journey.",
+      "Many individuals express a deep desire to spend their final moments in the familiarity of their own home, surrounded by cherished faces and treasured memories. At Lighthouse Homecare, we specialise in providing compassionate end-of-life care in the comfort of home. Our approach prioritises dignity, emotional wellbeing, and a gentle transition through this profound stage of life.",
+      "Our dedicated care professionals work collaboratively with GPs, district nurses, palliative specialists, and other community healthcare providers to deliver tailored support in a home setting. Whether offering help with daily tasks, managing symptoms, or simply being a comforting presence, we’re here to make each day meaningful.",
+      "By reducing the need for hospital admissions, we help maintain a sense of peace and normality while ensuring high standards of care. At Lighthouse Homecare, we strive to be a source of calm and comfort—for both our clients and their families.",
     ],
     image: "/images/end-of-life-1.webp",
     imageAlt: "Comfortable home environment for end-of-life care",
@@ -26,16 +28,12 @@ const serviceSections: ServiceSection[] = [
     id: 2,
     title: "Who We Support with End-of-Life Care",
     content: [
-      "Our compassionate end-of-life care is designed for individuals facing:",
-      "At Lighthouse Homecare, we tailor our approach to meet each person's unique needs, ensuring they receive the right level of support while maintaining their independence and dignity for as long as possible.",
-    ],
-    features: [
-      "Terminal illness diagnosis",
-      "Progressive health conditions",
-      "Advanced age with declining health",
-      "Recovery from serious medical treatment that requires ongoing support",
-      "Palliative care needs",
-      "Anyone wishing to spend their final days surrounded by family in familiar surroundings",
+      "• Serious, life-limiting illnesses such as cancer, advanced heart or lung disease, or degenerative neurological conditions",
+      "• A terminal diagnosis where curative treatments are no longer appropriate",
+      "• Complex symptoms such as unmanaged pain, breathlessness, or severe fatigue",
+      "• Emotional or psychological distress during advanced illness",
+      "• Multiple chronic conditions that require ongoing, coordinated palliative care",
+      "If your loved one is entering their final year, months, or days of life, our team can help develop a sensitive and respectful care plan tailored to their unique needs. At Lighthouse Homecare, we honour every individual’s values and wishes—ensuring their final chapter is as comforting and dignified as possible.",
     ],
     image: "/images/end-of-life-2.webp",
     imageAlt: "Caregiver providing compassionate support",
@@ -44,17 +42,18 @@ const serviceSections: ServiceSection[] = [
     id: 3,
     title: "Your Palliative Care Team",
     content: [
-      "At Lighthouse Homecare, we work as part of a broader palliative care team that may include:",
-      "Our role is to complement the medical expertise of these professionals by providing consistent, hands-on care that focuses on comfort, companionship, and practical daily support. We maintain close communication with all team members to ensure coordinated, seamless care.",
+      "At Lighthouse Homecare, we work closely with a diverse team of end-of-life care professionals to ensure every individual receives comprehensive, coordinated support. By uniting expertise from various fields, we provide care that honours the physical, emotional, and spiritual needs of our clients.",
+      "Our team may include:",
     ],
     features: [
-      "Your family GP",
-      "District nurses",
-      "Macmillan nurses",
+      "Palliative care nurses",
       "Occupational therapists",
-      "Social workers",
-      "Chaplains or spiritual carers",
-      "Community and hospice teams",
+      "Social workers and coordinators",
+      "Bereavement support professionals",
+      "Healthcare assistants",
+      "Palliative care doctors and consultants",
+      "Community and hospice care partners",
+      "Hospital discharge planners and outpatient liaisons",
     ],
     image: "/images/end-of-life-3.webp",
     imageAlt: "Professional palliative care team",
@@ -63,26 +62,30 @@ const serviceSections: ServiceSection[] = [
     id: 4,
     title: "Comfort Through Symptom Relief",
     content: [
-      "End-of-life care isn't just about medical intervention—it's about ensuring your loved one feels as comfortable and pain-free as possible. Our carers work closely with healthcare professionals to:",
-      "We understand that comfort means different things to different people, which is why we take time to understand what brings peace and relief to your loved one, ensuring their care is as individual as they are.",
+      "At Lighthouse Homecare, we work closely with a diverse team of end-of-life care professionals to ensure every individual receives comprehensive, coordinated support. By uniting expertise from various fields, we provide care that honours the physical, emotional, and spiritual needs of our clients.",
+      "Our team may include:",
     ],
     features: [
-      "Monitor comfort and report changes to medical teams",
-      "Assist with medication management and pain relief routines",
-      "Provide gentle personal care with dignity and respect",
-      "Support with mobility and positioning to enhance comfort",
-      "Encourage gentle activities that bring joy and connection",
-      "Offer emotional support and a calming presence during difficult moments",
+      "Palliative care nurses",
+      "Occupational therapists",
+      "Social workers and coordinators",
+      "Bereavement support professionals",
+      "Healthcare assistants",
+      "Palliative care doctors and consultants",
+      "Community and hospice care partners",
+      "Hospital discharge planners and outpatient liaisons",
     ],
+    featuresButtomText:
+      "This integrated model ensures every aspect of care is considered and thoughtfully delivered. By working as one, our team brings compassion, clarity, and continuity to individuals and families during one of life’s most delicate chapters.",
     image: "/images/end-of-life-4.webp",
     imageAlt: "Comfortable care environment",
   },
 ];
 
 const initialContent = {
-  title: "Compassionate End-of-Life Care at Home",
+  title: "What Is Friendly Companion Care?",
   description:
-    "At Lighthouse Homecare, we understand that facing the end of life is one of the most challenging times for individuals and their families. Our compassionate end-of-life care services are designed to provide comfort, dignity, and peace during this deeply personal journey. We believe everyone deserves to spend their final days surrounded by love in the familiar comfort of their own home, supported by caring professionals who understand the importance of preserving dignity and maintaining quality of life.",
+    "At Lighthouse Homecare, our Friendly Companion care goes beyond medical support — it’s all about emotional warmth, meaningful connection, and social wellbeing. We match each client with compassionate companions who offer kind conversation, light activities, and a comforting presence. Every visit is a chance to reconnect. Whether it’s a chat over tea, looking through old photo albums, or simply sharing stories, our service helps clients build confidence, reduce loneliness, and feel part of the world again. This support is flexible and can be tailored to suit individual preferences — from occasional companionship to more regular visits or integrated live-in care.",
 };
 
 interface ServiceSectionProps {
@@ -135,6 +138,7 @@ const ServiceSectionComponent: React.FC<ServiceSectionProps> = ({
 
           {section.features && (
             <div className="space-y-2">
+              {/*> */}
               {section.features.map((feature, idx) => (
                 <motion.div
                   key={idx}
@@ -150,6 +154,11 @@ const ServiceSectionComponent: React.FC<ServiceSectionProps> = ({
                   </p>
                 </motion.div>
               ))}
+              {section.featuresButtomText && (
+                <h2 className="text-gray-700 text-sm leading-relaxed md:text-[18px]">
+                  {section.featuresButtomText}
+                </h2>
+              )}
             </div>
           )}
         </motion.div>
@@ -199,7 +208,7 @@ export default function WhoWeAre() {
           <h2 className="text-2xl md:text-3xl font-bold text-[#1a365d] mb-6 leading-tight">
             {initialContent.title}
           </h2>
-          <p className="text-gray-700 leading-relaxed text-base md:text-lg max-w-4xl">
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg ">
             {initialContent.description}
           </p>
         </motion.div>

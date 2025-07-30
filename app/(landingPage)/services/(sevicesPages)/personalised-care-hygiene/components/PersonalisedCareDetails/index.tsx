@@ -12,14 +12,14 @@ export const PersonalisedCareDetails = () => {
           <div className="space-y-6">
             <div className="border-t-2 border-white pt-6 grid grid-cols-1 lg:grid-cols-3 gap-16">
               <h2 className="text-3xl font-bold text-white mb-6 lg:col-span-1">
-                What Is Personalised Care & Hygiene?{" "}
+                What Is Personal Centered Care?{" "}
               </h2>
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
                   Personalised care and hygiene are essential aspects of
                   domiciliary care. This support helps individuals maintain
                   their daily routines while upholding dignity, comfort, and
-                  wellbeing.
+                  wellbeing
                 </p>
                 <p>
                   It includes assistance with tasks such as bathing, toileting,

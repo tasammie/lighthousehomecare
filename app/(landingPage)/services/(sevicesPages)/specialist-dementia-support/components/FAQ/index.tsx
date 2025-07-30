@@ -18,38 +18,53 @@ const faqItems: FAQItem[] = [
   {
     id: "item-1",
     question: "Familiar Faces, Reassuring Routines",
-    answer:
-      "At Lighthouse Homecare, consistency is at the heart of what we do. Unlike many providers who rotate 3–4 carers, we assign one dedicated carer to visit daily—only replaced on their day off by a familiar cover carer. This continuity is especially vital for those living with dementia. Adapting to new routines is challenging enough without the added stress of unfamiliar faces. A consistent carer who understands your loved one's habits and home environment makes all the difference in delivering truly personalised, reassuring care.",
+    answer: `
+      <p>At Lighthouse Homecare, consistency is at the heart of what we do. Unlike many providers who rotate 3–4 carers, we assign one dedicated carer to visit daily—only replaced on their day off by a familiar cover carer.</p>
+      <p>This continuity is especially vital for those living with dementia. Adapting to new routines is challenging enough without the added stress of unfamiliar faces. A consistent carer who understands your loved one’s habits and home environment makes all the difference in delivering truly personalised, reassuring care.</p>
+    `,
   },
   {
     id: "item-2",
     question: "Planning Ahead with Confidence",
-    answer:
-      "It's important to begin planning early, so you and your loved one feel informed, prepared, and in control of the journey ahead. Many older adults wish to remain in the comfort of their own homes — and with the rise of personalised care options and assistive technologies, high-quality home care is now a real and reassuring alternative to residential care.",
+    answer: `
+      <p>It’s important to begin planning early, so you and your loved one feel informed, prepared, and in control of the journey ahead.</p>
+      <p>Many older adults wish to remain in the comfort of their own homes — and with the rise of personalised care options and assistive technologies, high-quality home care is now a real and reassuring alternative to residential care.</p>
+    `,
   },
   {
     id: "item-3",
     question: "Understanding Power of Attorney",
-    answer:
-      "Appointing Power of Attorney is an important step in safeguarding your loved one's finances and wellbeing as their condition progresses. Memory loss or confusion around money can appear early, so ensuring someone trusted can manage accounts and make decisions is essential to protecting them from financial harm. There are two main types of Power of Attorney: Ordinary Power of Attorney - This covers financial decisions and is only valid while the person still has mental capacity. It's often used for short-term needs, such as during a hospital stay. Lasting Power of Attorney (LPA) - An LPA remains valid if a person loses mental capacity. It allows a nominated person to make decisions about finances or health and care. For those with a dementia diagnosis, setting up an LPA early provides reassurance and legal clarity for the future.",
+    answer: `
+      <p>Appointing Power of Attorney is an important step in safeguarding your loved one’s finances and wellbeing as their condition progresses. Memory loss or confusion around money can appear early, so ensuring someone trusted can manage accounts and make decisions is essential to protecting them from financial harm.</p>
+      <p>There are two main types of Power of Attorney:</p>
+      <ul class="list-disc ml-6">
+        <li><strong>Ordinary Power of Attorney</strong><br/>This covers financial decisions and is only valid while the person still has mental capacity. It’s often used for short-term needs, such as during a hospital stay.</li>
+        <li><strong>Lasting Power of Attorney (LPA)</strong><br/>An LPA remains valid if a person loses mental capacity. It allows a nominated person to make decisions about finances or health and care. For those with a dementia diagnosis, setting up an LPA early provides reassurance and legal clarity for the future.</li>
+      </ul>
+    `,
   },
   {
     id: "item-4",
     question: "Creating a Safer Home Environment",
-    answer:
-      "Simple home adaptations can make a big difference in supporting your loved one's safety and independence. Installing grab rails in bathrooms, updating smoke detectors, and reducing slip and trip hazards all help create a secure living space. For individuals prone to wandering, families may consider GPS tracking devices and enhanced home security measures for added peace of mind.",
+    answer: `
+      <p>Simple home adaptations can make a big difference in supporting your loved one’s safety and independence. Installing grab rails in bathrooms, updating smoke detectors, and reducing slip and trip hazards all help create a secure living space.</p>
+      <p>For individuals prone to wandering, families may consider GPS tracking devices and enhanced home security measures for added peace of mind.</p>
+    `,
   },
   {
     id: "item-5",
     question: "Why Choose Lighthouse?",
-    answer:
-      "Whether your loved one needs full support or just a helping hand, we offer flexible, cost-effective hourly care tailored to their unique needs — even at short notice. When care is needed urgently, we can introduce a trained carer within 24 hours.",
+    answer: `
+      <p>Whether your loved one needs full support or just a helping hand, we offer flexible, cost-effective hourly care tailored to their unique needs — even at short notice. When care is needed urgently, we can introduce a trained carer within 24 hours.</p>
+    `,
   },
   {
     id: "item-6",
     question: "Invest in Peace of Mind",
-    answer:
-      "Peace of mind doesn't have to come at a high cost. Our hourly rates start from just £26, with visits beginning at a minimum of 30 minutes. We're also here to guide you through payment options and offer support in making care more manageable — so you have one less thing to worry about.",
+    answer: `
+      <p>Peace of mind doesn’t have to come at a high cost. Our hourly rates start from just £26, with visits beginning at a minimum of 30 minutes.</p>
+      <p>We’re also here to guide you through payment options and offer support in making care more manageable — so you have one less thing to worry about.</p>
+    `,
   },
 ];
 
@@ -112,7 +127,10 @@ export default function FAQ() {
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 leading-relaxed">
-                      {item.answer}
+                      <div
+                        className="faq-answer"
+                        dangerouslySetInnerHTML={{ __html: item.answer }}
+                      />
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>

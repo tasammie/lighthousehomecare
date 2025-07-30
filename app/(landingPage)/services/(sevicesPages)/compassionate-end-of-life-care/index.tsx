@@ -13,7 +13,7 @@ const CompassionateEndOfLifeCare = () => {
 
       <CareBannerComponent
         text="Lighthouse’s Promise of Respectful, Inclusive Care"
-        description="We are dedicated to providing compassionate, culturally sensitive care that embraces people of all backgrounds. Our goal is to ensure that everyone—regardless of beliefs, identity, or circumstance—has access to respectful, dignified care when it matters most."
+        description="We are dedicated to providing compassionate, culturally sensitive care that embraces people from all backgrounds. Our goal is to ensure that everyone—regardless of beliefs, identity, or circumstances—has access to respectful, dignified care when it matters most."
         buttonText="Get Started Today"
         buttonLink="/contact"
         imageSrc="/images/image-banner.webp"

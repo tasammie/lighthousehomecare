@@ -17,34 +17,39 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: "item-1",
-    question: "What does Personalised Care & Hygiene include?",
-    answer:
-      "Our service includes support with daily personal tasks such as bathing, dressing, toileting, grooming, oral hygiene, and mobility. It may also involve meal preparation, light domestic duties, medication reminders, and continence care — all tailored to individual preferences and routines.",
+    question: "What does Personal Centred Care & Hygiene include?",
+    answer: `
+      <p>Our service includes support with daily personal tasks such as bathing, dressing, toileting, grooming, oral hygiene, and mobility. It may also involve meal preparation, light domestic duties, medication reminders, and continence care — all tailored to individual preferences, routines, and wellbeing goals.</p>
+    `,
   },
   {
     id: "item-2",
     question: "Who provides the care, and are they trained?",
-    answer:
-      "All care is delivered by fully trained, DBS-checked carers with experience in personal and hygiene care. They are not only skilled but also chosen for their empathy, professionalism, and ability to make clients feel respected and comfortabl",
+    answer: `
+      <p>All care is delivered by fully trained, DBS-checked carers with experience in personal and hygiene care. They are not only skilled but also carefully chosen for their empathy, professionalism, and ability to make individuals feel respected, safe, and at ease.</p>
+    `,
   },
   {
     id: "item-3",
     question: "Can care be scheduled around my routine?",
-    answer:
-      "Yes. We create flexible care plans based on your needs and daily rhythms. Whether you need short visits in the morning or evening, or ongoing support throughout the day, we’ll tailor a plan that fits seamlessly into your lifestyle.",
+    answer: `
+      <p>Yes. We design flexible care plans around your personal schedule, preferences, and natural daily rhythms. Whether support is needed in the morning, evening, or throughout the day, we ensure visits align with what works best for you or your loved one.</p>
+    `,
   },
   {
     id: "item-4",
     question: "Will I have the same carer each time?",
-    answer:
-      "Continuity is important to us. We assign a regular carer whenever possible, ensuring familiarity and trust. If a cover is ever needed, we’ll always try to ensure it’s someone known to you.",
+    answer: `
+      <p>Continuity is a cornerstone of person-centred care. We assign a regular carer whenever possible to build familiarity and trust. If a cover is needed, we always try to ensure it's someone you already know and feel comfortable with.</p>
+    `,
   },
   {
     id: "item-5",
     question:
       "Is this service suitable for people with medical conditions or mobility issues?",
-    answer:
-      "Absolutely. We support individuals with a wide range of health conditions, including limited mobility, dementia, and recovery from surgery. Our carers are trained to assist safely and sensitively, always prioritising comfort and dignity.",
+    answer: `
+      <p>Absolutely. We support individuals with a wide range of health conditions — including reduced mobility, dementia, and recovery following surgery. Our carers are trained to deliver care safely, sensitively, and in a way that upholds dignity and comfort at every step.</p>
+    `,
   },
 ];
 export default function FAQ() {
@@ -106,7 +111,7 @@ export default function FAQ() {
                       {item.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-gray-700 leading-relaxed">
-                      {item.answer}
+                      <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>

@@ -44,29 +44,36 @@ const serviceSections: ServiceSection[] = [
   },
 ];
 
-const helpItems = [
+const personalCentredCareItems = [
   {
     id: 1,
-    description:
-      "Personal care isn't one-size-fits-all. At Lighthouse Homecare, we offer flexible options tailored to each individual's unique needs — ensuring comfort, dignity, and continued independence.",
-  },
-];
-
-const helpItems2 = [
-  {
-    id: 1,
-    description:
-      "Our trained carers provide personalised support right at home with daily tasks such as bathing, grooming, dressing, and meal preparation.",
+    description: "A care plan tailored around the person’s needs and wishes",
+    details:
+      "Each plan reflects the individual’s routines, preferences, and what truly matters to them.",
   },
   {
     id: 2,
-    description:
-      "This approach keeps your loved ones in familiar surroundings while receiving the care they need — promoting both safety and peace of mind.",
+    description: "Respect for cultural background, beliefs, and values",
+    details:
+      "We deliver care with sensitivity and inclusivity — always mindful of what’s meaningful to the person and their family.",
   },
   {
     id: 3,
-    description:
-      "In-home care is adaptable and designed to meet varying levels of support, making it a practical and reassuring option for many families.",
+    description: "Flexible care that adapts to changing needs",
+    details:
+      "Our approach is dynamic, evolving as health, comfort, or lifestyle needs change over time.",
+  },
+  {
+    id: 4,
+    description: "Regular reviews involving the client and family",
+    details:
+      "Collaboration is key — we invite ongoing input to keep care personal, responsive, and empowering.",
+  },
+  {
+    id: 5,
+    description: "Emotional support, dignity, and independence",
+    details:
+      "Because care should uplift, not replace — preserving confidence and a sense of self is just as important as meeting physical needs.",
   },
 ];
 
@@ -172,48 +179,25 @@ export default function WhoWeAre() {
       viewport={{ once: true, amount: 0.1 }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-0">
-        {/* The Options for Personal Care */}
+        {/* Our Personal Centred Care */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-[#001967] mb-6">
-            The Options for Personal Care
+            Our Personal Centred Care includes:
           </h3>
-          <div className="space-y-6">
-            {helpItems.map((item, index) => (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-              >
-                <p className="text-gray-700 leading-relaxed">
-                  {item.id}. {item.description}
-                </p>
-              </motion.div>
+          <p className="text-gray-700 mb-4">
+            We believe that truly personalised care honours the whole person —
+            their identity, choices, and way of life. That’s why our support
+            isn’t just built around needs, but around people.
+          </p>
+          <ul className="list-disc ml-6 space-y-4">
+            {personalCentredCareItems.map((item) => (
+              <li key={item.id}>
+                <span className="font-semibold">{item.description}</span>
+                <br />
+                <span className="text-gray-700">{item.details}</span>
+              </li>
             ))}
-          </div>
-        </div>
-
-        {/* In-Home Personal Care Services */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-[#001967] mb-6">
-            In-Home Personal Care Services
-          </h3>
-          <div className="space-y-6">
-            {helpItems2.map((item, index) => (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-              >
-                <p className="text-gray-700 leading-relaxed">
-                  {item.id}. {item.description}
-                </p>
-              </motion.div>
-            ))}
-          </div>
+          </ul>
         </div>
 
         {/* Service Sections */}
