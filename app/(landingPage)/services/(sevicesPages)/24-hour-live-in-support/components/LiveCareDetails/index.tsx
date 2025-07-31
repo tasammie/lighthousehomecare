@@ -17,7 +17,7 @@ const LiveCareDetails = () => {
               <div className="space-y-4 text-white/90 leading-relaxed lg:col-span-2">
                 <p>
                   Live-in care provides continuous, round-the-clock support for
-                  individuals who need help with daily living — including
+                  individuals who need help with daily living, including
                   personal care, mobility, medication, and regular routines.
                   Unlike hourly visits or residential care homes, this service
                   places a dedicated carer in the comfort of the client’s own
