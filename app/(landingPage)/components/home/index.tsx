@@ -45,7 +45,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg md:text-xl lg:text-[20px] text-gray-200 mb-8 max-w-3xl leading-relaxed text-center sm:text-left mx-auto sm:mx-0">
-            Personalized support tailored to your needs, delivered with dignity,
+            personalised support tailored to your needs, delivered with dignity,
             respect, and warmth right where you feel safest.
           </p>
 
