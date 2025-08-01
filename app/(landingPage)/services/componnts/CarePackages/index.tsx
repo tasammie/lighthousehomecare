@@ -15,7 +15,7 @@ interface CarePackage {
 const carePackages: CarePackage[] = [
   {
     id: 1,
-    title: "24-Hour Live-In Support",
+    title: "24/7 Live-In Support",
     description:
       "Round-the-clock care in your own home for complete peace of mind.",
     image: "/images/live-in-support.webp",
@@ -126,7 +126,7 @@ const PackageCard: React.FC<PackageCardProps> = ({ package: pkg, index }) => {
           <h3 className="text-[24px] font-bold mb-4 leading-tight">
             {pkg.title}
           </h3>
-          <p className="text-[#D6D4D4] text-sm leading-relaxed mb-6">
+          <p className="text-[#D6D4D4] text-[16px] font-[400] leading-relaxed mb-6">
             {pkg.description}
           </p>
 

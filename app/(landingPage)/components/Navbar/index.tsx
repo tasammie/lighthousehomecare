@@ -63,11 +63,17 @@ export default function Navbar() {
         <div className="bg-white border-b border-gray-100 py-3 hidden lg:block">
           <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center text-sm">
-              <ImgComp
-                src={"/images/logo.png"}
-                alt="Logo"
-                className="w-[120px]"
-              />
+              <div className="flex items-center gap-7">
+                {" "}
+                <ImgComp
+                  src={"/images/logo.png"}
+                  alt="Logo"
+                  className="w-[120px]"
+                />
+                <h2 className="text-[16px] text-[#00269B] font-[600]">
+                  Care Rooted In Emotion And Kindness{" "}
+                </h2>
+              </div>
               <div className="flex items-start gap-10 text-gray-700">
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
@@ -118,7 +124,7 @@ export default function Navbar() {
                       href={item.href}
                       className={`flex items-center space-x-1 px-4 py-3 text-base font-medium transition-all duration-300 ease-in-out ${
                         isActive(item.href)
-                          ? "text-white font-semibold"
+                          ? " font-semibold text-[#96ECE9]"
                           : "text-white/90 hover:text-white"
                       }`}
                     >

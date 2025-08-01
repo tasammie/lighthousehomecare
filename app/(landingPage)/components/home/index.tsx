@@ -40,7 +40,7 @@ export default function Hero() {
           <h1 className="text-[40px] md:text-5xl lg:text-6xl xl:text-[60px] font-bold text-white mb-6 leading-tight text-center sm:text-left">
             Compassionate Care in{" "}
             <span className="block">the Comfort of Your</span>
-            <span className="block text-blue-400">Home</span>
+            <span className="block">Home</span>
           </h1>
 
           {/* Subtitle */}
