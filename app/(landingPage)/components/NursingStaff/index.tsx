@@ -8,16 +8,19 @@ const staff = [
     name: "Paul Matney",
     role: "Nursing Staff",
     image: "/images/team1.webp",
+    className: "text-black md:text-white",
   },
   {
     name: "Paul Matney",
     role: "Nursing Staff",
     image: "/images/team2.webp",
+    className: "text-white",
   },
   {
     name: "Paul Matney",
     role: "Nursing Staff",
     image: "/images/team3.webp",
+    className: "text-white",
   },
   // Add more staff objects here as needed
 ];
@@ -73,10 +76,20 @@ export default function NursingStaff() {
                   />
                 </div>
                 <div className="flex items-center justify-center flex-col">
-                  <h3 className="text-xl font-bold text-white mt-4">
+                  <h3
+                    className={`text-xl font-bold  mt-4 ${
+                      member.className || ""
+                    }`}
+                  >
                     {member.name}
                   </h3>
-                  <p className="text-[#FFFFFF] text-sm">{member.role}</p>
+                  <p
+                    className={`text-[#FFFFFF] text-sm ${
+                      member.className || ""
+                    }`}
+                  >
+                    {member.role}
+                  </p>
                 </div>
               </div>
             ))}

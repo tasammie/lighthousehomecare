@@ -268,25 +268,33 @@ const LighthouseFooter = () => {
             {/* Social Media Icons */}
             <div className="flex gap-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/share/1AyDjysy5u/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
+                href={
+                  "https://www.instagram.com/lighthousehomecareltd?igsh=MWc4NmlmZG41ODc2OQ=="
+                }
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
-                className="text-gray-400 hover:text-white transition-colors"
+                className="text-gray-700 hover:text-whites transition-colors cursor-not-allowed "
               >
                 <Twitter className="w-5 h-5" />
               </Link>
               <Link
-                href="#"
+                href="https://www.linkedin.com/company/lighthousehomecare/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
               >
                 <Linkedin className="w-5 h-5" />

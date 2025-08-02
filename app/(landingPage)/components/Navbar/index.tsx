@@ -19,6 +19,7 @@ export default function Navbar() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   // Helper function to check if a navigation item is active
   const isActive = (href: string) => {
@@ -50,6 +51,10 @@ export default function Navbar() {
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
+
+  const toggleDropdown = (label: string) => {
+    setOpenDropdown(openDropdown === label ? null : label);
+  };
 
   return (
     <>
@@ -201,36 +206,51 @@ export default function Navbar() {
                     <div className="flex-1 overflow-y-auto space-y-2">
                       {navigationItems.map((item) => (
                         <div key={item.label}>
-                          <Link
-                            href={item.href}
-                            onClick={() => setIsSheetOpen(false)}
-                            className={`flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
-                              isActive(item.href)
-                                ? "text-primaryColor bg-blue-50 font-semibold"
-                                : "text-gray-700 hover:text-primaryColor hover:bg-gray-50"
-                            }`}
-                          >
-                            <span>{item.label}</span>
-                            {item.hasDropdown && (
-                              <ChevronDown className="w-4 h-4" />
-                            )}
-                          </Link>
+                          {item.hasDropdown ? (
+                            <button
+                              onClick={() => toggleDropdown(item.label)}
+                              className="flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 text-gray-700 hover:text-primaryColor hover:bg-gray-50 w-full text-left"
+                            >
+                              <span>{item.label}</span>
+                              <ChevronDown
+                                className={`w-4 h-4 transition-transform duration-200 ${
+                                  openDropdown === item.label
+                                    ? "rotate-180"
+                                    : ""
+                                }`}
+                              />
+                            </button>
+                          ) : (
+                            <Link
+                              href={item.href}
+                              onClick={() => setIsSheetOpen(false)}
+                              className={`flex items-center justify-between px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${
+                                isActive(item.href)
+                                  ? "text-primaryColor bg-blue-50 font-semibold"
+                                  : "text-gray-700 hover:text-primaryColor hover:bg-gray-50"
+                              }`}
+                            >
+                              <span>{item.label}</span>
+                            </Link>
+                          )}
 
                           {/* Mobile Dropdown Items */}
-                          {item.hasDropdown && item.items && (
-                            <div className="ml-4 mt-2 space-y-1">
-                              {item.items.map((subItem) => (
-                                <Link
-                                  key={subItem.href}
-                                  href={subItem.href}
-                                  onClick={() => setIsSheetOpen(false)}
-                                  className="block px-4 py-2 text-sm text-gray-600 hover:text-primaryColor hover:bg-gray-50 rounded transition-colors duration-200"
-                                >
-                                  {subItem.label}
-                                </Link>
-                              ))}
-                            </div>
-                          )}
+                          {item.hasDropdown &&
+                            item.items &&
+                            openDropdown === item.label && (
+                              <div className="ml-4 mt-2 space-y-1">
+                                {item.items.map((subItem) => (
+                                  <Link
+                                    key={subItem.href}
+                                    href={subItem.href}
+                                    onClick={() => setIsSheetOpen(false)}
+                                    className="block px-4 py-2 text-sm text-gray-600 hover:text-primaryColor hover:bg-gray-50 rounded transition-colors duration-200"
+                                  >
+                                    {subItem.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            )}
                         </div>
                       ))}
 
