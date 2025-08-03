@@ -47,7 +47,7 @@ const LiveCareDetails = () => {
                 <p>
                   Unlike generic or one-size-fits-all solutions, our live-in
                   support provides flexibility, continuity, and genuine comfort.
-                  It’s a cost-effective alternative to residential care — ideal
+                  It’s a cost effective alternative to residential care — ideal
                   for those who value staying in familiar surroundings, yet need
                   more regular support than occasional visits can offer.
                 </p>
