@@ -16,7 +16,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('/images/hero.webp')`,
+          backgroundImage: `url('/lighthouse-staff/all-staffs-landing.webp')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

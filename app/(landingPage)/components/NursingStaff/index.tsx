@@ -7,19 +7,19 @@ const staff = [
   {
     name: "Paul Matney",
     role: "Nursing Staff",
-    image: "/images/team1.webp",
+    image: "/lighthouse-staff/team1.webp",
     className: "text-black md:text-white",
   },
   {
     name: "Paul Matney",
     role: "Nursing Staff",
-    image: "/images/team2.webp",
+    image: "/lighthouse-staff/team2.webp",
     className: "text-white",
   },
   {
     name: "Paul Matney",
     role: "Nursing Staff",
-    image: "/images/team3.webp",
+    image: "/lighthouse-staff/team3.webp",
     className: "text-white",
   },
   // Add more staff objects here as needed
