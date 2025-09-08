@@ -167,13 +167,13 @@ export default function Navbar() {
                 ))}
               </nav>
 
-              {/* Contact Us Button */}
+              {/* Get In Touch Button */}
               <div className="hidden lg:flex items-center flex-shrink-0">
                 <Link
                   href="/contact"
                   className="bg-primaryColor hover:bg-blue-700 text-white px-8 py-3 rounded-md text-sm font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg whitespace-nowrap"
                 >
-                  Contact US
+                  Get In Touch
                 </Link>
               </div>
 
@@ -261,7 +261,7 @@ export default function Navbar() {
                           onClick={() => setIsSheetOpen(false)}
                           className="block bg-primaryColor hover:bg-blue-700 text-white px-4 py-3 rounded-lg text-base font-semibold transition-colors duration-200 text-center"
                         >
-                          Contact US
+                          Get In Touch
                         </Link>
                       </div>
 

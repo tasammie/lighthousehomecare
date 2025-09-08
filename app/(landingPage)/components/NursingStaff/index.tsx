@@ -76,15 +76,15 @@ export default function NursingStaff() {
                   />
                 </div>
                 <div className="flex items-center justify-center flex-col">
-                  <h3
+                  {/* <h3
                     className={`text-xl font-bold  mt-4 ${
                       member.className || ""
                     }`}
                   >
                     {member.name}
-                  </h3>
+                  </h3> */}
                   <p
-                    className={`text-[#FFFFFF] text-sm ${
+                    className={`text-[#FFFFFF] text-sm mt-5 ${
                       member.className || ""
                     }`}
                   >

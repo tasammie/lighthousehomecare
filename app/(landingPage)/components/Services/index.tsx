@@ -8,7 +8,7 @@ const serviceList = [
     id: 1,
     title: "24-Hour Live-In Support",
     description:
-      "Continuous care in your own home personalised support with tasks, medication, and companionship, day and night.",
+      "Continuous care in your own home personalised support withr tasks, medication, and companionship, day and night.",
     // gradient: "bg-gradient-to-br from-[#96ECE9] to-teal-300",
     gradient: "bg-white",
 
@@ -130,7 +130,7 @@ const serviceList = [
     id: 4,
     title: "Friendly Companionship",
     description:
-      "Kind-hearted companionship that brings conversation, connection, and comfort into each day — helping ease loneliness with warmth and care.",
+      "Kind-hearted companionship that brings conversation, connection, and comfort — easing loneliness with warmth and care.",
     gradient: "bg-white",
     iconBg: "bg-[#8092CD]",
     titleColor: "text-blue-900",
@@ -259,7 +259,7 @@ function ServiceCard({
 
       <div className="mb-6  flex flex-col gap-y-4 items-start">
         <div
-          className={`w-[80px] h-[80px] rounded-full flex items-center justify-center mb-4 ${iconBg}`}
+          className={`w-[70px] h-[70px] rounded-full flex items-center justify-center mb-4 ${iconBg}`}
         >
           {icon}
         </div>

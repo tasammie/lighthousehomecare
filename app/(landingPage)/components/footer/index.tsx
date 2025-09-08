@@ -268,7 +268,7 @@ const LighthouseFooter = () => {
             {/* Social Media Icons */}
             <div className="flex gap-4">
               <Link
-                href="https://www.facebook.com/share/1AyDjysy5u/"
+                href="https://www.facebook.com/share/p/19pgSjFr8Y/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"
