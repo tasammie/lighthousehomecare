@@ -81,12 +81,12 @@ const faqItems: FAQItem[] = [
     answer:
       "Costs vary based on the level and type of care needed. We provide tailored quotes following a no-obligation consultation. Live-in care is often more cost-effective than residential care, and we’ll help you find the best fit for your budget and needs.",
   },
-  {
-    id: "item-12",
-    question: "Are There Any Upfront Fees?",
-    answer:
-      "No. We don’t charge registration or assessment fees. All pricing is agreed in advance, so you’ll always know exactly what to expect — with no hidden charges or surprises.",
-  },
+  // {
+  //   id: "item-12",
+  //   question: "Are There Any Upfront Fees?",
+  //   answer:
+  //     "No. We don’t charge registration or assessment fees. All pricing is agreed in advance, so you’ll always know exactly what to expect — with no hidden charges or surprises.",
+  // },
 ];
 export default function FAQ() {
   return (
