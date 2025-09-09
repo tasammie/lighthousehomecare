@@ -23,7 +23,7 @@ const Hero = () => {
           >
             <div className="relative">
               <ImgComp
-                src="/images/24-hrs.webp"
+                src="/lighthouse-staff/24-hrs.webp"
                 alt="Caregiver providing overnight care"
                 className="w-full h-auto rounded-lg shadow-lg"
               />

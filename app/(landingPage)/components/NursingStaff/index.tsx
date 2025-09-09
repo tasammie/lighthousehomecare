@@ -6,19 +6,19 @@ import Link from "next/link";
 const staff = [
   {
     name: "Paul Matney",
-    role: "Nursing Staff",
+    role: "Team Member",
     image: "/lighthouse-staff/team1.webp",
     className: "text-black md:text-white",
   },
   {
     name: "Paul Matney",
-    role: "Nursing Staff",
+    role: "Team Member",
     image: "/lighthouse-staff/team2.webp",
     className: "text-white",
   },
   {
     name: "Paul Matney",
-    role: "Nursing Staff",
+    role: "Team Member",
     image: "/lighthouse-staff/team3.webp",
     className: "text-white",
   },
@@ -58,7 +58,7 @@ export default function NursingStaff() {
             Meet The Team
           </p>
           <h1 className="text-[44px] font-[700] text-[#001967] mb-12">
-            Nursing Staff
+            Team
           </h1>
         </div>
 

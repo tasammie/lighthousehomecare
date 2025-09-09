@@ -30,7 +30,7 @@ const TwentyFourHourCarerServices = () => {
       title: "Toileting & Continence Care",
       description:
         "Providing discreet assistance during the night with toileting or incontinence episodes — always with kindness, patience, and respect.",
-      image: "/images/toileting.webp",
+      image: "/lighthouse-staff/toileting.jpeg",
     },
     {
       title: "Mobility & Fall Prevention",
