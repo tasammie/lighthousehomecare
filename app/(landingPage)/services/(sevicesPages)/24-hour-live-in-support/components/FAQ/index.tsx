@@ -85,7 +85,7 @@ const faqItems: FAQItem[] = [
     id: "item-12",
     question: "Are There Any Upfront Fees?",
     answer:
-      "No. We don’t charge registration or assessment fees. All pricing is agreed in advance, so you’ll always know exactly what to expect — with no hidden charges or surprises.",
+      "No. We don’t charge registration or assessment fees. All pricing is agreed in advance, so you’ll always know exactly what to expect with no hidden charges or surprises.",
   },
 ];
 export default function FAQ() {
