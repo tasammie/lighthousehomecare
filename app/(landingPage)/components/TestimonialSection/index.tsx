@@ -35,19 +35,19 @@ const TestimonialSection = () => {
     {
       id: 5,
       text: '"I truly appreciate the excellent care your company has provided for my son. Your staff are not only competent and committed, but they also work with such diligence and compassion to ensure his well-being.There was a time I used to be afraid of coming to his room to see him, even though I had the natural urge as a mother to be close to my child. But now, things have changed. My son speaks to me calmly and kindly. He acknowledges me as his mother, and that means everything to me. He looks fine and healthy physically This transformation brings me so much peace and joy. I am giving you five stars. Please continue the good work  you are making a real difference."',
-      name: "KN’s Mum",
+      name: "Client's Mother",
       location: "Patient, United Kingdom.",
     },
     {
       id: 6,
       text: "I would like to express my sincere appreciation to the entire care team looking after my brother. The level of quality care, patience, and professionalism shown by the staff has been truly outstanding.I was amazed to see how well he is being supported not just physically, but emotionally as well. I have noticed a big difference, in his physical appearance, in his mood and how he interacts with us as a family. He’s calmer, more communicative, and the way he remembers extended families names , even some events that happened in the family and more.Knowing that he’s in such capable hands brings peace of mind to our family. Thank you for the continued commitment and compassion. Please keep up the amazing work. ",
-      name: "KN’s brother",
+      name: "Client's brother",
       location: "Patient, United Kingdom.",
     },
     {
       id: 7,
       text: "With sincere gratitude, I would like to commend the team for the outstanding care and support they continue to provide to my brother in law. Every time I visit, I am impressed by how attentive, patient, and compassionate the staff are with him.There has been a noticeable improvement in his overall physical performance,  he moving his hands and legs very well and emotional wellbeing. He seems more at ease and more connected with his family, especially when we come for Eid celebrations . It’s comforting to know he’s in an environment where he is genuinely cared for and treated with respect.As a family member, it gives me great peace of mind knowing he is in safe and capable hands. Thank you for your dedication , quality care and the positive difference you are making in his life.",
-      name: "Sister Inlaw.",
+      name: "Client's Sister Inlaw.",
       location: "Patient, United Kingdom.",
     },
   ];
