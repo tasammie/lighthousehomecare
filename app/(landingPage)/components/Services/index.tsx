@@ -8,7 +8,7 @@ const serviceList = [
     id: 1,
     title: "24-Hour Live-In Support",
     description:
-      "Continuous care in your own home personalised support withr tasks, medication, and companionship, day and night.",
+      "Continuous care in your own home, personalised support with tasks, medication, and companionship, day and night.",
     // gradient: "bg-gradient-to-br from-[#96ECE9] to-teal-300",
     gradient: "bg-white",
 
