@@ -51,13 +51,24 @@ const Hero = () => {
 
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
-              <p>
+              {/* <p>
                 24-Hour Live-In Support offers uninterrupted, round-the-clock
                 care for those wishing to remain at home rather than enter
                 residential care. Our trained team reside on-site, delivering
                 personalised assistance with daily routines, medication, and
                 companionship—ensuring safety, comfort, and peace of mind
                 throughout both day and night.
+              </p> */}
+              <p>
+                With 24-Hour Live-In Support, you or your loved one can enjoy 
+                the comfort of home while receiving round-the-clock care. 
+                Our caring team live alongside those they support, offering help 
+                with daily routines, medication, and companionship—bringing peace of mind, 
+                safety, and comfort every hour of the day and night. 
+                With 24-Hour Live-In Support, you or your loved one can enjoy the comfort of home 
+                while receiving round-the-clock care. Our caring team live alongside those they support, 
+                offering help with daily routines, medication, and companionship—bringing peace of mind, safety,
+                and comfort every hour of the day and night.
               </p>
             </div>
           </motion.div>

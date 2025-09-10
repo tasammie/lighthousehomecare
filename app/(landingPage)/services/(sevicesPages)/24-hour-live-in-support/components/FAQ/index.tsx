@@ -24,20 +24,21 @@ const faqItems: FAQItem[] = [
   {
     id: "item-2",
     question: "How Quickly Can Live-In Support Begin?",
-    answer:
-      "We understand that care needs can arise unexpectedly. That’s why we aim to begin live-in support within 24 to 48 hours. Whether due to hospital discharge, a sudden illness, or a family emergency, our team responds quickly to ensure care starts when it’s needed most.",
+    answer: "We understand that care needs can arise unexpectedly, and timely support is essential. That’s why we begin with an initial assessment to understand individual needs, preferences, and circumstances. Following this, we aim to arrange live-in support within 24 to 48 hours. Whether due to hospital discharge, a sudden illness, or a family emergency, our team responds quickly to ensure care begins when it’s needed most."
+
   },
   {
     id: "item-3",
     question: "What Kind of Training Do Your Carers Receive?",
-    answer:
-      "All of our carers are experienced and receive thorough, ongoing in-house training. This includes personal care techniques, medication safety, dementia care, moving and handling, and more. Training is supported by supervision, mentoring, and professional development led by our Care Managers.",
+    answer: "Your loved one’s safety and comfort are our top priority. That’s why every carer completes mandatory training in safeguarding, first aid, health and safety, and infection control. We also provide essential training in personal care, medication safety, dementia awareness, and moving and handling, so our carers are fully prepared for day-to-day support. Where needed, carers receive specialised training for more complex needs, such as end-of-life care, advanced dementia, or specific medical conditions. All training is reinforced through regular mentoring and professional development with our Care Managers — giving you confidence that your loved one is in capable, caring hands."
+    
   },
   {
     id: "item-4",
     question: "How Do You Monitor the Quality of Care?",
     answer:
-      "We ensure high standards through regular reviews, feedback systems, and unannounced visits. Care Managers remain closely connected with both carers and families. A 24/7 support line is also available, ensuring swift responses to any concerns, and maintaining consistent, safe, and transparent care.",
+"Your loved one’s wellbeing is always our top priority. That’s why we have a complete care monitoring system in place. Families and Care Managers can see daily updates, health notes, and progress in real time, so you always know how your loved one is doing. We also carry out regular reviews, welcome feedback, and make unannounced visits to ensure everything stays on track. Our Care Managers stay closely connected with both carers and families, and our 24/7 support line means we’re here whenever you need us. This way, you can feel confident knowing the care provided is safe, consistent, and transparent."
+
   },
   {
     id: "item-5",
