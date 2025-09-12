@@ -110,7 +110,7 @@ export default function ElderCare() {
               </h3>
               <p className="text-gray-600">
                 Skilled, compassionate professionals providing tailored care
-                with dignity and respect — right in the comfort of your home.
+                with dignity and respect, right in the comfort of your home.
               </p>
             </div>
           </li>
