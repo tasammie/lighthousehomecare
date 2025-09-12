@@ -124,10 +124,10 @@ export default function CareConnection() {
           }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-[#001967] mb-6">
+          <h2 className="text-2xl md:text-[24px] font-bold text-[#001967] mb-6">
             Care That Begins with Connection and Grows with You{" "}
           </h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-[18px] text-gray-700 max-w-4xl mx-auto leading-relaxed">
             We believe exceptional care is built on trust, deepens through
             understanding, and flourishes through genuine relationships that
             honour your unique needs and journey.

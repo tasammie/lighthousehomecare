@@ -84,6 +84,14 @@ const carePackages: CarePackage[] = [
     logo: "/images/lighthouse-logo-white.png",
     buttonLink: "personalised-care-hygiene",
   },
+  {
+    id: 9,
+    title: "Learning Difficulties & Autism Support",
+    description: "Specialist Care Rooted in Emotion & Kindness.",
+    image: "/images/monitoring.webp",
+    logo: "/images/lighthouse-logo-white.png",
+    buttonLink: "specialist-dementia-support",
+  },
 ];
 
 interface PackageCardProps {

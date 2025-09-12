@@ -60,15 +60,17 @@ const Hero = () => {
                 throughout both day and night.
               </p> */}
               <p>
-                With 24-Hour Live-In Support, you or your loved one can enjoy 
-                the comfort of home while receiving round-the-clock care. 
-                Our caring team live alongside those they support, offering help 
-                with daily routines, medication, and companionship—bringing peace of mind, 
-                safety, and comfort every hour of the day and night. 
-                With 24-Hour Live-In Support, you or your loved one can enjoy the comfort of home 
-                while receiving round-the-clock care. Our caring team live alongside those they support, 
-                offering help with daily routines, medication, and companionship—bringing peace of mind, safety,
-                and comfort every hour of the day and night.
+                With 24-Hour Live-In Support, you or your loved one can enjoy
+                the comfort of home while receiving round-the-clock care. Our
+                caring team live alongside those they support, offering help
+                with daily routines, medication, and companionship—bringing
+                peace of mind, safety, and comfort every hour of the day and
+                night. With 24-Hour Live-In Support, you or your loved one can
+                enjoy the comfort of home while receiving round-the-clock care.
+                Our caring team live alongside those they support, offering help
+                with daily routines, medication, and companionship—bringing
+                peace of mind, safety, and comfort every hour of the day and
+                night.
               </p>
             </div>
           </motion.div>
