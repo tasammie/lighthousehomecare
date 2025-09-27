@@ -6,31 +6,36 @@ const TwentyFourHourCarerServices = () => {
       title: "Night-time Personal Care",
       description:
         "Helping with washing, changing, toileting, and bedtime routines — ensuring dignity and comfort both before and during sleep.",
-      image: "/images/night-personal-care.webp",
+      image: "/images/night-rest.png",
+      // image: "/images/night-personal-care.webp",
     },
     {
       title: "Medication Reminders",
       description:
         "Prompting or administering time-sensitive evening or night-time medication to help maintain prescribed treatment plans.",
-      image: "/images/medication-reminder.webp",
+      image: "/images/medication.png",
+      // image: "/images/medication-reminder.webp",
     },
     {
       title: "Repositioning & Pressure Relief",
       description:
         "Assisting with regular position changes to prevent pressure sores and enhance sleep — vital for those with reduced mobility.",
-      image: "/images/presure-relive.webp",
+      image: "/images/reposition.png",
+      // image: "/images/presure-relive.webp",
     },
     {
       title: "Monitoring & Reassurance",
       description:
         "Maintaining a watchful presence through the night to quickly respond to distress, confusion, or wandering  especially helpful for those with dementia or anxiety.",
-      image: "/images/monitoring.webp",
+      image: "/images/mointor.png",
+      // image: "/images/monitoring.webp",
     },
     {
       title: "Toileting & Continence Care",
       description:
         "Providing discreet assistance during the night with toileting or incontinence episodes — always with kindness, patience, and respect.",
-      image: "/lighthouse-staff/toileting.jpeg",
+      image: "/images/toileting.png",
+      // image: "/lighthouse-staff/toileting.jpeg",
     },
     {
       title: "Mobility & Fall Prevention",
