@@ -44,17 +44,16 @@ const Hero = () => {
               <h1 className="text-4xl md:text-[42px] font-bold text-[#000000] mb-4 ">
                 Learning Difficulties & Autism Support{" "}
               </h1>
-              <h2 className="text-xl font-semibold text-[#00269B] mb-6">
+              {/* <h2 className="text-xl font-semibold text-[#00269B] mb-6">
                 Specialist Care Rooted in Emotion & Kindness{" "}
-              </h2>
+              </h2> */}
             </div>
 
             {/* Description */}
             <div className="text-gray-700 leading-relaxed space-y-4">
               <p>
-                On the Learning Difficulties and Autism website page, could you
-                put this info: Learning Difficulties and Autism Lighthouse
-                Homecare provides personalised support for people with learning
+                
+                Lighthouse Homecare provides personalised support for people with learning
                 difficulties and autism, helping them live with dignity,
                 independence, and inclusion. Guided by the principles of Right
                 Care, Right Support, and Right Culture, our services focus on
