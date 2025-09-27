@@ -37,7 +37,7 @@ const SpecialistDementiaSupportDetails = () => {
                   This type of care addresses common challenges such as symptoms
                   of memory loss, sleep disturbance, confusion, changes in
                   behaviour, and reduced mobility. Our trained team provides
-                  condition-led care and tailored assistance to meet the
+                  condition led care and tailored assistance to meet the
                   evolving physical, emotional, and psychological needs of each
                   client.
                 </p>
@@ -51,6 +51,8 @@ const SpecialistDementiaSupportDetails = () => {
               </div>
             </div>
           </div>
+
+           
 
           {/* Tailored for Individual Needs */}
           <div className="space-y-6">
