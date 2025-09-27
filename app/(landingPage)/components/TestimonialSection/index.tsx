@@ -34,7 +34,7 @@ const TestimonialSection = () => {
     },
     {
       id: 5,
-      text: '"I truly appreciate the excellent care your company has provided for my son. Your staff are not only competent and committed, but they also work with such diligence and compassion to ensure his well-being.There was a time I used to be afraid of coming to his room to see him, even though I had the natural urge as a mother to be close to my child. But now, things have changed. My son speaks to me calmly and kindly. He acknowledges me as his mother, and that means everything to me. He looks fine and healthy physically This transformation brings me so much peace and joy. I am giving you five stars. Please continue the good work  you are making a real difference."',
+      text: "I truly appreciate the excellent care your company has provided for my son. Your staff are not only competent and committed, but they also work with such diligence and compassion to ensure his well-being.There was a time I used to be afraid of coming to his room to see him, even though I had the natural urge as a mother to be close to my child. But now, things have changed. My son speaks to me calmly and kindly. He acknowledges me as his mother, and that means everything to me. He looks fine and healthy physically This transformation brings me so much peace and joy. I am giving you five stars. Please continue the good work  you are making a real difference.",
       name: "Client's Mother",
       location: "Patient, United Kingdom.",
     },
