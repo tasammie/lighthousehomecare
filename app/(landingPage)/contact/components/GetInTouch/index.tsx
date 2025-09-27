@@ -222,7 +222,7 @@ const GetInTouch = () => {
             </div>
 
             {/* Office Location */}
-            <div className="space-y-6">
+            <div className="space-y-6 flex items-start">
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-[#001967] mt-1" />
                 <div>
@@ -235,6 +235,20 @@ const GetInTouch = () => {
                     Victoria Street, St. Albans,
                     <br />
                     AL1 3TF
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-start space-x-4">
+                <MapPin className="w-6 h-6 text-[#001967] mt-1" />
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-2">
+                    Leeds Office Address
+                  </h3>
+                  <p className="text-gray-700">
+                    2 Infirmary Street,
+                    {/* 2 Fountain Court, Victoria Square, */}
+                    <br />
+                    Leeds, LS1 2JP <br />
                   </p>
                 </div>
               </div>

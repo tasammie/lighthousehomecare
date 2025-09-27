@@ -135,7 +135,7 @@ export default function Support() {
           >
             <div className="relative rounded-lg overflow-hidden">
               <ImgComp
-                src="/lighthouse-staff/staff-with-grandma.webp"
+                src="/lighthouse-staff/staff-with-grandma-new.webp"
                 alt="Caregiver providing post-hospital recovery support to elderly person"
                 className="w-full h-auto object-cover rounded-lg"
               />

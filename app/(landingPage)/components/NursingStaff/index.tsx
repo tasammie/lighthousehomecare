@@ -9,18 +9,21 @@ const staff = [
     role: "Team Member",
     image: "/lighthouse-staff/team1.webp",
     className: "text-black md:text-white",
+    imageStyle: "object-top",
   },
   {
     name: "Paul Matney",
     role: "Team Member",
     image: "/lighthouse-staff/team2.webp",
     className: "text-white",
+    imageStyle: "object-top",
   },
   {
     name: "Paul Matney",
     role: "Team Member",
     image: "/lighthouse-staff/team3.webp",
     className: "text-white",
+    imageStyle: "object-top",
   },
   // Add more staff objects here as needed
 ];
@@ -57,9 +60,7 @@ export default function NursingStaff() {
           <p className="text-blue-600 text-lg font-medium mb-4">
             Meet The Team
           </p>
-          <h1 className="text-[44px] font-[700] text-[#001967] mb-12">
-            Team
-          </h1>
+          <h1 className="text-[44px] font-[700] text-[#001967] mb-12">Team</h1>
         </div>
 
         {/* Team Cards Section */}
@@ -72,7 +73,7 @@ export default function NursingStaff() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover p-5 border"
+                    className={`object-cover p-5 border ${member.imageStyle}`}
                   />
                 </div>
                 <div className="flex items-center justify-center flex-col">

@@ -73,7 +73,7 @@ export default function FamilyFocus() {
                 Welcome to Lighthouse Homecare
               </p>
               <h2 className="text-[44px] font-[700] text-[#001967] mb-6">
-                Family-Focused Version (for clients and families)
+                Family-Focused Care
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed">
                 At Lighthouse Homecare, we know that home is far more than just

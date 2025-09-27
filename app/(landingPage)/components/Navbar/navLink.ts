@@ -45,6 +45,10 @@ export const navigationItems: NavLink[] = [
         label: "Personalised Care & Hygiene",
         href: "/services/personalised-care-hygiene",
       },
+      {
+        label: "Learning Difficulties & Autism Support",
+        href: "/services/specialist-dementia-support",
+      },
     ],
   },
   { label: "Contact Us", href: "/contact" },
