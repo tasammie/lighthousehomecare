@@ -47,7 +47,7 @@ export const navigationItems: NavLink[] = [
       },
       {
         label: "Learning Difficulties & Autism Support",
-        href: "/services/specialist-dementia-support",
+        href: "/services/autism-learning-difficulties-support",
       },
     ],
   },
