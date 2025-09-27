@@ -90,7 +90,7 @@ const carePackages: CarePackage[] = [
     description: "Specialist Care Rooted in Emotion & Kindness.",
     image: "/images/monitoring.webp",
     logo: "/images/lighthouse-logo-white.png",
-    buttonLink: "specialist-dementia-support",
+    buttonLink: "autism-learning-difficulties-support",
   },
 ];
 
