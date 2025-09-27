@@ -8,7 +8,7 @@ const AutismSupport = () => {
         {/* Left: Text */}
         <div className="md:col-span-2">
           <h1 className="text-3xl md:text-4xl font-bold text-[#001967] mb-6">
-            Learning Difficulties & Autism Support
+            Learning Difficulties & Autism 
           </h1>
           <p className="text-gray-800 text-lg mb-4">
             When everyday life feels challenging, Lighthouse Homecare is here to

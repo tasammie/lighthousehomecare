@@ -23,7 +23,8 @@ const Hero = () => {
           >
             <div className="relative">
               <ImgComp
-                src="/images/autism-support.png"
+                src="/images/autism.png"
+                // src="/images/autism-support.png"
                 alt="Autism Support"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -42,7 +43,7 @@ const Hero = () => {
             {/* Header */}
             <div>
               <h1 className="text-4xl md:text-[42px] font-bold text-[#000000] mb-4 ">
-                Learning Difficulties & Autism Support{" "}
+                Learning Difficulties & Autism{" "}
               </h1>
               {/* <h2 className="text-xl font-semibold text-[#00269B] mb-6">
                 Specialist Care Rooted in Emotion & Kindness{" "}
