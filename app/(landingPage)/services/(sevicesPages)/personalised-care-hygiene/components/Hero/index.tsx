@@ -42,7 +42,7 @@ const Hero = () => {
             {/* Header */}
             <div>
               <h1 className="text-4xl md:text-[42px] font-bold text-[#000000] mb-4 ">
-                Personal Centered Care{" "}
+                Person-Centred Care{" "}
               </h1>
               <h2 className="text-xl font-semibold text-[#00269B] mb-6">
                 Care as unique as the person.{" "}
