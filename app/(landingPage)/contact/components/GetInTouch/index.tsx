@@ -198,8 +198,9 @@ const GetInTouch = () => {
             <div className="space-y-6 grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <Mail className="w-6 h-6 text-[#001967] mt-1" />
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+               
+                <div className="flex items-baseline space-x-2">
+                  <h3 className="font-semibold text-gray-900 mb-1">Email:</h3>
                   <a
                     href="mailto:info@Lighthousehomecare.co.uk"
                     className="text-blue-600 hover:text-blue-800 underline"
@@ -209,7 +210,9 @@ const GetInTouch = () => {
                 </div>
               </div>
 
-              <div className="space-y-4">
+   
+
+              {/* <div className="space-y-4">
                 <Phone className="w-6 h-6 text-[#001967] mt-1" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
@@ -218,11 +221,11 @@ const GetInTouch = () => {
                     <p className="text-gray-700">01727 324 619</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Office Location */}
-            <div className="space-y-6 flex items-start">
+            {/* <div className="space-y-6 flex items-start">
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-[#001967] mt-1" />
                 <div>
@@ -236,8 +239,21 @@ const GetInTouch = () => {
                     <br />
                     AL1 3TF
                   </p>
+                   <div className="space-y-4">
+                <Phone className="w-6 h-6 text-[#001967] mt-1" />
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+                  <div className="space-y-1">
+                    <p className="text-gray-700">07397 029 192</p>
+                    <p className="text-gray-700">01727 324 619</p>
+                  </div>
                 </div>
               </div>
+                </div>
+                
+                
+              </div>
+
               <div className="flex items-start space-x-4">
                 <MapPin className="w-6 h-6 text-[#001967] mt-1" />
                 <div>
@@ -246,13 +262,95 @@ const GetInTouch = () => {
                   </h3>
                   <p className="text-gray-700">
                     2 Infirmary Street,
-                    {/* 2 Fountain Court, Victoria Square, */}
+                   
                     <br />
                     Leeds, LS1 2JP <br />
                   </p>
+                   <div className="space-y-4">
+                <Phone className="w-6 h-6 text-[#001967] mt-1" />
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+                  <div className="space-y-1">
+                    <p className="text-gray-700">07397 029 192</p>
+                    <p className="text-gray-700">01727 324 619</p>
+                  </div>
                 </div>
               </div>
-            </div>
+                </div>
+              </div>
+            </div> */}
+
+
+<div className="grid grid-cols-2 gap-8">
+  {/* First Column - St. Albans Office */}
+  <div className="space-y-6">
+    <div className="flex items-start space-x-4">
+      <MapPin className="w-6 h-6 text-[#001967] mt-1 flex-shrink-0" />
+      <div className="flex-1">
+        <h3 className="font-semibold text-gray-900 mb-2">
+          Office Address
+        </h3>
+        <div className="min-h-[72px]">
+          <p className="text-gray-700">
+            2 Fountain Court, Victoria Square,
+            <br />
+            Victoria Street, St. Albans,
+            <br />
+            AL1 3TF
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="flex items-start space-x-4">
+      <Phone className="w-6 h-6 text-[#001967] mt-1 flex-shrink-0" />
+      <div className="flex-1">
+        <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+        <div className="space-y-1">
+          <p className="text-gray-700">07397 029 192</p>
+          <p className="text-gray-700">01727 324 619</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Second Column - Leeds Office */}
+  <div className="space-y-6">
+    <div className="flex items-start space-x-4">
+      <MapPin className="w-6 h-6 text-[#001967] mt-1 flex-shrink-0" />
+      <div className="flex-1">
+        <h3 className="font-semibold text-gray-900 mb-2">
+          Leeds Office Address
+        </h3>
+        <div className="min-h-[72px]">
+          <p className="text-gray-700">
+            2 Infirmary Street,
+            <br />
+            Leeds, LS1 2JP
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div className="flex items-start space-x-4">
+      <Phone className="w-6 h-6 text-[#001967] mt-1 flex-shrink-0" />
+      <div className="flex-1">
+        <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+        <div className="space-y-1">
+          <p className="text-gray-700">0113 547 0544</p>
+          <p className="text-gray-700">0739 702 9192</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     
+
+
+
+
           </div>
         </div>
       </div>

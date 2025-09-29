@@ -54,7 +54,7 @@ const Hero = () => {
               <p>
                 At Lighthouse Homecare, we believe that truly great care begins
                 with truly understanding the individual. Our Person-Centred Care
-                approach places each client at the heart of their care plan —
+                approach places each client at the heart of their care plan,
                 honouring their choices, routines, preferences, and life story.
               </p>
               <p>
