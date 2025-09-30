@@ -17,7 +17,7 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: "item-1",
-    question: "What does Personal Centred Care & Hygiene include?",
+    question: "What does Person-Centred Care & Hygiene include?",
     answer: `
       <p>Our service includes support with daily personal tasks such as bathing, dressing, toileting, grooming, oral hygiene, and mobility. It may also involve meal preparation, light domestic duties, medication reminders, and continence care — all tailored to individual preferences, routines, and wellbeing goals.</p>
     `,
