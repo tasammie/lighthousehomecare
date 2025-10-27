@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -75,6 +76,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${robotoMono.variable} antialiased`}
       >
         {children}
+        <Toaster position="top-center" />
       </body>
       <GoogleAnalytics gaId="G-ED7Q0V009C" />
     </html>

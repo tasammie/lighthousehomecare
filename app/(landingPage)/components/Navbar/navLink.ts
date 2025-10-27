@@ -53,5 +53,5 @@ export const navigationItems: NavLink[] = [
   },
   { label: "Contact Us", href: "/contact" },
   { label: "Find Job", href: "#" },
-  // { label: "Blog", href: "/blog" },
+  { label: "Blog", href: "/blog" },
 ];
