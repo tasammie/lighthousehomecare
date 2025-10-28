@@ -14,6 +14,7 @@ interface BlogCommentsProps {
   comments: Comment[];
   totalComments: number;
   onCommentSubmit?: (name: string, email: string, comment: string) => void;
+  onCommentLike?: (commentId: string) => void;
   loading?: boolean;
 }
 
@@ -21,6 +22,7 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
   comments,
   totalComments,
   onCommentSubmit,
+  onCommentLike,
   loading,
 }) => {
   const [showCommentForm, setShowCommentForm] = useState(false);
@@ -30,9 +32,15 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
     comment: "",
   });
 
+  // console.log(comments, "comments");
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (onCommentSubmit && formData.name && formData.email && formData.comment) {
+    if (
+      onCommentSubmit &&
+      formData.name &&
+      formData.email &&
+      formData.comment
+    ) {
       onCommentSubmit(formData.name, formData.email, formData.comment);
       setFormData({ name: "", email: "", comment: "" });
       setShowCommentForm(false);
@@ -45,7 +53,7 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
         <h3 className="text-2xl font-bold">All Comments ({totalComments})</h3>
         <button
           onClick={() => setShowCommentForm(!showCommentForm)}
-          className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+          className="bg-[#00269b] text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
         >
           {showCommentForm ? "Cancel" : "Add Comment"}
         </button>
@@ -53,13 +61,18 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
 
       {/* Comment Form */}
       {showCommentForm && (
-        <form onSubmit={handleSubmit} className="mb-8 p-6 bg-gray-50 rounded-lg">
+        <form
+          onSubmit={handleSubmit}
+          className="mb-8 p-6 bg-gray-50 rounded-lg"
+        >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <input
               type="text"
               placeholder="Your Name"
               value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
               className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
@@ -67,7 +80,9 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
               type="email"
               placeholder="Your Email"
               value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
               className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
@@ -75,7 +90,9 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
           <textarea
             placeholder="Your Comment"
             value={formData.comment}
-            onChange={(e) => setFormData({ ...formData, comment: e.target.value })}
+            onChange={(e) =>
+              setFormData({ ...formData, comment: e.target.value })
+            }
             rows={4}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
             required
@@ -83,7 +100,7 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
           <button
             type="submit"
             disabled={loading}
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
+            className="bg-[#00269b] text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
           >
             {loading ? (
               <>
@@ -111,8 +128,11 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
               </p>
               <div className="flex items-center gap-4 mt-3 text-sm text-gray-500">
                 <span>{comment.date}</span>
-                <button className="flex items-center gap-1 hover:text-blue-600 transition-colors">
-                  👍 Like
+                <button
+                  onClick={() => onCommentLike?.(comment.id.toString())}
+                  className="flex items-center gap-1 hover:text-[#00269b] transition-colors"
+                >
+                  👍 Like ({comment.likes})
                 </button>
               </div>
             </div>

@@ -27,7 +27,7 @@ export default async function Page({ params }: PageProps) {
 
   // Fetch comments
   const comments = await client.fetch(COMMENTS_QUERY, { postId: post._id });
-
+  console.log(comments, "comments");
   // Get category slugs for related posts
   const categorySlugss =
     post.categories?.map(

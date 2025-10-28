@@ -1,6 +1,7 @@
 import { useState, useCallback } from "react";
 import { client } from "@/sanity/lib/client";
 import { toast } from "sonner";
+import { hasViewedBlog, hasLikedBlog, markBlogAsViewed, markBlogAsLiked } from "@/lib/cookies";
 
 interface BlogInteractionState {
   likes: number;
@@ -40,6 +41,9 @@ export const useBlogInteractions = ({
   const incrementViews = useCallback(async () => {
     if (state.loading.view) return;
 
+    // Check if user has already viewed this blog
+    if (hasViewedBlog(postId)) return;
+
     setState((prev) => ({
       ...prev,
       loading: { ...prev.loading, view: true },
@@ -47,6 +51,9 @@ export const useBlogInteractions = ({
 
     try {
       const result = await client.patch(postId).inc({ views: 1 }).commit();
+      
+      // Mark as viewed in cookies
+      markBlogAsViewed(postId);
 
       setState((prev) => ({
         ...prev,
@@ -65,6 +72,12 @@ export const useBlogInteractions = ({
   const handleLike = useCallback(async () => {
     if (state.loading.like) return;
 
+    // Check if user has already liked this blog
+    if (hasLikedBlog(postId)) {
+      toast.info("You've already liked this post!");
+      return;
+    }
+
     setState((prev) => ({
       ...prev,
       loading: { ...prev.loading, like: true },
@@ -72,6 +85,9 @@ export const useBlogInteractions = ({
 
     try {
       const result = await client.patch(postId).inc({ likes: 1 }).commit();
+      
+      // Mark as liked in cookies
+      markBlogAsLiked(postId);
 
       setState((prev) => ({
         ...prev,

@@ -2,6 +2,7 @@ import { useState, useCallback } from 'react';
 import { client } from '@/sanity/lib/client';
 import { toast } from 'sonner';
 import { SanityComment } from '@/lib/sanity/types';
+import { hasLikedComment, markCommentAsLiked } from '@/lib/cookies';
 
 interface UseCommentsProps {
   postId: string;
@@ -62,12 +63,21 @@ export const useComments = ({
   }, [postId]);
 
   const handleCommentLike = useCallback(async (commentId: string) => {
+    // Check if user has already liked this comment
+    if (hasLikedComment(commentId)) {
+      toast.info("You've already liked this comment!");
+      return;
+    }
+
     try {
       // Update comment likes in Sanity
       const result = await client
         .patch(commentId)
         .inc({ likes: 1 })
         .commit();
+
+      // Mark as liked in cookies
+      markCommentAsLiked(commentId);
 
       // Update local state
       setComments(prev => 

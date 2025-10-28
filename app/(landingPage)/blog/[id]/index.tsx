@@ -46,6 +46,7 @@ const BlogDetails: React.FC<BlogDetailsProps> = ({
     comments: transformedComments,
     loading: commentLoading,
     handleCommentSubmit,
+    handleCommentLike,
   } = useComments({
     postId: post._id,
     initialComments,
@@ -111,6 +112,7 @@ const BlogDetails: React.FC<BlogDetailsProps> = ({
               comments={transformedComments}
               totalComments={initialComments.length}
               onCommentSubmit={handleCommentSubmit}
+              onCommentLike={handleCommentLike}
               loading={commentLoading}
             />
           </div>
