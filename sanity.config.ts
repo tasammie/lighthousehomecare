@@ -18,6 +18,11 @@ export default defineConfig({
   projectId,
   dataset,
   // Add and edit content schema in './sanity/schemaTypes' folder
+
+  // for sanity deoploy
+
+  // basePath: "/studio",
+  // projectId: "6p6wev1f",
   schema,
   plugins: [
     structureTool({ structure }),

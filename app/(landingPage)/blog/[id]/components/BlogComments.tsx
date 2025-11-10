@@ -3,6 +3,7 @@ import { Loader2 } from "lucide-react";
 
 interface Comment {
   id: number;
+  _id: string; // Add Sanity _id
   author: string;
   date: string;
   content: string;
@@ -129,7 +130,7 @@ const BlogComments: React.FC<BlogCommentsProps> = ({
               <div className="flex items-center gap-4 mt-3 text-sm text-gray-500">
                 <span>{comment.date}</span>
                 <button
-                  onClick={() => onCommentLike?.(comment.id.toString())}
+                  onClick={() => onCommentLike?.(comment._id)}
                   className="flex items-center gap-1 hover:text-[#00269b] transition-colors"
                 >
                   👍 Like ({comment.likes})

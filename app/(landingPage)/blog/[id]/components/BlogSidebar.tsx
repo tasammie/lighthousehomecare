@@ -3,7 +3,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { SanityBlogPost } from "@/lib/sanity/types";
-import { Facebook, Twitter, Instagram, Youtube, Clock } from "lucide-react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Youtube,
+  Clock,
+  Linkedin,
+} from "lucide-react";
+import SubscribeForm from "@/components/SubscribeForm";
 
 interface BlogSidebarProps {
   author?: string;
@@ -24,16 +32,16 @@ const BlogSidebar: React.FC<BlogSidebarProps> = ({
       <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
         <h3 className="text-2xl font-bold mb-6 text-gray-900">Follow Us</h3>
         <div className="flex gap-3 flex-wrap">
-          <a
-            href="https://facebook.com"
+          <Link
+            href="https://www.facebook.com/share/p/19pgSjFr8Y/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-lg bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-all hover:scale-110 shadow-md"
             title="Follow us on Facebook"
           >
             <Facebook className="w-5 h-5" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -41,58 +49,36 @@ const BlogSidebar: React.FC<BlogSidebarProps> = ({
             title="Follow us on Twitter"
           >
             <Twitter className="w-5 h-5" />
-          </a>
-          <a
-            href="https://instagram.com"
+          </Link>
+          <Link
+            href="https://www.instagram.com/lighthousehomecareltd?igsh=MWc4NmlmZG41ODc2OQ=="
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 flex items-center justify-center text-white hover:opacity-90 transition-all hover:scale-110 shadow-md"
             title="Follow us on Instagram"
           >
             <Instagram className="w-5 h-5" />
-          </a>
-          <a
-            href="https://youtube.com"
+          </Link>
+          <Link
+            href="https://www.linkedin.com/company/lighthousehomecare/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-lg bg-red-600 flex items-center justify-center text-white hover:bg-red-700 transition-all hover:scale-110 shadow-md"
             title="Subscribe on YouTube"
           >
-            <Youtube className="w-5 h-5" />
-          </a>
+            <Linkedin className="w-5 h-5" />
+          </Link>
         </div>
       </div>
 
       {/* Subscription Section */}
       <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 shadow-sm border border-blue-100">
-        <h3 className="text-2xl font-bold mb-3 text-gray-900">Subscription</h3>
-        <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-          Subscribe to our newsletter and receive a selection of cool articles
-          every week
-        </p>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow"
+        <SubscribeForm 
+          title="Subscription"
+          description="Subscribe to our newsletter and receive a selection of cool articles every week"
+          buttonText="SUBSCRIBE"
+          variant="sidebar"
         />
-        <button className="w-full bg-[#00269B] text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition-all hover:shadow-lg active:scale-98">
-          SUBSCRIBE
-        </button>
-        <div className="flex items-start gap-2 mt-4">
-          <input
-            type="checkbox"
-            id="terms"
-            className="mt-1 w-4 h-4 text-blue-600 rounded focus:ring-2 focus:ring-blue-500"
-          />
-          <label
-            htmlFor="terms"
-            className="text-xs text-gray-600 leading-relaxed"
-          >
-            By checking this box, you confirm that you have read and are
-            agreeing to our terms of use regarding the storage of the data
-            submitted through this form.
-          </label>
-        </div>
       </div>
 
       {/* Recent Posts Section */}

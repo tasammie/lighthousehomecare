@@ -1,65 +1,10 @@
 "use client";
 import { ImgComp } from "@/components/ImgComp";
-import { motion } from "framer-motion";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import SubscribeForm from "@/components/SubscribeForm";
 
 const LighthouseFooter = () => {
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<{
-    type: "success" | "error" | null;
-    message: string;
-  }>({ type: null, message: "" });
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    if (!email) return;
-
-    setIsSubmitting(true);
-    setSubmitStatus({ type: null, message: "" });
-
-    try {
-      // Mailchimp integration - replace with your actual values
-      const response = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email: email,
-        }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setSubmitStatus({
-          type: "success",
-          message: "Successfully subscribed to our newsletter!",
-        });
-        setEmail("");
-      } else {
-        console.log(data.error || "Failed to subscribe");
-        // throw new Error(data.error || "Failed to subscribe");
-        setSubmitStatus({
-          type: "error",
-          message: data.error || "Failed to subscribe",
-        });
-      }
-    } catch (error) {
-      console.error("Error subscribing:", error);
-      setSubmitStatus({
-        type: "error",
-        message: "Sorry, there was an error. Please try again.",
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <footer className="bg-[#000D34] text-white">
       {/* Main Footer Content */}
@@ -175,63 +120,11 @@ const LighthouseFooter = () => {
 
           {/* Subscribe Section */}
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold mb-6">Subscribe</h3>
-            <p className="text-gray-300 mb-6 text-sm leading-relaxed">
-              Join our newsletter to stay up to date on features and releases.
-            </p>
-
-            {/* Status Message */}
-            {submitStatus.type && (
-              <div
-                className={`mb-4 p-3 rounded-md text-sm ${
-                  submitStatus.type === "success"
-                    ? "bg-green-100 text-green-800 border border-green-200"
-                    : "bg-red-100 text-red-800 border border-red-200"
-                }`}
-              >
-                {submitStatus.message}
-              </div>
-            )}
-
-            <form onSubmit={handleSubscribe} className="space-y-4">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 bg-white text-gray-900 placeholder-gray-500 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                required
-                disabled={isSubmitting}
-              />
-              <motion.button
-                type="submit"
-                disabled={isSubmitting}
-                className={`w-full bg-primaryColor hover:bg-blue-900 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed`}
-                whileHover={
-                  !isSubmitting
-                    ? {
-                        scale: 1.05,
-                        boxShadow: "0 8px 15px rgba(0,0,0,0.1)",
-                      }
-                    : {}
-                }
-                whileTap={!isSubmitting ? { scale: 0.95 } : {}}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              >
-                {isSubmitting ? "Subscribing..." : "Subscribe"}
-              </motion.button>
-            </form>
-
-            <p className="text-xs text-gray-400 mt-4 leading-relaxed">
-              By subscribing you agree to with our{" "}
-              <Link
-                href="#"
-                className="underline hover:text-white transition-colors"
-              >
-                Privacy Policy
-              </Link>{" "}
-              and provide consent to receive updates from our company.
-            </p>
+            <SubscribeForm
+              title="Subscribe"
+              description="Join our newsletter to stay up to date on features and releases."
+              variant="footer"
+            />
           </div>
         </div>
       </div>

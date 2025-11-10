@@ -1,6 +1,18 @@
 import React from "react";
 import Image from "next/image";
-import { Share2, ThumbsUp, Loader2, Eye, MessageCircle, Forward, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  Share2,
+  ThumbsUp,
+  Loader2,
+  Eye,
+  MessageCircle,
+  Forward,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
+import Link from "next/link";
 
 interface BlogHeaderProps {
   title: string;
@@ -49,7 +61,9 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
           ) : (
             <Share2 className="w-6 h-6" />
           )}
-          <span className="text-[10px] font-semibold uppercase tracking-wide">Share</span>
+          <span className="text-[10px] font-semibold uppercase tracking-wide">
+            Share
+          </span>
         </button>
         <div className="h-px bg-gray-200 w-full" />
         <button
@@ -63,22 +77,24 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
           ) : (
             <ThumbsUp className="w-6 h-6" />
           )}
-          <span className="text-[10px] font-semibold uppercase tracking-wide">Like</span>
+          <span className="text-[10px] font-semibold uppercase tracking-wide">
+            Like
+          </span>
         </button>
       </div>
 
       {/* Social icons - Left side fixed */}
       <div className="fixed left-4 top-[55%] hidden xl:flex flex-col gap-3 z-20">
-        <a
-          href="https://facebook.com"
+        <Link
+          href="https://www.facebook.com/share/p/19pgSjFr8Y/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white hover:bg-blue-700 transition-all hover:scale-110 shadow-md"
           title="Share on Facebook"
         >
           <Facebook className="w-4 h-4" />
-        </a>
-        <a
+        </Link>
+        <Link
           href="https://twitter.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -86,25 +102,25 @@ const BlogHeader: React.FC<BlogHeaderProps> = ({
           title="Share on Twitter"
         >
           <Twitter className="w-4 h-4" />
-        </a>
-        <a
-          href="https://linkedin.com"
+        </Link>
+        <Link
+          href="https://www.linkedin.com/company/lighthousehomecare/"
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center text-white hover:bg-blue-800 transition-all hover:scale-110 shadow-md"
           title="Share on LinkedIn"
         >
           <Linkedin className="w-4 h-4" />
-        </a>
-        <a
-          href="https://instagram.com"
+        </Link>
+        <Link
+          href="https://www.instagram.com/lighthousehomecareltd?igsh=MWc4NmlmZG41ODc2OQ=="
           target="_blank"
           rel="noopener noreferrer"
           className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 flex items-center justify-center text-white hover:opacity-90 transition-all hover:scale-110 shadow-md"
           title="Share on Instagram"
         >
           <Instagram className="w-4 h-4" />
-        </a>
+        </Link>
       </div>
 
       {/* Featured Image */}
