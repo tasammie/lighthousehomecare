@@ -19,7 +19,7 @@ const LighthouseFooter = () => {
                 alt="Logo"
                 width={400}
                 height={400}
-                className="w-[160px]"
+                className="w-40"
               />
             </div>
           </div>
