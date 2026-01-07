@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight, User } from "lucide-react";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const TestimonialSection = () => {
@@ -93,7 +94,7 @@ const TestimonialSection = () => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div
-        className="max-w-7xl mx-auto md:ml-[20rem]"
+        className="max-w-7xl mx-auto md:ml-[10rem]"
         variants={{
           hidden: { opacity: 0, y: 30 },
           visible: { opacity: 1, y: 0 },
@@ -103,11 +104,39 @@ const TestimonialSection = () => {
         {/* Header */}
         <div className="text-start mb-12">
           <p className="text-[#00269B] text-sm mb-2">
-            Read convincing testimonies from some of our care patients{" "}
+            A few highlights from our clients. Read all independently verified
+            reviews on{" "}
+            <Link
+              href="https://www.homecare.co.uk/homecare/agency.cfm/id/65432250585"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primaryColor underline underline-offset-2 hover:text-blue-700 font-medium"
+            >
+              Homecare.co.uk
+            </Link>
+            .
           </p>
-          <h2 className="text-[44px] font-[700] text-[#001967]">
-            What our Clients say
-          </h2>
+
+          {/* <p className="text-[#00269B] text-sm mb-2">
+            Read convincing testimonies from some of our care patients
+          </p> */}
+
+          <div className="flex  justify-between items-center">
+            <h2 className="text-[44px] font-[700] text-[#001967]">
+              What our Clients say
+            </h2>
+
+            <div className="mr-4">
+              <Link
+                target="_blank"
+                href="https://www.homecare.co.uk/homecare/agency.cfm/id/65432250585"
+                className="bg-primaryColor hover:bg-blue-700 text-white px-8 py-3 rounded-md text-sm font-semibold transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg whitespace-nowrap"
+              >
+                {/* See Our Reviews on Homecare.co.uk{" "} */}
+                Read All Reviews on Homecare.co.uk
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* Carousel */}
