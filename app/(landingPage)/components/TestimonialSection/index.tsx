@@ -45,12 +45,12 @@ const TestimonialSection = () => {
       name: "Client's brother",
       location: "Patient, United Kingdom.",
     },
-    // {
-    //   id: 7,
-    //   text: "With sincere gratitude, I would like to commend the team for the outstanding care and support they continue to provide to my brother in law. Every time I visit, I am impressed by how attentive, patient, and compassionate the staff are with him.There has been a noticeable improvement in his overall physical performance,  he moving his hands and legs very well and emotional wellbeing. He seems more at ease and more connected with his family, especially when we come for Eid celebrations . It’s comforting to know he’s in an environment where he is genuinely cared for and treated with respect.As a family member, it gives me great peace of mind knowing he is in safe and capable hands. Thank you for your dedication , quality care and the positive difference you are making in his life.",
-    //   name: "Client's Sister Inlaw.",
-    //   location: "Patient, United Kingdom.",
-    // },
+    {
+      id: 7,
+      text: "With sincere gratitude, I would like to commend the team for the outstanding care and support they continue to provide to my brother in law. Every time I visit, I am impressed by how attentive, patient, and compassionate the staff are with him.There has been a noticeable improvement in his overall physical performance,  he moving his hands and legs very well and emotional wellbeing. He seems more at ease and more connected with his family, especially when we come for Eid celebrations . It’s comforting to know he’s in an environment where he is genuinely cared for and treated with respect.As a family member, it gives me great peace of mind knowing he is in safe and capable hands. Thank you for your dedication , quality care and the positive difference you are making in his life.",
+      name: "Client's Sister Inlaw.",
+      location: "Patient, United Kingdom.",
+    },
   ];
 
   const scrollToIndex = (index: number) => {
