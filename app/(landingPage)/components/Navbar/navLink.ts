@@ -51,6 +51,17 @@ export const navigationItems: NavLink[] = [
       },
     ],
   },
+  {
+    label: "Supported Living",
+    href: "/supported-living",
+    hasDropdown: true,
+    items: [
+      {
+        label: "18+ Supported Accommodation",
+        href: "/supported-living/18-supported-accommodation",
+      },
+    ],
+  },
   { label: "Contact Us", href: "/contact" },
   { label: "Find Job", href: "#" },
   { label: "Blog", href: "/blog" },
