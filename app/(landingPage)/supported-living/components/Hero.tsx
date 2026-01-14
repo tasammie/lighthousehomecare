@@ -17,8 +17,8 @@ const Hero: React.FC = () => {
 
           <p className="text-lg text-gray-700 mb-8 max-w-2xl">
             At Lighthouse Homecare Ltd, we support adults to live with greater
-            independence, confidence, and choice—within a safe, supportive home
-            environment. Our approach is person-centred, compassionate, and
+            independence, confidence, and choice within a safe, supportive home
+            environment. Our approach is person centred, compassionate, and
             outcomes-focused, helping individuals build life skills, feel secure,
             and stay connected to their community.
           </p>
