@@ -15,7 +15,7 @@ const SupportedLivingPage = () => {
     {
       title: "Independence and Choice",
       content:
-        "We encourage independence by supporting people in developing practical life skills and making everyday decisions—always at a pace that feels comfortable and empowering.",
+        "We encourage independence by supporting people in developing practical life skills and making everyday decisions, always at a pace that feels comfortable and empowering.",
     },
     {
       title: "Safe and Secure Environment",
@@ -25,7 +25,7 @@ const SupportedLivingPage = () => {
     {
       title: "Community and Belonging",
       content:
-        "A fulfilled life includes connection. We support people in participating in community activities, building positive relationships, and feeling included—socially and emotionally.",
+        "A fulfilled life includes connection. We support people to participate in community activities, build positive relationships, and feel included socially and emotionally."
     },
     {
       title: "Personalised Support Plans",
@@ -35,7 +35,7 @@ const SupportedLivingPage = () => {
     {
       title: "Emotional Wellbeing and Confidence",
       content:
-        "Our support is rooted in empathy and kindness—helping people feel heard, valued, and motivated as they work towards their goals.",
+        "Our support is rooted in empathy and kindness, helping people feel heard, valued, and motivated as they work towards their goals.",
     },
   ];
 
@@ -194,7 +194,7 @@ const SupportedLivingPage = () => {
               Services Provided
             </h2>
             <p className="text-xl text-gray-600">
-              Flexible support that fits around the person—not the other way
+              Flexible support that fits around the person and not the other way
               round.
             </p>
           </div>
