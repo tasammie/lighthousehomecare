@@ -263,7 +263,7 @@ const SupportedLivingPage = () => {
                 Whom we support
               </h2>
               <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                We provide Supported Living for 18+ and above who may need assistance
+                We provide Supported Living for 18 and above who may need assistance
                 to live more independently, including individuals with learning
                 disabilities, autism, mental health needs, and other support
                 requirements. Our services are available across St Albans,

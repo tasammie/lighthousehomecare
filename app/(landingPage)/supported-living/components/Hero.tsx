@@ -15,11 +15,18 @@ const Hero: React.FC = () => {
             Supported Living that feels like home
           </h1>
 
-          <p className="text-lg text-gray-700 mb-8 max-w-2xl">
+          {/* <p className="text-lg text-gray-700 mb-8 max-w-2xl">
             At Lighthouse Homecare Ltd, we support 18+ and above to live with greater
             independence, confidence, and choice within a safe, supportive home
             environment. Our approach is person centred, compassionate, and
             outcomes-focused, helping individuals build life skills, feel secure,
+            and stay connected to their community.
+          </p> */}
+          <p className="text-lg text-gray-700 mb-8 max-w-2xl">
+            At Lighthouse Homecare Ltd, we support adults aged 18 and above to live 
+            with greater independence, confidence, and choice within a safe, 
+            supportive home environment. Our approach is person-centred, compassionate, 
+            and outcomes-focused, helping individuals build life skills, feel secure, 
             and stay connected to their community.
           </p>
 

@@ -67,10 +67,15 @@ const SupportedAccommodation18Page = () => {
               </h1>
 
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-                Supported Living for adults aged 18 and over is designed to help
-                young adults live independently in their own home, while receiving
+                Supported Living for adults aged 18 and above is designed to help 
+                young adults live independently in their own homes, while receiving 
                 personalised support to manage daily life safely and confidently.
               </p>
+              {/* <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+                Supported Living for adults aged 18+ and above is designed to help
+                young adults live independently in their own home, while receiving
+                personalised support to manage daily life safely and confidently.
+              </p> */}
 
               <p className="text-lg text-gray-600 mb-10 leading-relaxed">
                 This service supports individuals as they transition into adulthood,
@@ -159,7 +164,7 @@ const SupportedAccommodation18Page = () => {
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Our team provides flexible, person-centred support across all areas
-                of daily life—helping you build skills, confidence, and independence.
+                of daily life, helping you build skills, confidence, and independence.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Support is tailored to your unique needs and can be adjusted as you
