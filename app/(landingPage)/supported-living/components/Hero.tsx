@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-lg text-gray-700 mb-8 max-w-2xl">
-            At Lighthouse Homecare Ltd, we support adults to live with greater
+            At Lighthouse Homecare Ltd, we support 18+ and above to live with greater
             independence, confidence, and choice within a safe, supportive home
             environment. Our approach is person centred, compassionate, and
             outcomes-focused, helping individuals build life skills, feel secure,
@@ -43,7 +43,7 @@ const Hero: React.FC = () => {
         <div className="relative">
           <div className="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-gray-100">
             <ImgComp
-              src="/images/friendly-companion-service.webp"
+                  src="/images/ladyandboy-smile.jpeg"
               alt="Support worker helping an adult build independent living skills."
               className="w-full h-[420px] object-cover"
             />

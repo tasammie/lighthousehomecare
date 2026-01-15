@@ -99,7 +99,7 @@ const SupportedAccommodation18Page = () => {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden border-2 border-white ring-1 ring-gray-200">
                 <ImgComp
-                  src="/images/friendly-companion-service.webp"
+                  src="/images/ladyandboy-smile.jpeg"
                   alt="Young adult in supported accommodation living independently"
                   className="w-full h-[500px] object-cover"
                 />

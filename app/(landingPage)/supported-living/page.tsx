@@ -148,7 +148,7 @@ const SupportedLivingPage = () => {
             Your goals. Your routine. Your choices.
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Supported Living is about more than support—it’s about building a
+            Supported Living is more than just a support, it’s about building a
             meaningful life. We work alongside each person to understand what
             matters to them, create a personalised support plan, and deliver
             flexible care that adapts as needs and goals change.
@@ -263,7 +263,7 @@ const SupportedLivingPage = () => {
                 Whom we support
               </h2>
               <p className="text-lg text-gray-200 mb-8 leading-relaxed">
-                We provide Supported Living for adults who may need assistance
+                We provide Supported Living for 18+ and above who may need assistance
                 to live more independently, including individuals with learning
                 disabilities, autism, mental health needs, and other support
                 requirements. Our services are available across St Albans,
@@ -283,9 +283,9 @@ const SupportedLivingPage = () => {
             
             <div className="relative">
               <div className="absolute inset-0 bg-[#527AF2] rounded-2xl transform rotate-6 scale-95 opacity-50"></div>
-              <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[700px] rounded-2xl overflow-hidden shadow-2xl">
                 <ImgComp
-                  src="/images/team1.webp"
+                  src="/lighthouse-staff/wheelchail-nurses.webp"
                   alt="Care team supporting a client"
                   className="object-cover w-full h-full"
                 />
@@ -373,20 +373,20 @@ const SupportedLivingPage = () => {
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-200 text-center">
-        <p className="text-primaryColor font-medium">
+        {/* <p className="text-primaryColor font-medium">
                 Proudly serving: St Albans • Hertfordshire • Watford • Borehamwood • Leeds
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
       </section>
 
       {/* SEO Footer Text */}
-      <div className="bg-primaryColor py-4 text-center">
+      {/* <div className="bg-primaryColor py-4 text-center">
         <p className="text-blue-200 text-sm max-w-5xl mx-auto px-4">
           Supported Living | St Albans • Hertfordshire • Watford • Borehamwood • Leeds
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
