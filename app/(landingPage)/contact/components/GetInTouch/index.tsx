@@ -337,7 +337,7 @@ const GetInTouch = () => {
       <div className="flex-1">
         <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
         <div className="space-y-1">
-          <p className="text-gray-700">0113 547 0544</p>
+          <p className="text-gray-700">0113 873 1258</p>
           <p className="text-gray-700">0739 702 9192</p>
         </div>
       </div>
